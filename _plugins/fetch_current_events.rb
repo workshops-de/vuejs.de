@@ -1,5 +1,5 @@
 Jekyll::Hooks.register :site, :after_init do |site|
   require 'rest-client'
-  response = RestClient.get('https://workshops.de/api/course/4/events')
+  response = RestClient.get('https://workshops.de/api/course/37/events')
   File.write('_data/events/vuejs-intensiv.json', response.body)
 end
