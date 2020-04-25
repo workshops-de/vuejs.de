@@ -4,24 +4,21 @@ Jekyll::Hooks.register :site, :after_init do |site|
   filename = '_data/meetups.json'
 
   meetups = [
-    'AngularJS-Meetup-Berlin',
-    'angular-users-stuttgart',
-    'Angular-Ruhr',
-    'Angular-Meetup-Leipzig',
-    'Angular-Frankfurt',
-    'angular-cologne',
-    'angular-heidelberg',
-    'Angular-Kiel',
-    'Angular-Meetup-Karlsruhe',
-    'Angular-Meetup-Dresden',
-    'Angular-Munich',
-    'Swiss-Angular',
-    'Angular-Vienna',
-    'Hamburg-AngularJS-Meetup',
-    'NgNiederrhein',
-    'Angular-Meetup-Graz',
-    'ngGirls-RheinNeckar',
-    'niederrhein-valley',
+    'vue-js-dresden',
+    'Stuttgart-Vue-js-Meetup',
+    'Hamburg-Vue-js-Meetup',
+    'Dusseldorf-Vuejs-Meetup-Gruppe',
+    'vuejsvienna',
+    'Vue-JS-Cologne',
+    'Vue-JS-Cologne-Rheinland',
+    'aachen-vue-js-meetup',
+    'vue-nfe',
+    'vuejsfrankfurt',
+    'Vue-js-Berlin',
+    'Vue-js-Meetup-Leipzig',
+    'Vue-js-Munich',
+    'vue_zurich',
+    'Vue-Bern'
   ]
 
   if(ENV["JEKYLL_ENV"] == "production") then
