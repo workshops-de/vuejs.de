@@ -11,3 +11,4 @@ _data/course.json
 _data/meetups.json
 _data/videos.json
 firebase-debug.log
+node_modules/
