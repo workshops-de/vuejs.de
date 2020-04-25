@@ -6,7 +6,7 @@ github_username:  jekyll
 ga_property: "UA-97181121-6"
 permalink: /artikel/:slug/
 repository_url: "https://github.com/workshops-de/vuejs.de"
-ws_course_id: 4
+ws_course_id: 37
 
 collections:
   pages:
@@ -14,6 +14,10 @@ collections:
     permalink: /:name/
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      noindex: "true" # for now
   - scope:
       path: "_posts" # an empty string here means all files in the project
     values:
