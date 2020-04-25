@@ -1,12 +1,11 @@
 <div data-headroom data-offset="105" class="navbar-wrapper headroom headroom--top headroom--not-bottom fixed-top">
   <nav class="navbar navbar-light navbar-ajs navbar-expand-md">
     <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand d-none d-md-block p-0 mr-4 img-grayscale-100" href="/">
-        <img alt="Angular.DE" src="/assets/img/angular-de-logo.svg" width="35">
+        <img alt="Angular.DE" src="/assets/img/vuejs-logo.svg" width="35">
       </a>
       <div class="collapse navbar-collapse mt-3 mt-sm-0" id="navbarNav">
         <ul class="navbar-nav">
@@ -20,8 +19,7 @@
             <a class="nav-link" href="/schulungen/">Schulungen</a>
           </li>
           <li class="nav-item dropdown {% if page.url contains '/ng-de-konferenz' %}active{% endif %}">
-            <a class="nav-link" href="#" id="navbarCourseDropdown" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
+            <a class="nav-link" href="#" id="navbarCourseDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Community
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarCourseDropdown">
@@ -68,5 +66,5 @@
     </div><!-- .container -->
   </nav>
 
-{% include _navigation-banner.html %}
+  {% include _navigation-banner.html %}
 </div>

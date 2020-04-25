@@ -1,4 +1,4 @@
-# angular.de
+# vuejs.de
 
 Requires Ruby 2.5+
 
@@ -17,5 +17,5 @@ $ jekyll s --incremental
 ## Build the dockerfile locally
 
 ```
-$ docker build -t anguarjs-de .
+$ docker build -t vuejs-de .
 ```

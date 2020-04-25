@@ -1,17 +1,14 @@
-title: Angular.DE
+title: VueJS.DE
 description: ""
-url: "https://angular.de" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vuejs.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-ga_property: "UA-39010393-1"
+ga_property: "UA-97181121-6"
 permalink: /artikel/:slug/
-repository_url: "https://github.com/symetics/angular.de"
+repository_url: "https://github.com/workshops-de/vuejs.de"
 ws_course_id: 4
 
 collections:
-  books:
-    output: true
-    permalink: /buecher/:path/
   pages:
     output: true
     permalink: /:name/
@@ -23,10 +20,6 @@ defaults:
       layout: "post"
       header_image: "header.jpg"
       toc: true
-  - scope:
-      path: "_books" # an empty string here means all files in the project
-    values:
-      layout: "chapter"
   - scope:
       path: "_pages" # an empty string here means all files in the project
     values:
