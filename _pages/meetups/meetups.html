@@ -37,12 +37,12 @@ newsletter: false
   <div class="row">
     {% for meetup in site.data.meetups %}
     <div class="card h-100 col-lg-4 col-md-6 col-12">
-      <a class="c-img-post" style="height: 150px; background-image: url('{{  meetup.key_photo.photo_link }}');" href="{{ meetup.link }}">
+      <a class="c-img-post" style="height: 150px; background-image: url('{{  meetup.key_photo.photo_link }}');" href="{{ meetup.link }}" rel=”nofollow”>
         <span class="c-post-categories">
           <span class="text-uppercase">{{meetup.city}}</span>
         </span>
       </a>
-      <a class="card-body text-dark" href="{{ meetup.link }}" target="_blank">
+      <a class="card-body text-dark" href="{{ meetup.link }}" target="_blank" rel=”nofollow”>
         <div class="text-muted">{{ meetup.members }} {{ meetup.who }}</div>
         <span class="font-weight-bold">
           {{ meetup.name }}
