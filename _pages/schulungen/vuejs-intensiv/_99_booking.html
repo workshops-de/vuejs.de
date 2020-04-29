@@ -11,12 +11,13 @@
           Im Normalfall beginnen unsere Schulungen am ersten Tag um 9:00 Uhr und enden am letzten Tag um 16:30 Uhr.
           Die genauen Start- und Endzeiten findest du, wenn du auf einen Termin klickst.
         </p>
-        <p>
-          Wir bieten unsere Schulungen auch Remote an. Aktuelle Termine und weitere Informationen findest du unter <a href="/schulungen/angular-remote/">Angular Intensiv Remote Schulung</a>.</p>
+        <!--<p>
+          Wir bieten unsere Schulungen auch Remote an. Aktuelle Termine und weitere Informationen findest du unter <a href="/schulungen/angular-remote/">Angular Intensiv Remote Schulung</a>.
+        </p>-->
       </div>
     </div>
 
-    {% assign onsite_workshops = site.data.events.angular-intensiv  | where_exp: "event", "event.location.address.addressLocality != 'Remote'"  %}
+    {% assign onsite_workshops = site.data.events.vuejs-intensiv  | where_exp: "event", "event.location.address.addressLocality != 'Remote'"  %}
 
     {% for event in onsite_workshops limit:6 %}
     <div class="row mb-2" itemscope="" itemtype="http://schema.org/Event">
@@ -52,7 +53,7 @@
                 {% endif %}
               </span>
             </span>
-            <meta itemprop="name" content="🅰️ Angular Intensiv Kurs">
+            <meta itemprop="name" content="💚 VueJS Intensiv Kurs">
             <meta itemprop="url" content="{{ event.url }}">
           </div>
           <div class="col-sm-3 text-right">
@@ -72,13 +73,13 @@
       <div class="col-8 col-sm-7">
         <div class="row">
           <div class="col-12 col-sm-9">
-            <a class="text-unstyled" href="https://workshops.de/seminare-schulungen-kurse/angular-typescript/inhouse?utm_source=https://vuejs.de/schulungen/vuejs-intensiv/?utm_campaign=website-link-inhouse&utm_medium=link&utm_content=workshops-list" target="_blank"> <span class="sr-only">Angular &amp; TypeScript</span> Firmenschulung Inhouse
+            <a class="text-unstyled" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript/inhouse?utm_source=https://vuejs.de/schulungen/vuejs-intensiv/?utm_campaign=website-link-inhouse&utm_medium=link&utm_content=workshops-list" target="_blank"> <span class="sr-only">VueJS &amp; TypeScript</span> Firmenschulung Inhouse
             </a> <br>
             <small class="d-none d-sm-inline"> Termine und Preise auf Anfrage </small>
             <small class="d-inline d-sm-none"> Auf Anfrage </small>
           </div>
           <div class="col-12 col-sm-3 text-right">
-            <a class="btn btn-primary btn-sm btn-cta shadow" href="https://workshops.de/seminare-schulungen-kurse/angular-typescript/inhouse?utm_source=https://vuejs.de/schulungen/vuejs-intensiv/#iframe&amp;utm_campaign=undefined&utm_medium=button&utm_content=workshops-list" target="_blank"> <span class="sr-only">Angular &amp; TypeScript Inhouse</span> &nbsp;anfragen&nbsp;
+            <a class="btn btn-primary btn-sm btn-cta shadow" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript/inhouse?utm_source=https://vuejs.de/schulungen/vuejs-intensiv/#iframe&amp;utm_campaign=undefined&utm_medium=button&utm_content=workshops-list" target="_blank"> <span class="sr-only">VueJS &amp; TypeScript Inhouse</span> &nbsp;anfragen&nbsp;
             </a> </div>
         </div>
       </div>
