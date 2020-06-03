@@ -2,6 +2,9 @@
 
 Requires Ruby 2.5+
 
+## Build Status
+![Build Status](https://travis-ci.org/workshops-de/vuejs.de.svg?branch=master "Travis Build Status")
+
 ## Development
 
 ### 0. Prerequisite Software
