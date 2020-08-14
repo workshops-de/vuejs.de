@@ -22,7 +22,7 @@
     {% for event in onsite_workshops limit:6 %}
     <div class="row mb-2" itemscope="" itemtype="http://schema.org/Event">
       <div class="col-4">
-        <span itemprop="startDate" content="{{ event.startDate | date: " %Y-%m-%d " }}">{{ event.startDate | date: "%d.%m" }}</span> - <span class="mr-2">{{ event.endDate | date: "%d.%m.%Y" }}</span>
+        <span itemprop="startDate" content="{{ event.startDate | date: " %Y-%m-%d " }}">{{ event.startDate | date: "%d.%m" }}</span> - <span class="mr-2" itemprop="endDate" content="{{ event.endDate | date: " %Y-%m-%d " }}">{{ event.endDate | date: "%d.%m.%Y" }}</span>
         {% if event.bookingsStatus == "BOOKED" %}
         <span class="badge badge-danger">ausgebucht</span>
         {% elsif event.bookingsStatus == "ONE_LEFT" %}
@@ -45,8 +45,22 @@
                 endcase %}</span>
             </a>
             <span class="d-block d-lg-inline">
+              {% if event.location.address.addressLocality != 'Remote' %}
               <span>in</span>
-              <span itemprop="location" content="{{event.location.address.addressLocality}} + Inhouse">{{event.location.address.addressLocality}}</span>
+              <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                <meta itemprop="name" content="{{event.location.name}}">
+                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="addressLocality" content="{{event.location.address.addressLocality}} + Inhouse">{{event.location.address.addressLocality}}</span>
+                  <meta itemprop="streetAddress" content="{{event.location.address.streetAddress}}">
+                  <meta itemprop="postalCode" content="{{event.location.address.postalCode}}">
+                </span>
+              </span>
+              {% else %}
+              <span itemprop="location" itemscope itemtype="http://schema.org/VirtualLocation">
+                <span>{{event.location.address.addressLocality}}</span>
+                <meta itemprop="url" content="https://zoom.us/  ">
+              </span>
+              {% endif %}
               <span>
                 {% if event.early_bird == true %}
                 <span class="badge badge-info"><small>Frühbucher Rabatt</small></span>
@@ -54,7 +68,35 @@
               </span>
             </span>
             <meta itemprop="name" content="💚 VueJS Intensiv Kurs">
+            <meta itemprop="description" content="{{ event.description }}">
             <meta itemprop="url" content="{{ event.url }}">
+            <span itemprop="organizer" itemscope itemtype="http://schema.org/Organization">
+              <meta itemprop="name" content="Workshops.DE">
+              <meta itemprop="url" content="https://workshops.de">
+            </span>
+            <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
+            {% if event.location.address.addressLocality == 'Remote' %}
+            <meta itemprop="eventAttendanceMode" content="https://schema.org/OnlineEventAttendanceMode">
+            {% else %}
+            <meta itemprop="eventAttendanceMode" content="https://schema.org/OfflineEventAttendanceMode">
+            {% endif %}
+            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              {% if event.bookingsStatus == 'TICKETS_LEFT' %}
+              <meta itemprop="availability" content="https://schema.org/InStock">
+              {% else %}
+              <meta itemprop="availability" content="https://schema.org/SoldOut">
+              {% endif %}
+              <link itemprop="url" content="{{event.offers.url}}">
+              <meta itemprop="price" content="{{event.offers.price.coef}}">
+              <meta itemprop="priceCurrency" content="{{event.offers.priceCurrency}}">
+              <meta itemprop="validFrom" content="{{event.validFrom}}">
+            </span>
+            <!-- <link itemprop="image" href="<%= Routes.static_url(@conn, "/images/workshops-de-social-share.png") %>" /> -->
+            {% if event.performer %}
+            <span itemprop="performer" itemscope itemtype="https://schema.org/Person">
+              <meta itemprop="name" content="{{event.performer.name}}">
+            </span>
+            {% endif %}
           </div>
           <div class="col-sm-3 text-right">
             <a class="btn btn-success btn-sm btn-cta shadow" href="{{ event.url }}?utm_source=https://vuejs.de/schulungen/vuejs-intensiv/&utm_campaign=website-link-event-date&utm_medium=button&utm_content=workshops-list#booking" target="_blank">anmelden</a>
