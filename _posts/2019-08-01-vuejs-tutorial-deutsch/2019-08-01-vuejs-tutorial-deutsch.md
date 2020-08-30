@@ -112,7 +112,7 @@ Die HTML-Datei, in welcher sich das Element mit der ID _app_ finden lässt, befi
 ### 2. Unsere erste Komponente
 Wir werden eine einfache Komponente zur Addition zweier Zahlen erstellen. Das vorläufige Ergebnis wird dabei so aussehen:
 
-<img class="img-fluid center img-rounded" src="tutorial_result.png" alt="Das Ergebnis der hier umgesetzten Komponente, besteht aus zwei Eingabefelder und einem Button, zur Auslösung der Addition.">
+<img class="img-fluid center img-rounded" src="tutorial-result.png" alt="Das Ergebnis der hier umgesetzten Komponente, besteht aus zwei Eingabefelder und einem Button, zur Auslösung der Addition.">
 
 Im `components`-Ordner erstellen wir dazu zunächst eine neue Datei mit dem Namen `Calculator.vue`:
 
