@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    {% assign onsite_workshops = site.data.events.vuejs-intensiv  | where_exp: "event", "event.location.address.addressLocality != 'Remote'"  %}
+    {% assign onsite_workshops = site.data.events.vuejs-intensiv %}
 
     {% for event in onsite_workshops limit:6 %}
     <div class="row mb-2" itemscope="" itemtype="http://schema.org/Event">
