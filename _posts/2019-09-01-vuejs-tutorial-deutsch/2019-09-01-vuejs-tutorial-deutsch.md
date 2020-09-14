@@ -357,7 +357,7 @@ export default {
 }
 ``` 
 
-**Achtung:** Verwendest du aktuell noch das Plug-in, um mit der Composition API zu arbeiten, so muss `ref` aus `'@vue/composition-api'` importiert werden.
+_Achtung: Verwendest du aktuell noch das Plug-in, um mit der Composition API zu arbeiten, so muss `ref` aus `'@vue/composition-api'` importiert werden._
 
 Damit ist das Refactoring auch schon fast abgeschlossen. Jetzt weisen wir dem Template nur noch die Variablen und Funktionen zu.
 
