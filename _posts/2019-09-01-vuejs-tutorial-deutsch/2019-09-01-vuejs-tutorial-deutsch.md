@@ -315,7 +315,15 @@ Im `template`-Teil unserer Root-Komponente `App.vue` können wir nun an beliebig
 </template>
 ```
 
-Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (SFC) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculator`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`Calculator`) schreiben.
+Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (**SFC**) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculator`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`Calculator`) schreiben.
+
+Normalerweise ist Kebab Case vorzuziehen, da diese Schreibweise dem W3C-Standard entspricht und HTML [case-insensitive](https://html.spec.whatwg.org/multipage/syntax.html){:target="_blank"} ist. Das heißt, es wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+Da wir aber ohnehin SFCs verwenden und diese vorher noch durch den Compiler verarbeitet werden, empfiehlt es sich in Vue Anwendungen unter anderem aus folgenden Gründen die Pascal Case Schreibweise zu verwenden:
+
+* Code-Editoren können Komponentennamen automatisch vervollständigen, da die Pascal Case Schreibweise auch im JavaScript verwendet wird.
+* `<MyComponent />` unterscheidet sich visuell mehr von Standard HTML-Elementen als `<my-component />`, da es durch die Großbuchstaben mehr heraussticht.
+
+Wie genau Vue intern funktioniert und _was_ letztlich von unseren Single-File-Components _wie_ im Browser landet, kann [hier](https://medium.com/js-imaginea/the-vue-js-internals-7b76f76813e3){:target="_blank"} und [hier](https://vuejs.org/v2/guide/render-function.html){:target="_blank"} nachgelesen werden. 
 
 ### 4. Die Vue DevTools
 
