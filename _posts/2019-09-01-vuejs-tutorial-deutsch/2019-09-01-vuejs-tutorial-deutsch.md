@@ -15,6 +15,7 @@ Wenn du dich fragst, was die Hauptmerkmale und wichtigsten Änderungen von Vue 3
 Obwohl das finale Release erst im dritten Quartal 2020 erwartet wird, kann die Composition API über ein Plug-in bereits jetzt in bestehende Vue Anwendungen integriert und verwendet werden. 
 In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 
+* Was ist Vue?
 * Was verbirgt sich hinter der Composition API?
 * Warum wurde die Composition API eingeführt?
 * Wie funktioniert die Composition API? 
@@ -41,7 +42,21 @@ In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Kompon
     </div>
   </div>
 </div>
-<hr>  
+<hr>
+
+## Was ist Vue?
+
+Vue (oder Vue.js) ist ein Open-Source Javascript-Framework für die Frontendentwicklung. 
+Im Gegensatz zu anderen beliebten JavaScript-Frameworks wird Vue nicht von einem großen Unternehmen wie React (Facebook) oder Angular (Google) unterstützt. 
+Vue wurde ursprünglich von Evan You und mittlerweile von einer größeren Open-Source-Community geschrieben.
+
+Wie in allen gängigen Frameworks, wird auch in Vue komponentenorientiert gearbeitet. Eine Anwendung wird dabei in kleinere Bestandteile (Bausteine, Komponenten) zerlegt.
+Dadurch werden einfach wiederverwendbare und pflegbare Einheiten erstellt, die in eine hierarchische Struktur gebracht werden, um somit eine größere Anwendung Stück für Stück zusammenzusetzen.
+Komponenten bilden somit die fundamentalen Bausteine einer Anwendung. In folgender Grafik wird veranschaulicht, wie eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht werden kann:
+
+<a href="https://vuejs.org/v2/guide/#Composing-with-Components" target="_blank"><img class="img-fluid center img-rounded" src="components.png" alt="Eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht."></a>
+
+Weitere Informationen dazu finden sich in der offiziellen [Vue Dokumentation](https://vuejs.org/v2/guide/#Composing-with-Components){:target="_blank"}.
 
 ## Was verbirgt sich hinter der Composition API?
 Das Wichtigste vorweg: **Die neue API ist rein additiv, bricht vorhandenen Code nicht und muss darüber hinaus auch gar nicht verwendet werden!**
@@ -61,7 +76,7 @@ Ein weiterer Nachteil dieser Organisation ist, dass sie die Wiederverwendung von
 
 Die [offizielle Vue Dokumentation](https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api){:target="_blank"} enthält dieses ausgezeichnete Diagramm, welches die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung unterschiedlicher Farben sichtbar macht:
 
-<img class="img-fluid center img-rounded" src="component-feature-structure.png" alt="Die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung verschiedener Farben sichtbar gemacht.">
+<a href="https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api" target="_blank"><img class="img-fluid center img-rounded" src="component-feature-structure.png" alt="Die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung verschiedener Farben sichtbar gemacht."></a>
 
 Als weiterer wichtiger Punkt ist der aktuelle TypeScript-Support zu nennen. Die Options API beruht auf einer Menge "Magie" des Vue-Compilers, wodurch sich die Verwendung von `this` innerhalb von Komponenten nur sehr schwierig mit TypeScript verbinden lässt.
 Die Composition API ist aufgrund Ihrer Struktur und Simplizität frei von diesen Nachteilen, sodass sie sich wie in JavaScript erwartet verhält. Dies ermöglicht eine viel bessere TypeScript-Unterstützung bei der Verwendung der Composition API.
@@ -161,7 +176,7 @@ export default {
 }
 ```
 
-Um die Addition auszuführen, verwenden wir noch eine Methode. Diese wird wie gewohnt in `methods` deklariert:
+Um die Addition auszuführen, verwenden wir noch eine Methode. Diese wird in der Option `methods` deklariert. Die Funktion darf nicht als [arrow function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Pfeilfunktionen){:target="_blank"} geschrieben werden, da wir sonst den Bezug zu `this` verlieren. 
 
 ```javascript
 export default {
@@ -174,13 +189,16 @@ export default {
   },
   methods: {
     add: function () {
-      this.sum = parseInt(this.num1) + parseInt(this.num2);
+      this.sum = parseInt(this.num1, 10) + parseInt(this.num2, 10);
     }
   }
 }
 ``` 
 
 An diesem Beispiel sehen wir auch die Verwendung von `this`. Der Vue-Compiler kümmert sich darum, dass Optionen über `this` aufeinander zugreifen können und alle in `data` definierten Variablen auch initialisiert werden, wodurch sie dem Kontext zur Verfügung stehen.  
+
+Werte in Eingabefeldern werden immer als String repräsentiert. Daher benötigen wir die Methode [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt){:target="_blank"}. Diese konvertiert die Eingabewerte in Zahlen. 
+Der zweite Parameter sollte immer verwendet werden, da dieser das zugrundeliegende Zahlensystem für die Konvertierung vorgibt. `10` steht für das gebräuchliche Dezimalsystem.
 
 Damit ist der `script`-Teil zunächst fertig. Als Nächstes geht es darum, die Steuerung der Anzeige ins Template zu integrieren.
 
@@ -245,7 +263,7 @@ Die Art des Events wird hinter einem Doppelpunkt angegeben.
 </template>
 ``` 
 
-Bei einem Klick auf den Button wollen wir unsere `add`-Methode ausführen, um `sum` den Wert der Addition von `num1` und `num2` zuzuweisen. Dadurch wird ein Re-Rendering der Komponente ausgelöst. 
+Bei einem Klick auf den Button wollen wir unsere `add`-Methode ausführen, um `sum` den Wert der Addition von `num1` und `num2` zuzuweisen. Dadurch wird ein Re-Rendering der Komponente ausgelöst, wodurch `sum` im Template den neu berechneten Wert anzeigt.
 
 Ein HTML-Formular, welches einen `button` vom Typ `submit` beinhaltet, wird durch Klicken automatisch abgesendet. 
 Alternativ kann das Formular auch mit _Enter_ abgeschickt werden, was aus Gründen der [Barrierefreiheit](https://developer.mozilla.org/de/docs/Learn/Accessibility) die bessere Lösung darstellt. 
@@ -272,7 +290,7 @@ Um unsere Komponente testen zu können, müssen wir diese in unserer Anwendung e
 import Calculator from './components/Calculator.vue';
 ```
 
-Unsere Komponente registrieren wir nun als solche und machen sie Anwendung bekannt. Dafür bietet die Options API eine weitere Eigenschaft, nämlich `components`. 
+Unsere Komponente registrieren wir nun als solche und machen sie der Anwendung bekannt. Dafür bietet die Options API eine weitere Eigenschaft, nämlich `components`. 
 
 Die Option `components` ist ein Objekt, welches als Key den Namen des Tags und als Wert die Komponente beziehungsweise das Konfigurationsobjekt derselben beinhaltet:
 
@@ -287,7 +305,7 @@ export default {
 
 Hier verwenden wir die [Kurzschreibweise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions){:target="_blank"}, welche seit ECMAScript 2015 (ES6) verwendet werden kann, indem wir lediglich `Calculator` angeben.
 
-Im `template`-Teil unserer Root-Komponente `App` können wir nun an beliebiger Stelle `<Calculator />` verwenden, um dort unsere Komponente rendern zu lassen:
+Im `template`-Teil unserer Root-Komponente `App.vue` können wir nun an beliebiger Stelle `<Calculator />` verwenden, um dort unsere Komponente rendern zu lassen:
 
 ```html
 <template>
@@ -296,6 +314,22 @@ Im `template`-Teil unserer Root-Komponente `App` können wir nun an beliebiger S
   </div>
 </template>
 ```
+
+Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (SFC) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculator`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`Calculator`) schreiben.
+
+### 4. Die Vue DevTools
+
+Bei der Arbeit mit Vue gehören neben den kennengelernten Werkzeugen unbedingt auch die Vue DevTools. Es handelt sich dabei um ein Add-On für den Chrome- oder Firefox-Browser, welches die Entwicklertools um einen zusätzlichen Bereich für Vue erweitert. Dieser stellt uns viele Informationen über die Anwendung und die verwendeten Vue-Komponenten bereit.
+
+* [Vue DevTools für Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg){:target="_blank"}
+* [Vue DevTools für Firefox](https://github.com/vuejs/vue-devtools/releases/download/v6.0.0-beta.2/vuejs_devtools_beta-6.0.0.2-an+fx.xpi){:target="_blank"}
+
+Nach der Installation und einem Neustart des Browsers können wir über die Tastenkombination [**Cmd+Option+I**] (Mac) oder [**Strg+Shift+I**] (Windows) die Entwicklertools öffnen. In der Liste der Reiter suchen wir den Eintrag **Vue** und klicken diesen an:
+
+<img class="img-fluid" src="vue-devtools.png" alt="Eine Ansicht der Vue-Devtools für unsere aktuelle Vue-Anwendung.">
+
+In der Abbildung sehen wir links den Komponentenbaum, welcher die Komponente `App` und darunter unsere selbsterstellte Komponente `Calculator` enthält.
+Im rechten Bereich sehen wir Detailinformationen zu der ausgewählten Komponente.
 
 ## Refactoring mit der Composition API
 
@@ -328,7 +362,7 @@ export default {
     const sum = ref(0);
 
     function add() {
-      sum.value = parseInt(num1.value) + parseInt(num2.value);
+      sum.value = parseInt(num1.value, 10) + parseInt(num2.value, 10);
     }
   },
 }
@@ -351,13 +385,11 @@ export default {
     const sum = ref(0);
 
     function add() {
-      sum.value = parseInt(num1.value) + parseInt(num2.value);
+      sum.value = parseInt(num1.value, 10) + parseInt(num2.value, 10);
     }
   },
 }
 ``` 
-
-_Achtung: Verwendest du aktuell noch das Plug-in, um mit der Composition API zu arbeiten, so muss `ref` aus `'@vue/composition-api'` importiert werden._
 
 Damit ist das Refactoring auch schon fast abgeschlossen. Jetzt weisen wir dem Template nur noch die Variablen und Funktionen zu.
 
@@ -373,7 +405,7 @@ export default {
     const sum = ref(0);
 
     function add() {
-      sum.value = parseInt(num1.value) + parseInt(num2.value);
+      sum.value = parseInt(num1.value, 10) + parseInt(num2.value, 10);
     }
  
     return {
@@ -412,14 +444,14 @@ import { reactive } from 'vue';
 
 export default {
   setup() {
-    let state = reactive({
+    const state = reactive({
       num1: 0,
       num2: 0,
       sum: 0,
     });
 
     function add() {
-      state.sum = parseInt(state.num1) + parseInt(state.num2);
+      state.sum = parseInt(state.num1, 10) + parseInt(state.num2, 10);
     }
  
     return {
@@ -435,6 +467,8 @@ Im Template müssten die Verwendungen der Variablen noch entsprechend mit dem Pr
 Die Funktion `reactive` ist quasi das Pendant zu `ref` für Objekte. Es akzeptiert ein Objekt und gibt einen Proxy für dieses Objekt zurück, welches getrackt wird. 
 Hier ist der Umweg über `.value` nicht notwendig, da Objekte in JavaScript ohnehin per Referenz übergeben werden und somit kein Wrapper mehr erzeugt werden muss.
 
+Für den weiteren Verlauf des Tutorials werden wir mit `ref` weiterarbeiten.
+
 ## Das Konzept der `computed properties`
 
 Wie eingangs bereits erwähnt, bietet die Composition API dem Entwickler eine Alternative für die Erstellung von Komponenten. 
@@ -442,6 +476,54 @@ Zuvor haben wir uns die Grundkonzepte und die Struktur zum Schreiben von Kompone
 Das Vorgehen zur Berechnung der Summe ist hier mithilfe eines Klick-Listeners und einer Funktion nicht optimal gelöst. Für diese Zwecke bietet Vue uns eine wesentlich mächtigere Alternative, die wir uns in diesem Abschnitt anschauen wollen. 
 
 Mit sogenannten `computed properties` können Variablen definiert werden, deren Wert von anderen (nicht-)reaktiven Werten abhängt. Diese Variablen werden zur Laufzeit ausgewertet und aktualisiert, sobald sich einer der anderen Werte ändern sollte.
+
+Die Composition API bietet uns auch hierfür eine eigene Funktion an;
+
+```javascript
+import { ref, computed } from 'vue';
+
+export default {
+  setup() {
+    const num1 = ref(0);
+    const num2 = ref(0);
+    const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
+ 
+    return {
+      num1,
+      num2,
+      sum,
+    };
+  },
+}
+``` 
+
+Die `computed`-Funktion gibt ein *immutable* (nicht veränderbares) `ref`-Objekt zurück, auf dessen Wert, ebenfalls mit `.value` zugegriffen werden kann. Als Parameter akzeptiert `computed` eine Funktion.
+Wir verwenden eine [arrow function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Pfeilfunktionen){:target="_blank"} in gekürzter Schreibweise, weshalb wir hier kein `return` benötigen, um das Ergebnis der Addition zurückzugeben.
+`computed` kann auch ein Objekt mit einer Setter-Funktion akzeptieren, um es bei Bedarf veränderbar zu machen.
+
+Vue sammelt alle im Body verwendeten Variablen als Abhängigkeiten ein und berechnet `sum` jedes Mal automatisch neu, sobald sich einer der Werte dieser Abhängigkeiten ändert. In unserem Falle sind das `num1` und `num2`.
+
+Darüber hinaus wird der Wert gecacht und nur dann neu berechnet, wenn sich der Wert einer der gesammelten Abhängigkeiten tatsächlich ändert. 
+Das heißt, selbst wenn es aus einem anderen Grund zu einem Re-Rendering der Komponente kommt, ist Vue schlau genug, um die `computed properties` nicht neu zu berechnen und einfach den zuvor gespeicherten Wert auszugeben.
+
+Im Gegensatz dazu wird eine einfache Funktion jedes Mal ausgeführt, da hier kein Dependency Tracking stattfindet. 
+
+Aufgrund der vorgenommenen Änderungen können wir das Template wie folgt verändern:
+
+```html
+<template>
+    <h3>Calculator</h3>
+    <form>
+        <input type="number" v-model="num1">
+        <input type="number" v-model="num2">
+    </form>
+    <p>Result: {{ sum }}</p>
+</template>
+``` 
+
+Wie wir sehen, benötigen wir weder den Button noch den Event-Listener, da Vue aufgrund der Reaktivität der Variablen und Abhängigkeiten der `computed property` automatisch die Komponente neu rendert, sobald wir eines der Eingabefelder editieren. 
+
+### `computed` mithilfe der Options API
 
 In einer klassischen Vue-Komponente würden wir eine `computed property` wie folgt schreiben:
 
@@ -455,60 +537,16 @@ export default {
   },
   computed: {
     sum() {
-      return parseInt(this.num1) + parseInt(this.num2);
+      return parseInt(this.num1, 10) + parseInt(this.num2, 10);
     }
   }
 }
 ``` 
 
-Wir haben `sum` als Variable aus `data` entfernt und einer uns bisher unbekannten Eigenschaft untergeordnet. Mit `computed` sehen wir eine weitere Option des Konfigurationsobjektes aus der Options API. 
+Mit `computed` sehen wir eine weitere Option des Konfigurationsobjektes aus der Options API. Wir haben `sum` als Variable aus `data` entfernt und in `computed` verschoben.  
 Es handelt sich wiederum um ein Objekt, in welchem `computed properties` als Funktionen definiert werden. 
-Vue sammelt alle im Body verwendeten Variablen als Abhängigkeiten ein und berechnet `sum` jedes Mal automatisch neu, sobald sich einer der Werte dieser Abhängigkeiten ändert.
 
-Darüber hinaus wird der Wert gecacht und nur dann neu berechnet, wenn sich der Wert einer der gesammelten Abhängigkeiten tatsächlich ändert. 
-Das heißt, selbst wenn es aus einem anderen Grund zu einem Re-Rendering der Komponente kommt, ist Vue schlau genug, um die `computed properties` nicht neu zu berechnen und einfach den zuvor gespeicherten Wert auszugeben. 
-Im Gegensatz dazu wird eine Funktion aus `methods` jedes Mal ausgeführt, da hier kein Dependency Tracking stattfindet. 
-
-Entgegen der Syntax verwendet wir `sum` allerdings weder im `script`- noch im `template`-Teil als Funktionsaufruf in der Schreibweise `sum()` sondern wie eine normale Variable `sum`:
-
-```html
-<template>
-    <h3>Calculator</h3>
-    <form>
-        <input type="number" v-model="num1">
-        <input type="number" v-model="num2">
-    </form>
-    <p>Result: {{ sum }}</p>
-</template>
-``` 
-
-Wie wir sehen, benötigen wir weder den Button noch den Event-Listener, da Vue aufgrund der Reaktivität der Variablen und Abhängigkeiten der `computed property` automatisch die Komponente neu rendert, sobald wir eines der Eingabefelder editieren.
-
-### `computed` mithilfe der Composition API
-
-Auch hierbei bietet Vue mit der Composition API wieder eine eigene Funktion an, um `computed` values anzulegen:
-
-```javascript
-import { ref, computed } from 'vue';
-
-export default {
-  setup() {
-    const num1 = ref(0);
-    const num2 = ref(0);
-    const sum = computed(() => num1.value + num2.value);
- 
-    return {
-      num1,
-      num2,
-      sum,
-    };
-  },
-}
-``` 
-
-Die `computed`-Funktion gibt ein *immutable* (nicht veränderbares) `ref`-Objekt zurück, auf dessen Wert, ebenfalls mit `.value` zugegriffen werden kann. Als Parameter akzeptiert `computed` eine Funktion.
-Wir verwenden eine [arrow function]((https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Pfeilfunktionen){:target="_blank"}) in gekürzter Schreibweise, weshalb wir hier kein `return` benötigen, um das Ergebnis der Addition zurückzugeben.
-`computed` kann auch ein Objekt mit einer Setter-Funktion akzeptieren, um es bei Bedarf veränderbar zu machen.
+Entgegen der Syntax verwenden wir `sum` allerdings auch hier weder im `script`- noch im `template`-Teil als Funktionsaufruf in der Schreibweise `sum()` sondern wie eine normale Variable `sum`.
 
 ## Vereinfachter Aufbau von Komponenten
 
@@ -545,7 +583,7 @@ export default {
     const num1 = ref(0);
     const num2 = ref(0);
     const fact = ref('');
-    const sum = computed(() => num1.value + num2.value);
+    const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
  
     watchEffect(async () => {
       const res = await fetch(`http://numbersapi.com/${sum.value}`);
@@ -603,7 +641,7 @@ import { ref, computed } from 'vue';
 export default () => {
   const num1 = ref(0);
   const num2 = ref(0);
-  const sum = computed(() => num1.value + num2.value);
+  const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
 
   return {
     num1,
