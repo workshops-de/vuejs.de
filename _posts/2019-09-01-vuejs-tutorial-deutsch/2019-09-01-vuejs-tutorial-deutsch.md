@@ -725,7 +725,7 @@ Wir arbeiten aktuell an vielen weiteren Artikeln zum Thema Vue.js, insbesondere 
 Viel Spaß beim Lernen!
 
 
-Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das Tutorial macht!
+Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das Tutorial macht:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pMr7P4QXj-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
