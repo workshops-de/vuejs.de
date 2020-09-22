@@ -724,6 +724,11 @@ Tausche dich in unserem kostenfreien [Slack Chat](https://vuejs.de/slack) mit an
 Wir arbeiten aktuell an vielen weiteren Artikeln zum Thema Vue.js, insbesondere die Neuerungen von Vue 3 werden wir auf dieser Seite näher beleuchten. Guck also regelmäßig bei uns vorbei, um alle Neuerungen als Erstes zu erfahren.
 Viel Spaß beim Lernen!
 
+
+Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das Tutorial macht!
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pMr7P4QXj-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 <hr>
 <div class="workshop-hint text-center">
   <div class="h3">Hat dir das Tutorial geholfen?</div>
