@@ -2,7 +2,7 @@
 title: "Einführung Vue 3 Composition API Tutorial"
 description: "Javascript Framework Vue.js Tutorial: diese Verbesserungen bietet die Composition API in Vue 3"
 author: "Antony Konstantinidis"
-published_at: 2019-08-01 08:00:00.000000Z
+published_at: 2020-09-01 16:00:00.000000Z
 categories: "tutorial vuejs typescript"
 tutorial_page_order: '1'
 ---
