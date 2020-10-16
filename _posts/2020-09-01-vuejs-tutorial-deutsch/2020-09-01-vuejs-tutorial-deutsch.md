@@ -57,7 +57,7 @@ Komponenten bilden somit die fundamentalen Bausteine einer Anwendung. In folgend
 Weitere Informationen dazu finden sich in der offiziellen [Vue Dokumentation](https://vuejs.org/v2/guide/#Composing-with-Components){:target="_blank"}.
 
 ## Was verbirgt sich hinter der Composition API?
-Das Wichtigste vorweg: **Die neue API ist rein additiv, bricht vorhandenen Code nicht und muss darüber hinaus auch gar nicht verwendet werden!**
+Das Wichtigste vorweg: Die neue API ist rein additiv, bricht vorhandenen Code nicht und muss darüber hinaus auch gar nicht verwendet werden!
 Es kann weiterhin mit der Options API gearbeitet werden. Die neue Composition API ist lediglich eine Erweiterung des bestehenden Frameworks, um Einschränkungen von Vue 2.x zu beheben, die speziell bei großen Anwendungen aufkamen.
 Die Composition API bietet eine Möglichkeit, die aus Vue bekannte [Reactivity](https://vuejs.org/v2/guide/reactivity.html){:target="_blank"} in allen Teilen der Anwendung nutzbar zu machen, ohne dabei die Organisation und Lesbarkeit zu beeinträchtigen. 
 
