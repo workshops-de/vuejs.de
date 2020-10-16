@@ -1,13 +1,11 @@
 ---
-title: "Einführung Vue 3 Composition API Tutorial"
-description: "Javascript Framework Vue.js Tutorial: diese Verbesserungen bietet die Composition API in Vue 3"
+title: "Vue 3 Tutorial für Einsteiger"
+description: "Einsteiger Tutorial für das Javascript Framework Vue.js in Version 3. Schritt für Schritt erklären wir dir die Konzepte und Verbesserungen der Composition API."
 author: "Antony Konstantinidis"
 published_at: 2020-09-01 16:00:00.000000Z
 categories: "tutorial vuejs typescript"
 tutorial_page_order: '1'
 ---
-
-## Erste Schritte mit Vue 3 und der Composition API
 
 Die lang erwartete Version 3 des beliebten JavaScript Frameworks Vue.js ist noch nicht offiziell freigegeben worden. Dennoch wird der aktuelle [Release Candidate](https://github.com/vuejs/vue-next/tags){:target="_blank"} bereits ausgiebig getestet und verwendet. 
 Wenn du dich fragst, was die Hauptmerkmale und wichtigsten Änderungen von Vue 3 sind, bist du hier schon einmal richtig. Bereits die Ankündigung der neuen Composition API hat zu einigen Kontroversen geführt, welche mittlerweile jedoch zur Zufriedenheit aller beendet sind. In diesem Artikel beleuchten hauptsächlich diese neue API näher.
