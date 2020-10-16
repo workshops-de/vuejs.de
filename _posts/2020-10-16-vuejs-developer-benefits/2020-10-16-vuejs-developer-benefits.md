@@ -1,10 +1,10 @@
 ---
-  title: "Welche Vorteile bietet Vue.js 3 für Entwickler?"
-  description: "Ihr kennt Vue.js 3 noch nicht? Aber dafür React oder Angular? Vielleicht solltet Ihr jetzt Vue.js eine Chance geben. Hier die Vor- und Nachteile des Frameworks."
-  author: "Antony Konstantinidis"
-  published_at: 2020-10-16 12:00:00.000000Z
-  categories: "vuejs developer"
-  ---
+title: "Welche Vorteile bietet Vue.js 3 für Entwickler?"
+description: "Ihr kennt Vue.js 3 noch nicht? Aber dafür React oder Angular? Vielleicht solltet Ihr jetzt Vue.js eine Chance geben. Hier die Vor- und Nachteile des Frameworks."
+author: "Antony Konstantinidis"
+published_at: 2020-10-16 12:00:00.000000Z
+categories: "vuejs developer"
+---
   
   Vue.js 3 bewies wieder einmal, wie einfach und schnell JavaScript Frameworks sein können und sollten. 
   Ob professionelle App-Entwicklung oder im privaten Bereich – Vue.js hat viele Fans und erfreut sich zunehmend größter Beliebtheit. 
