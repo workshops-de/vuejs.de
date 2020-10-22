@@ -22,6 +22,11 @@
         "source": "/chat*",
         "destination": "https://vuejs.de/slack",
         "type": 301
+      },
+      {
+        "source": "/artikel/vuejs-tutorial-deutsch/",
+        "destination": "https://vuejs.de/artikel/vuejs-tutorial-deutsch-anfaenger/",
+        "type": 301
       }
     ],
     "headers": [
