@@ -6,9 +6,9 @@ published_at: 2020-10-05 19:00:00.000000Z
 categories: "vuejs release"
 ---
 
-**Gute Nachrichten für alle JavaScript-Entwickler: Das beliebte Framework Vue.js ist jetzt mit Version 3.0 verfügbar. 
+Gute Nachrichten für alle JavaScript-Entwickler: Das beliebte Framework Vue.js ist jetzt mit Version 3.0 verfügbar. 
 Neben dem neuen Kern, der vollständig in TypeScript geschrieben wurde und vielen weitere Features wie Composition API, verbesserte Performance, 
-kleinere Bundle-Größen, schnelleres Rendering und Multi-Root-Komponenten bietet Vue.js 3 zahlreiche Optimierungen.**
+kleinere Bundle-Größen, schnelleres Rendering und Multi-Root-Komponenten bietet Vue.js 3 zahlreiche Optimierungen.
 
 Mit mehr als weltweit 1,3 Mio. Nutzern ist Vue.js eines der erfolgreichsten JavaScript Frameworks derzeit und erfreut sich größter Beliebtheit. 
 Wie viel Arbeit in die neue Version eingeflossen ist, lässt sich anhand dieser Zahlen gut ablesen: 
