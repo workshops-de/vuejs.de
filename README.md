@@ -3,7 +3,7 @@
 Requires Ruby 2.5+
 
 ## Build Status
-![Build Status](https://travis-ci.org/workshops-de/vuejs.de.svg?branch=master "Travis Build Status")
+![Build Status](https://github.com/workshops-de/vuejs.de/workflows/Build%20Jekyll%20and%20Deploy%20to%20Firebase/badge.svg?branch=master)
 
 ## Development
 
