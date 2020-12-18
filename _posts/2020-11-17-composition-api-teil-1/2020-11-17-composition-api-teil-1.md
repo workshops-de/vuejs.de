@@ -85,9 +85,9 @@ Rechts sehen wir, wie die optimierte Struktur mittels Composition API schließli
 Anhand eines Beispiels wollen wir uns mit den Neuerungen der Composition API vertraut machen und die einzelnen Zusammenhänge besser verstehen. 
 Dazu schauen wir uns zunächst eine Komponente an, die mit der Options-API geschrieben ist und mehrere Aufgaben erledigt:
 
-1. Die Anfrage an eine externe API, um passende Bilder zu einem Tag zu erhalten. Das Tag wird über eine `prop an die Komponente übergeben. Beim Ändern des Tags sollte der Request erneut ausgeführt werden.
-2. Die Repositories sollen über einen Suchstring `searchQuery` durchsucht werden können.
-3. Das Filtern von Repositories mittels eines `filters` Objekts.
+1. Die Anfrage an eine externe API, um passende Bilder zu einem Tag zu erhalten. Das Tag wird über eine `prop` an die Komponente übergeben. Beim Ändern des Tags sollte der Request erneut ausgeführt werden.
+2. Die Bilder sollen über einen Suchstring `searchQuery` durchsucht werden können.
+3. Das Filtern von Bilder mittels eines `filters` Objekts.
 
 ```javascript
 export default {
@@ -131,7 +131,7 @@ Die Daten hierzu sollen erst beim Erstellen der Komponente über eine externe Sc
 Hierzu benötigen wir den Lifecycle-Hook `mounted`. Dieser steht innerhalb des Options-Objekts als Methode bereit. 
 Sobald die Komponente erstellt und in den DOM geladen (_mounted_) worden ist, wird auch der darin befindliche Code ausgeführt. Mehr dazu findet ihr unter [Lifecycle-Hooks](https://v3.vuejs.org/api/options-lifecycle-hooks.html#lifecycle-hooks){:target="_blank"}.
 Über ein Eingabefeld soll der User die Bilder durchsuchen können, dafür verwenden wir die Eigenschaft `searchQuery`. 
-Um die gefilterte Liste dem Nutzer anzuzeigen, nutzen wir eine `computed property`, die unter `filteredRepositories` zu finden ist. 
+Um die gefilterte Liste dem Nutzer anzuzeigen, nutzen wir eine `computed property`, die unter `filteredImages` zu finden ist. 
 Dadurch erreichen wir, dass die Liste jedes Mal neu berechnet wird, sobald sich einer ihrer Abhängigkeiten (`filter`, `images`) verändert. 
 
 Das Options-Objekt kann aber noch ganz andere Eigenschaften beinhalten. Für eine vollständige Liste empfehlen wir diesen [Link](https://v3.vuejs.org/api/options-api.html){:target="_blank"}.
