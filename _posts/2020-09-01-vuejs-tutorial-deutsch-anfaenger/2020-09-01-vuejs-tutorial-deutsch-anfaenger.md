@@ -7,10 +7,10 @@ categories: "tutorial vuejs typescript"
 tutorial_page_order: '1'
 ---
 
-Die lang erwartete Version 3 des beliebten JavaScript Frameworks Vue.js ist noch nicht offiziell freigegeben worden. Dennoch wird der aktuelle [Release Candidate](https://github.com/vuejs/vue-next/tags){:target="_blank"} bereits ausgiebig getestet und verwendet.
-Wenn du dich fragst, was die Hauptmerkmale und wichtigsten Änderungen von Vue 3 sind, bist du hier schon einmal richtig. Bereits die Ankündigung der neuen Composition API hat zu einigen Kontroversen geführt, welche mittlerweile jedoch zur Zufriedenheit aller beendet sind. In diesem Artikel beleuchten hauptsächlich diese neue API näher.
+Die lang erwartete Version 3 des beliebten JavaScript Frameworks Vue.js ist offiziell freigegeben worden und schon vor dem Release wurde der aktuelle [Release Candidate](https://github.com/vuejs/vue-next/tags){:target="_blank"} bereits ausgiebig getestet und verwendet.
+Wenn du dich fragst, was die Hauptmerkmale und wichtigsten Änderungen von Vue 3 sind, bist du hier schon einmal richtig. Bereits die Ankündigung der neuen Composition API hat zu einigen Kontroversen geführt, welche mittlerweile jedoch zur Zufriedenheit aller beendet sind. In diesem Artikel beleuchten wir hauptsächlich diese neue API näher.
 
-Obwohl das finale Release erst im dritten Quartal 2020 erwartet wird, kann die Composition API über ein Plug-in bereits jetzt in bestehende Vue Anwendungen integriert und verwendet werden.
+Das finale Release erfolgte am 18. September 2020, doch schon zuvor konnte die Composition API über ein Plug-in bereits in bestehende Vue Anwendungen integriert und verwendet werden.
 In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 
 * Was ist Vue?
