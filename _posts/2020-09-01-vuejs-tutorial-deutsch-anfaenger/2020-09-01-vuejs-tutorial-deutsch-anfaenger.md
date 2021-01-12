@@ -432,7 +432,7 @@ Die gesamte Reaktivität, welche sonst vom Framework hinter den Kulissen gehandh
 
 Im Beispiel sehen wir die Verwendung von `ref`. Auf diese Art machen wir die Variable nun sozusagen händisch **reaktiv**. Die Funktion `ref` akzeptiert einen Wert und gibt daraufhin eine [Reactive Reference](https://v3.vuejs.org/guide/composition-api-introduction.html#reactive-variables-with-ref){:target="_blank"} zurück.
 Das Konzept, mit solchen Referenzen zu arbeiten, zieht sich durch die gesamte Composition API. Für Webentwickler ist es wichtig, die grundlegende Funktionsweise zu verstehen.
-Eine ausführliche Beschreibung findet sich unter anderem in folgendem Artikel: [Die Composition API](/artikel/vuejs-tutorial-deutsch-anfaenger/){:target="_blank"}.
+Eine ausführliche Beschreibung findet sich unter anderem in folgendem Artikel: [Die Composition API](https://vuejs.de/artikel/composition-api-teil-1/){:target="_blank"}.
 
 [Primitiven Datentypen in JavaScript](https://developer.mozilla.org/de/docs/Glossary/einfache_datenelemente){:target="_blank"} (im Wesentlichen non-`objects`, wie z.B. ein `string`) werden als Kopie und nicht als Referenz übergeben.
 Das sorgt dafür, dass Referenzen beim Übergeben an Funktionen "verloren" gehen und somit keine Reaktivität abgebildet werden kann. `ref` hingegen erzeugt aus dem initialen Wert ein Objekt und ermöglicht somit, die Werte als Referenz übergeben zu können.
