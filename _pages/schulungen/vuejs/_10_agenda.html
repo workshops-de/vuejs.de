@@ -29,15 +29,15 @@
       <div class="offset-2 offset-md-0 col-12 col-md-4">
         <ul class="c-text-sm c-checked-list">
           <li>Unterschiede zu ES6</li>
-          <li>Funktionen und Scopes</li>
+          <li>Destructuring, Template Strings, Rest/Spread</li>
+          <li>this Kontext</li>
           <li>Fat Arrow</li>
+          <li>Funktionen und Scopes</li>
           <li>Typen</li>
-          <li>Klassen</li>
-          <li>Decorators / Annotationen</li>
-          <li>Modul-System</li>
           <li>Interfaces</li>
           <li>Generics</li>
-          <li>Destructuring</li>
+          <li>Promises / Async await</li>
+          <li>Modul-System</li>
         </ul>
       </div>
     </div>
@@ -57,13 +57,35 @@
       <div class="offset-2 offset-md-0 col-12 col-md-4">
         <ul class="c-text-sm c-checked-list">
           <li>Was ist VueJS?</li>
+          <li>Virtual DOM</li>
           <li>Arbeiten mit Vue CLI</li>
-          <li>Templates & Template-Syntax</li>
-          <li>Einführung in die Konzepte von Vue</li>
-          <li>Komponenten und Komponentenarchitektur </li>
-          <li>Inputs und Outputs</li>
+          <li>Single File Components</li>
+          <li>Templates & Direktiven</li>
+          <li>Einführung in die Konzepte von Vue (u.a. watch und computed properties)</li>
+          <li>Komponenten und Komponentenarchitektur</li>
+          <li>Props und Custom Events</li>
           <li>Kommunikation zwischen Komponenten</li>
-          <li>Composition API</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="d-none d-sm-block col-2 col-md-1">
+        <img alt="VueJS Logo" src="/assets/img/schulungen/shared/logo-vuejs.svg" class="img-fluid">
+      </div>
+      <div class="col-10 col-md-6">
+        <h3>Vue Router</h3>
+        <p class="text-muted">Nach den Grundlagen gehen wir dazu über unsere Demo-Applikation umzusetzen, wobei wir mit dem Routing beginnen.
+        </p>
+      </div>
+      <div class="offset-2 offset-md-0 col-12 col-md-4">
+        <ul class="c-text-sm c-checked-list">
+          <li>Wozu braucht man Routing?</li>
+          <li>Definition und Nutzung von Routen</li>
+          <li>Dynamische Routen und der Ranking Algorithmus</li>
+          <li>Child Routes</li>
+          <li>Performance-Optimierungen durch Lazy Loading</li>
+          <li>Route Guards</li>
         </ul>
       </div>
     </div>
@@ -74,16 +96,15 @@
       </div>
       <div class="col-10 col-md-6">
         <h3>Vue Formulare und Rest-APIs</h3>
-        <p class="text-muted">Nach den Grundlagen gehen wir zu den Themen über, die den Kern von jeder Anwedung bilden.
+        <p class="text-muted">Als Nächstes gehen wir zu den Themen über, die den Kern von nahezu jeder Anwendung bilden.
         </p>
       </div>
       <div class="offset-2 offset-md-0 col-12 col-md-4">
         <ul class="c-text-sm c-checked-list">
           <li>Formulare</li>
           <li>Validatoren und Fehlermeldungen</li>
-          <li>Formulare über Templates und Models</li>
           <li>Zugriff auf eine REST-API</li>
-          <li>Authentifizierung / Login</li>
+          <li>Bidirektionales Databinding (Two-Way) durch v-model</li>
         </ul>
       </div>
     </div>
@@ -93,19 +114,17 @@
         <img alt="VueJS Logo" src="/assets/img/schulungen/shared/logo-vuejs.svg" class="img-fluid">
       </div>
       <div class="col-10 col-md-6">
-        <h3>VueJS weiterführende Themen</h3>
-        <p class="text-muted">Die restliche Zeit widmen wir individuellen Themenwünschen. Hierbei kann die Gruppe
-          wählen, welche Themen am relevantesten für sie sind.
-          Wir haben über 600 Folien, aus denen ad hoc ausgewählt werden kann.
+        <h3>State management mit Vuex</h3>
+        <p class="text-muted">In mittel bis großen Anwendungen wird die Verwaltung des Zustandes der Applikation immer wichtiger, daher widmen wir uns als letztes der Einbindung von Vuex.
         </p>
       </div>
       <div class="offset-2 offset-md-0 col-12 col-md-4">
         <ul class="c-text-sm c-checked-list">
-          <li>Lifecycle hooks</li>
-          <li>Mixins</li>
-          <li>Statemanagement mit Vuex</li>
-          <li>Performance</li>
-          <li>Benutzung von 3rd-Party-Komponenten</li>
+          <li>Was ist State management und wozu brauchen wir es?</li>
+          <li>Vuex Architektur</li>
+          <li>Einbindung von Vuex</li>
+          <li>Nutzung von Actions, Mutations und Getters</li>
+          <li>Trennen der Verantwortlichkeiten mit Modulen</li>
         </ul>
       </div>
     </div>
@@ -131,27 +150,25 @@
       </div>
     </div>
 
-
     <div class="row mb-5">
-      <div class="col-2 col-md-1">
+      <div class="d-none d-sm-block col-2 col-md-1">
         <img alt="VueJS Logo" src="/assets/img/schulungen/shared/logo-vuejs.svg" class="img-fluid">
       </div>
       <div class="col-10 col-md-6">
-        <h3>Testing & Debugging</h3>
-        <p class="text-muted">
-          Manuelles Testen ist sehr Zeitaufwendung und lenkt euch von der eigentlichen Entwicklung ab.
-          Mit einer sinnvollen Testabdeckung könnt ihr langfristig wartbare Anwendung entwickeln.
-          Ob Unit oder End-to-End Test - lernt die Vor- und Nachteile und wann welcher Test sinnvoll ist.
+        <h3>VueJS weiterführende Themen</h3>
+        <p class="text-muted">Wir verfügen darüber hinaus über viele weitere Module, welche nach Bedarf hinzugefügt werden können.
         </p>
       </div>
       <div class="offset-2 offset-md-0 col-12 col-md-4">
         <ul class="c-text-sm c-checked-list">
-          <li>Unit Tests vs. End-to-End Tests</li>
-          <li>Unit Testing</li>
-          <li>End-To-End Testing mit Protractor</li>
-          <li>Source Maps</li>
-          <li>Vue Browser Extensions</li>
-          <li>DevTools</li>
+          <li>Die Composition API</li>
+          <li>Teleport</li>
+          <li>Async Components</li>
+          <li>Mixins</li>
+          <li>Dynamic Components</li>
+          <li>Slots und scoped Slots</li>
+          <li>Testing & Debugging</li>
+          <li>Server-Side-Rendering (SSR)</li>
         </ul>
       </div>
     </div>
