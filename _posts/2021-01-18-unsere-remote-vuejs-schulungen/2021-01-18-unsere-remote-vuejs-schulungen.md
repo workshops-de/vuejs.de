@@ -2,7 +2,7 @@
 title: "Unsere Remote Vue.js Schulungen für Einsteiger und Fortgeschrittene"
 description: "Erfahrt in unseren Vue.js Schulungen, Seminaren und Workshops, welche Vorteile das innovative Webframework für Entwickler bietet."
 author: "Antony Konstantinidis"
-published_at: 2021-01-18 12:00:00.000000Z
+published_at: 2021-01-18 15:45:00.000000Z
 categories: "vuejs remote schulung"
 tutorial_page_order: '1'
 ---
@@ -15,12 +15,11 @@ Mit Version 3.0 hat Vue.js sich sogar wieder übertroffen und überzeugt mit vie
 
 In unserer Vue Schulung vermitteln wir die Grundlagen des Webframeworks und zeigen unseren Teilnehmern, wie sie ein Projekt-Setup planen und aufbauen können. 
     
-Durch die aktuellen Corona-Entwicklungen haben wir unsere Schulungen entsprechend den Wünschen unserer Teilnehmer angepasst. 
+Wir bieten sowohl offene als auch geschlossene Workshops an. Erstere zeichnen sich dadurch aus, dass der Termin bereits vorgegeben ist und die Anmeldung jedem beliebigen Teilnehmer online zur Verfügung steht. 
+Geschlossene bzw. inhouse Schulungen kommen durch Anfragen von Unternehmen zustande und werden sowohl terminlich als auch inhaltlich ganz individuell abgestimmt. 
 
-Das heißt: Wir fokussieren uns auf das Homeoffice und bieten 6-Tage-Teilzeit-Workshops an. So könnt Ihr weiterhin an Euren Projekten arbeiten und fallt nicht komplett aus.
+Aktuell fokussieren wir uns auf das Homeoffice und bieten 6-Tage-Teilzeit-Workshops an. So könnt Ihr weiterhin an Euren Projekten arbeiten und fallt nicht komplett aus.
 Gerade Entwickler können sich selten für eine ganze Woche freimachen. Ständig meldet sich ein Kunde oder der Chef, weil irgendetwas ganz dringend gemacht werden muss. 🙄
-
-In einer aktuellen Twitter Umfrage haben wir übrigens herausgefunden, dass 68 % unserer Teilnehmer die Nachmittagsstunden bevorzugen. Diesen Wünschen kommen wir gerne nach.
 
 Unsere Schulung wird immer von einem/r erfahrenen Vue Trainer/in durchgeführt. Sobald Fragen aufkommen, können diese direkt beantwortet werden.
 
@@ -35,7 +34,6 @@ Dabei unterteilen wir den Vue Kurs in mehrere virtuelle Klassenräume, um die Gr
 
 - Mindestens 60 % Praxisanteil
 - Musterlösungen zu allen Aufgaben
-- Keine Trainings in der Vormittagszeit (mehr Zeit für Kinder)
 - Kurze Blöcke für intensive Schulungen und Erfolge (3 Stunden en bloc)
 - Praxisnahe Beispiele aus dem Entwickler-Alltag
 - Aktuelle Inhalte basierend auf Vue.js 3.0
@@ -151,14 +149,14 @@ Grundsätzlich lassen sich natürlich alle Workshops auch beim Kunden vor Ort du
 ### Derzeit arbeite ich schon an einem Vue Projekt? Kann in der Vue Schulung darauf eingegangen werden?
 Fragen zu Vue Themen können auch in der Schulung besprochen werden, solange sie zum Unterrichtsinhalt passen. Falls Ihr zusätzliche Unterstützung benötigt, könnt Ihr auch außerhalb der Workshops unsere Vue Experten anfragen.
 
-Wie groß sind die Gruppen in der Vue Schulung?
+### Wie groß sind die Gruppen in der Vue Schulung?
 Unsere Schulungen sind so konzipiert, dass bis 12 Teilnehmer gut daran teilnehmen können. Mehr Teilnehmer würden den Unterrichtsfortschritt nur behindern. Wir empfehlen für solche Fälle dann mehr als einen Trainer zu buchen, damit eine adäquate Betreuung für jeden Teilnehmer sichergestellt werden kann. 
 
 ### Ich kann nicht an allen Tagen teilnehmen. Kann ich trotzdem teilnehmen?
-Natürlich ist es am besten, wenn Ihr jeden Tag dabei seid, um nichts zu verpassen. Da wir aber alle Schulungen aufzeichnen, könnt Ihr Euch den gesamten Workshop auch im Nachhinein noch einmal ansehen. 
+Natürlich ist es am besten, wenn Ihr jeden Tag dabei seid, um nichts zu verpassen. Da wir aber nach Bedarf und Zustimmung Schulungen aufzeichnen, könnt Ihr Euch den gesamten Workshop auch im Nachhinein noch einmal ansehen. 
 
 ### Warum gerade Vue.js?
-Vue  füllt eine Lücke zwischen den großen Webframeworks Angular und React. Ob Vue für Euch das richtige Framework ist, müsst Ihr anhand Eurer Projekte selbst entscheiden. Schaut euch dazu doch zum Beispiel unser [Tutorial](/artikel/vuejs-tutorial-deutsch-anfaenger/){:target="_blank"} an. 
+Vue  füllt eine Lücke zwischen den großen Webframeworks Angular und React. Ob Vue für Euch das richtige Framework ist, müsst Ihr anhand Eurer Projekte selbst entscheiden. Schaut euch dazu doch zum Beispiel unser [Tutorial](https://vuejs.de/artikel/vuejs-tutorial-deutsch-anfaenger/){:target="_blank"} an. 
 
 ### Wenn genug Teilnehmer zusammenkommen, gibt es dann die Möglichkeit, einen individuellen eigenen Vue Workshop zu buchen? 
 Sofern sich genug Teilnehmer für einen Kurs zusammenfinden, die alle das Gleiche lernen möchten, können wir diese Schulung auch direkt auf Eure Anforderungen anpassen. 
