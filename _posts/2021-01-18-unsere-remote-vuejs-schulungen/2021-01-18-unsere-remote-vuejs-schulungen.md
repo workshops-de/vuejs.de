@@ -25,7 +25,7 @@ Unsere Schulung wird immer von einem/r erfahrenen Vue Trainer/in durchgeführt. 
 
 Das Besondere: Die Vue.js Schulung (Workshop, Seminar) hat einen Praxisanteil von ca. 60 %. 
 Und das bedeutet, dass Ihr hier nicht nur rumsitzt und zuhört, sondern auch alles gleich ausprobieren könnt.
-Bei Bedarf kann der Vue Trainer jederzeit gefragt werden und wertvolle Tipps geben.
+Bei Bedarf können jederzeit Fragen gestellt werden. Außerdem geben unsere Trainer:innen viele wertvolle Tipps während der Schulung.
 
 Durch sogenannte virtuelle Breakout-Sessions können wir zudem Pair-Programming und separierte Betreuung innerhalb eines Kurses einfach einrichten.
 Dabei unterteilen wir den Vue Kurs in mehrere virtuelle Klassenräume, um die Gruppenarbeit zu unterstützen.
@@ -44,10 +44,10 @@ Dabei unterteilen wir den Vue Kurs in mehrere virtuelle Klassenräume, um die Gr
 - Interaktive Meetings für Fragen und Diskussionen
 - Dauerhafter Zugriff auf Materialien, Aufzeichnung und Transkripte für die Teilnehmer zum Nachlesen nach der Vue Schulung
 
-## Was unterscheidet uns von der Konkurrenz?
+## Was unterscheidet uns von anderen?
 
-- Wir sind eine Trainer-Community und erarbeiten gemeinsam Material, dadurch erhöhen wir die Qualität enorm
-- Unsere Trainer haben alle mehrjährige praktische Erfahrung. Wir verfolgen keinen reinen Theorie-Ansatz. Wir machen auch Projektarbeit
+- Wir sind eine Trainer:innen-Community und erarbeiten gemeinsam Material, dadurch erhöhen wir die Qualität enorm
+- Unsere Trainer:innen haben alle mehrjährige praktische Erfahrung. Wir verfolgen keinen reinen Theorie-Ansatz. Wir machen auch Projektarbeit
 - Alle Materialien richten sich nach einem selbst entwickelten didaktischem Konzept, das für den Lernerfolg optimiert ist
 - Mit unseren regelmäßigen "Coach the Coach"-Sessions helfen wir uns untereinander gut vernetzt und auf einem aktuellen Stand zu bleiben
 - Durch unsere Community-Portale sind wir möglichst nah an den Entwicklern und Bedürfnissen dran, weshalb wir zielgerichtet Material und Themen anbieten können
@@ -132,13 +132,13 @@ Wir verfügen darüber hinaus über viele weitere Module, welche nach Bedarf hin
 Remote bedeutet einfach nur, dass es keine Präsenz-Workshops vor Ort sind.
 Ihr loggt Euch einfach im Homeoffice in das verwendete Videokonferenz-Tool ein und seid live dabei – sicher vor Corona. 
 Unter anderem Zoom können wir auch eine gute Video- und Ton-Qualität sicherstellen.
-Der Vue.js Trainer kann ebenfalls mit den Teilnehmern interagieren sowie Präsentationen oder Code-Beispiele teilen.
+Unsere Vue.js Trainer:innen können ebenfalls mit den Teilnehmern interagieren sowie Präsentationen oder Code-Beispiele teilen.
 Für weitere Erklärungen steht außerdem ein virtuelles Whiteboard bereit.
 
 ## Das virtuelle Lernsystem von vuejs.de
 
 Seit 2015 entwickeln wir ein virtuelles Lernsystem, das den Online-Zugriff auf Materialien, Videos, Transkripte und Aufgaben ermöglicht.
-Unsere Vue Schulung ist in verschiedene Kapitel aufgeteilt, die individuell je nach Trainer und Teilnehmern zusammengestellt werden kann.
+Unsere Vue Schulung ist in verschiedene Kapitel aufgeteilt, die individuell je nach Trainer:in und Teilnehmern zusammengestellt werden kann.
 Derzeit verfügen wir über 67 dieser Lernmodule und können diese je nach Workshop schnell zusammenstellen. 
 
 ## FAQs – häufig gestellte Fragen zu unserer Vue Schulung
@@ -150,7 +150,7 @@ Grundsätzlich lassen sich natürlich alle Workshops auch beim Kunden vor Ort du
 Fragen zu Vue Themen können auch in der Schulung besprochen werden, solange sie zum Unterrichtsinhalt passen. Falls Ihr zusätzliche Unterstützung benötigt, könnt Ihr auch außerhalb der Workshops unsere Vue Experten anfragen.
 
 ### Wie groß sind die Gruppen in der Vue Schulung?
-Unsere Schulungen sind so konzipiert, dass bis 12 Teilnehmer gut daran teilnehmen können. Mehr Teilnehmer würden den Unterrichtsfortschritt nur behindern. Wir empfehlen für solche Fälle dann mehr als einen Trainer zu buchen, damit eine adäquate Betreuung für jeden Teilnehmer sichergestellt werden kann. 
+Unsere Schulungen sind so konzipiert, dass bis 12 Teilnehmer gut daran teilnehmen können. Mehr Teilnehmer würden den Unterrichtsfortschritt nur behindern. Wir empfehlen für solche Fälle dann mehrere Trainer:innen zu buchen, damit eine adäquate Betreuung für jeden Teilnehmer sichergestellt werden kann. 
 
 ### Ich kann nicht an allen Tagen teilnehmen. Kann ich trotzdem teilnehmen?
 Natürlich ist es am besten, wenn Ihr jeden Tag dabei seid, um nichts zu verpassen. Da wir aber nach Bedarf und Zustimmung Schulungen aufzeichnen, könnt Ihr Euch den gesamten Workshop auch im Nachhinein noch einmal ansehen. 
