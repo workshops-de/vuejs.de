@@ -334,4 +334,4 @@ export default {
 Ihr könnt jetzt sehen, wie wir verschiedene Elemente unseres ersten Features in die `setup` Methode verschoben haben. 
 Was noch fehlt: Wir rufen die `fetchImages` in der `mounted` Lebenszyklus-Methode auf und stellen einen Watcher bereit, der sich darum kümmern soll neue Bilder anzufragen, sobald sich die `tag` prop verändert.
 
-Wir hoffen, dass Euch unsere kleine Einführung etwas helfen konnte. Im nächsten Teil geht es weiter mit dem Lifecycle Hook. Bleibt also dran!
+Wir hoffen, dass Euch unsere kleine Einführung etwas helfen konnte. Im [nächsten Teil](https://vuejs.de/artikel/composition-api-teil-2/){:target="_blank"} geht es weiter mit dem Lifecycle Hook.
