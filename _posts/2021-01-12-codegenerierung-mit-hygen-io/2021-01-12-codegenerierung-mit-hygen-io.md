@@ -11,11 +11,11 @@ Viele Entwickler beginnen ein neues Frontend-Projekt mittels einer CLI (command-
 
 Vue liefert mit der [Vue CLI](https://cli.vuejs.org){:target="_blank"} ebenfalls ein solches Tooling standardmäßig aus. Vollgepackt mit außergewöhnlichen Werkzeugen, die ein schnelles und intuitives Scaffolding ermöglichen, muss sich der Entwickler nicht mehr um aufwendige Webpack-Konfigurationen kümmern. Out-of-the-box lassen sich so Dinge wie TypeScript-Support, Linter, Unit Testing und andere Funktionen über wenige Klicks automatisch in ein funktionierendes Projekt-Setup umsetzen. Mittlerweile steht sogar eine grafische Benutzeroberfläche zur Verfügung, wenn man die Konsole nicht nutzen möchte.
 
-Doch wie geht es weiter, nachdem das Projekt und die grundlegende Ordnerstruktur von der CLI erstellt worden ist? Alle großen Frameworks arbeiten mit Komponenten. Dennoch gibt es auch hier Unterschiede zwischen Entwicklern und Teams. Einige arbeiten mit [Single File Components (SFC)](https://v3.vuejs.org/guide/single-file-component.html#single-file-components){:target="_blank"}, andere bevorzugen lieber das [Separation of Concerns Prinzip](https://v3.vuejs.org/guide/single-file-component.html#what-about-separation-of-concerns){:target="_blank"}. 
+Doch wie geht es weiter, nachdem das Projekt und die grundlegende Ordnerstruktur von der CLI erstellt worden ist? Alle großen Frameworks arbeiten mit Komponenten. Dennoch gibt es auch hier Unterschiede zwischen Entwicklern und Teams. Einige arbeiten mit [Single File Components (SFC)](https://v3.vuejs.org/guide/single-file-component.html#single-file-components){:target="_blank"}, andere bevorzugen lieber das [Separation of Concerns Prinzip](https://v3.vuejs.org/guide/single-file-component.html#what-about-separation-of-concerns){:target="_blank"}.
 
 Außerdem unterscheidet sich die Arbeit mit Vue häufig in der Nutzung von JavaScript vs. Typescript, der Nutzung eines Präprozessors wie Sass/Less/Stylus oder noch spezieller anhand einzelner Design-Entscheidungen, wie z.B. der Verwendung von [BEM](http://getbem.com){:target="_blank"} oder der [Composition API](https://vuejs.de/artikel/composition-api-teil-1/){:target="_blank"}.
 
-Das bedeutet, dass wir während der Entwicklung unseren eigenen Workflow geschaffen haben, der aus einer Menge "Copy & Paste" besteht, um neue Komponenten in dem gewählten Stil anzulegen. Einige Entwicklungsumgebungen wie [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets){:target="_blank"} oder [WebStorm](https://www.jetbrains.com/help/webstorm/using-live-templates.html){:target="_blank"} bieten die Möglichkeit sogenannte Templates anzulegen, womit z.B. der Inhalt bestimmter Dateien automatisch generiert werden kann. 
+Das bedeutet, dass wir während der Entwicklung unseren eigenen Workflow geschaffen haben, der aus einer Menge "Copy & Paste" besteht, um neue Komponenten in dem gewählten Stil anzulegen. Einige Entwicklungsumgebungen wie [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets){:target="_blank"} oder [WebStorm](https://www.jetbrains.com/help/webstorm/using-live-templates.html){:target="_blank"} bieten die Möglichkeit sogenannte Templates anzulegen, womit z.B. der Inhalt bestimmter Dateien automatisch generiert werden kann.
 
 Jede dieser Möglichkeit besitzt allerdings wiederum eigene Beschränkungen. Das Anlegen der Templates durch jeden Entwickler in seiner individuellen Umgebung außerhalb des Projekt-Setups, zählt dabei nur zu einem der Nachteile dieser Lösungen.
 
@@ -64,7 +64,7 @@ Um hygen letztlich verwenden zu können, muss es zunächst initialisiert werden.
 hygen init self
 ```
 
-hygen kommt mit zwei vorgefertigten Generatoren, die dabei helfen unsere eigenen Generatoren zu bauen. In Eurem Projektordner solltet Ihr daher jetzt einen neuen Ordner namens `_templates` vorfinden. 
+hygen kommt mit zwei vorgefertigten Generatoren, die dabei helfen unsere eigenen Generatoren zu bauen. In Eurem Projektordner solltet Ihr daher jetzt einen neuen Ordner namens `_templates` vorfinden.
 
 ## Unser Vorhaben
 
@@ -96,7 +96,7 @@ export default defineComponent({
 .MyComponent {
 }
 </style>
-``` 
+```
 
 ## Erstellung des Generators mit hygen
 
@@ -111,8 +111,8 @@ In unserem Ordner sollten wir nun unter `_templates` einen neuen Unterordner nam
 - _templates
     - component
         - new
-            - hello.ejs.t 
-            
+            - hello.ejs.t
+
 Um unseren Generator auszuführen, verwenden wir ein ähnliches Kommando wie das zur Generator-Erstellung, wobei Euch hier die Bestandteile wesentlich bekannter vorkommen sollten, da sie sich an der Ordnerstruktur orientieren:
 
 ```shell
@@ -145,7 +145,7 @@ console.log(hello)
 
 Einige der Konstrukte sehen nach gewöhnlichem JavaScript aus, andere wiederum wirken noch etwas fremd. Unterteilt wird die Datei in zwei Bereiche. Zu erkennen ist das an den gestrichelten Linien.
 Innerhalb dieser befinden sich die sogenannten Metadaten: der *head* der Datei. Dieser entspricht der YAML-Syntax.
-Darunter befindet sich der zu generierende Inhalt der Zieldatei: der *body*. Die hier verwendete Sprache kann frei gewählt werden. Wir verwenden JavaScript. 
+Darunter befindet sich der zu generierende Inhalt der Zieldatei: der *body*. Die hier verwendete Sprache kann frei gewählt werden. Wir verwenden JavaScript.
 
 Wenn wir uns jetzt an die Datei-Ausgabe unter `app/hello.js` zurückerinnern, sollten wir viele Zusammenhänge erkennen. Zum einen entspricht der Inhalt dieser Datei genau dem *body* unseres Generators und zum anderen wird durch den im *head* Bereich angegebenen Befehl der Ablageort definiert:
 
@@ -209,9 +209,9 @@ Für dieses Vorhaben bietet hygen uns Variablen an. Der für unser Beispiel nahe
 
 ```shell
 hygen generator new component HygenDemo
-``` 
+```
 
-Hygen erlaubt es uns am Ende des Aufrufs, einen weiteren Parameter anzuhängen, der uns in unserem Template als `name` zur Verfügung gestellt wird. 
+Hygen erlaubt es uns am Ende des Aufrufs, einen weiteren Parameter anzuhängen, der uns in unserem Template als `name` zur Verfügung gestellt wird.
 Die unter anderem aus Java Server Pages und Ruby on Rails bekannte Syntax `<%= name %>` kann zur Ausgabe der Variable in unserem Template verwendet werden:
 
 ```
@@ -246,9 +246,9 @@ Ein letzter Test zeigt uns, dass wir unseren ersten funktionsfähigen Generator 
 
 ## Ausblick
 
-Wir hoffen, Euch hat der erste kurze Einblick in hygen.io und die Generierung von Code gefallen und Ihr könnt damit den nervigen Zeitfresser Copy & Paste beim Schreiben von Vue Anwendungen loswerden. 
+Wir hoffen, Euch hat der erste kurze Einblick in hygen.io und die Generierung von Code gefallen und Ihr könnt damit den nervigen Zeitfresser Copy & Paste beim Schreiben von Vue Anwendungen loswerden.
 
-Gebt uns gerne [Feedback](https://vuejs.de/slack){:target="_blank"}, ob Ihr noch mehr in diese Richtung erfahren wollt. Mit hygen lassen sich noch viel umfangreichere Funktionen umsetzen, wie zum Beispiel:
+Gebt uns gerne [Feedback](https://vuejs.de/discord){:target="_blank"}, ob Ihr noch mehr in diese Richtung erfahren wollt. Mit hygen lassen sich noch viel umfangreichere Funktionen umsetzen, wie zum Beispiel:
 
 1. Nutzung von *prompts*: Damit können vom Nutzer zusätzliche Eingaben abgefragt werden, um die Code-Generierung flexibler zu gestalten und dynamische Inhalte abbilden zu können.
 2. Die Erzeugung mehrerer Dateien innerhalb eines Generators.

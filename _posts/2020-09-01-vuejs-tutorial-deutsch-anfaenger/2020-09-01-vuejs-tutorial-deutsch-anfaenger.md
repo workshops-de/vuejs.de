@@ -717,7 +717,7 @@ In diesem Vue.js Online-Tutorial hast du gelernt, selbstständig eine Komponente
 Im Vergleich zur klassischen Schreibweise hast du gesehen, was die Composition API ist, warum sie notwendig ist und wie man damit eine Komponente erstellen kann.
 Die Composition API ist bereits jetzt veröffentlicht und einsatzbereit. Du kannst sie über den Release Candidate von Vue 3 oder als Plug-in benutzen.
 Diskutier gerne mit, ob sich die Composition API in deinen Augen lohnt. Möchtest du diese einmal selbst ausprobieren oder lieber weiter wie gewohnt mit der Options API arbeiten?
-Tausche dich in unserem kostenfreien [Slack Chat](https://vuejs.de/slack) mit anderen Nutzern aus!
+Tausche dich in unserem kostenfreien [Discord Chat](https://vuejs.de/discord) mit anderen Nutzern aus!
 
 Wir arbeiten aktuell an vielen weiteren Artikeln zum Thema Vue.js, insbesondere die Neuerungen von Vue 3 werden wir auf dieser Seite näher beleuchten. Guck also regelmäßig bei uns vorbei, um alle Neuerungen als Erstes zu erfahren.
 Viel Spaß beim Lernen!
