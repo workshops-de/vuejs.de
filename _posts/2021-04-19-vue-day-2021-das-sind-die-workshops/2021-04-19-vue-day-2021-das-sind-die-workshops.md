@@ -12,7 +12,7 @@ Wir stellen dir die Speaker und ihre spannenden Themen vor.
 
 ## Zwei Vorträge stehen schon fest
 
-Der CfP ist beendet und das Team von Vue.js wählt gerade aus allen Einsendungen die besten Speaker und interessantesten Themen für die den Vue Day 2021 aus.
+Der CfP ist beendet und das Team von Vue.js wählt gerade aus allen Einsendungen die besten Speaker und interessantesten Themen für den Vue Day 2021 aus.
 Dabei sieht das Gremium aber nur das vorgeschlagene Thema und erhält keinerlei Informationen zum Speaker und dessen Erfahrungen.
 Mit diesem Verfahren wollen wir unseren Fokus auf Diversität konsequent durchsetzen und für Gleichberechtigung und Fairness bei der Programmauswahl sorgen.
 Außerdem können wir uns so auf die Attraktivität des Themas und dessen Sinnhaftigkeit für den VueDay konzentrieren. Zwei Vorträge stehen aber schon fest.
