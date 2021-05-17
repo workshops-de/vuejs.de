@@ -1,5 +1,5 @@
 <div class="col mb-4">
-    <a href="/schulungen/{{ include.permalink }}/" class="course-card h-100">
+    <a href="{% if include.external_link %}{{ include.external_link }}{% else %}/schulungen/{{ include.permalink }}/{% endif %}" {% if include.external_link %} target="blank" {% endif %} class="course-card h-100">
         <div class="row | align-items-center | mb-4">
             <div class="col-auto">
                 <img class="course-card-image" src="/assets/img/workshops/logo-{{ include.logo }}.svg" alt="Logo für {{ include.title }}">
