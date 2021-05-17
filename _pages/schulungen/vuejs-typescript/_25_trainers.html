@@ -1,0 +1,46 @@
+<section class="copy-section py-6" ad-fader="">
+  <div class="container">
+    {% include _section_header.html cols="11"
+         feature="Trainer"
+         benefit="Lerne von den Besten."
+    %}
+
+    <div class="row mb-5">
+      <div class="col-10">
+        Seit 2019 schulen wir Entwickler zum Thema Vue.js. Um die bestmöglichen Schulungen zu geben, haben wir uns als Trainer-Team
+        zusammengeschlossen. Somit arbeiten wir gemeinsam an Materialien und Didaktik für unsere Teilnehmer:innen.
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div id="carouselTrainers" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner pb-4">
+            <div class="carousel-item active">
+              <div class="row">
+                {% include_relative _includes/_trainer.html name="Antony Konstantinidis"%}
+                {% include_relative _includes/_trainer.html name="Nico König" %}
+                {% include_relative _includes/_trainer.html name="Robin Böhm" %}
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselTrainers" data-slide-to="0" class="active"></li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="mb-">
+          Unter anderem sind wir:
+        </p>
+        <ul class="c-checked-list">
+          <li><strong>Google-Developer-Experts</strong></li>
+          <li>Erfahrene Softwareentwickler mit Fokus auf das Web</li>
+          <li>Buch- und Artikel-Autoren</li>
+          <li>Aktive Mitglieder der Vue.js-Community</li>
+          <li>Organisatoren von Meetups und Konferenzen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
