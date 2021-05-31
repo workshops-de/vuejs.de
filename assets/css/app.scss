@@ -15,14 +15,18 @@ $headings-font-weight: 600;
 $code-font-size: .875em;
 
 // Theme Colors
-$primary:#0386c9; // #4eafca
-$success:#43ac6a;
-$warning:#e99002;
-$danger: #f04124;
-$info:   #5bc0de;
+$primary:#3e7aad; // #4eafca
 $black:  #000;
 $white:  #fff;
 $yiq-contrasted-threshold:  195;
+
+// Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
 
 // Spacers
 $spacer: 1rem;
@@ -36,6 +40,9 @@ $spacers: map-merge((
   5: ($spacer * 3),
   6: ($spacer * 6)
 ), $spacers);
+
+// Links
+$link-decoration: none;
 
 // Cards
 $card-cap-bg: $white;

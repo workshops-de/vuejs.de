@@ -28,15 +28,15 @@
         KW{{ event.startDate | date: "%W" }}
       </div>
       <div class="col-4">
-        <span itemprop="startDate" content="{{ event.startDate | date: " %Y-%m-%d " }}">{{ event.startDate | date: "%d.%m" }}</span> - <span class="mr-2" itemprop="endDate" content="{{ event.endDate | date: " %Y-%m-%d " }}">{{ event.endDate | date: "%d.%m.%Y" }}</span>
+        <span itemprop="startDate" content="{{ event.startDate | date: " %Y-%m-%d " }}">{{ event.startDate | date: "%d.%m" }}</span> - <span class="me-2" itemprop="endDate" content="{{ event.endDate | date: " %Y-%m-%d " }}">{{ event.endDate | date: "%d.%m.%Y" }}</span>
         {% if event.bookingsStatus == "BOOKED" %}
-        <span class="badge badge-danger">ausgebucht</span>
+        <span class="badge bg-danger">ausgebucht</span>
         {% elsif event.bookingsStatus == "ONE_LEFT" %}
-        <span class="badge badge-danger">Nur noch 1 Platz</span>
+        <span class="badge bg-danger">Nur noch 1 Platz</span>
         {% elsif event.bookingsStatus == "FEW_TICKETS_LEFT" %}
-        <span class="badge badge-danger">Fast ausgebucht</span>
+        <span class="badge bg-danger">Fast ausgebucht</span>
         {% elsif event.bookingsStatus == "SOME_TICKETS_LEFT" %}
-        <span class="badge badge-warning">Wenige Plätze frei</span>
+        <span class="badge bg-warning">Wenige Plätze frei</span>
         {% elsif event.bookingsStatus == "TICKETS_LEFT" %}
         <span class="badge c-badge-free">Noch freie Plätze</span>
         {% endif %}
@@ -66,7 +66,7 @@
               {% endif %}
               <span>
                 {% if event.early_bird == true %}
-                <span class="badge badge-info"><small>Frühbucher Rabatt</small></span>
+                <span class="badge bg-info"><small>Frühbucher Rabatt</small></span>
                 {% endif %}
               </span>
             </span>
@@ -102,7 +102,7 @@
             </span>
             {% endif %}
           </div>
-          <div class="col-sm-3 text-right">
+          <div class="col-sm-3 text-end">
             <a class="btn btn-success btn-sm btn-cta shadow" href="{{ event.offers.url }}?utm_source=vuejs_de&utm_campaign=website-link-event-date&utm_medium=button&utm_content=workshops-list#booking" target="_blank">anmelden</a>
           </div>
         </div>
@@ -116,19 +116,19 @@
       <div class="col-8 col-sm-7">
         <div class="row">
           <div class="col-12 col-sm-9">
-            <a class="text-unstyled" href="https://workshops.de/seminare-schulungen-kurse/vuejs-javascript-intensiv-schulung/inhouse?utm_source=vuejs_de?utm_campaign=website-link-inhouse&utm_medium=link&utm_content=workshops-list" target="_blank"> <span class="sr-only">Vue.js &amp; JavaScript</span> Firmenschulung Inhouse
+            <a class="text-unstyled" href="https://workshops.de/seminare-schulungen-kurse/vuejs-javascript-intensiv-schulung/inhouse?utm_source=vuejs_de?utm_campaign=website-link-inhouse&utm_medium=link&utm_content=workshops-list" target="_blank"> <span class="visually-hidden">Vue.js &amp; JavaScript</span> Firmenschulung Inhouse
             </a> <br>
             <small class="d-none d-sm-inline"> Termine und Preise auf Anfrage </small>
             <small class="d-inline d-sm-none"> Auf Anfrage </small>
           </div>
-          <div class="col-12 col-sm-3 text-right">
-            <a class="btn btn-primary btn-sm btn-cta shadow" href="https://workshops.de/seminare-schulungen-kurse/vuejs-javascript-intensiv-schulung/inhouse?utm_source=vuejs_de#iframe&amp;utm_campaign=undefined&utm_medium=button&utm_content=workshops-list" target="_blank"> <span class="sr-only">Vue.js &amp; JavaScript Inhouse</span> &nbsp;anfragen&nbsp;
+          <div class="col-12 col-sm-3 text-end">
+            <a class="btn btn-primary btn-sm btn-cta shadow" href="https://workshops.de/seminare-schulungen-kurse/vuejs-javascript-intensiv-schulung/inhouse?utm_source=vuejs_de#iframe&amp;utm_campaign=undefined&utm_medium=button&utm_content=workshops-list" target="_blank"> <span class="visually-hidden">Vue.js &amp; JavaScript Inhouse</span> &nbsp;anfragen&nbsp;
             </a> </div>
         </div>
       </div>
     </div>
     <hr>
-    <div class="text-muted smaller text-right d-flex justify-content-end">Unsere Workshops werden durchgeführt von <span class="d-inline-flex align-items-center"><img class="ml-1 mr-1" alt="Workshops Logo" src="/assets/img/workshops-de-logo.svg" height="16"> <a class="text-workshops" href="https://workshops.de/?utm_source=angular_de&utm_campaign=website-link-right-bottom&utm_medium=link&utm_content=workshops-list" target="_blank" rel="noopener">Workshops.DE</a></span></div>
+    <div class="text-muted smaller text-end d-flex justify-content-end">Unsere Workshops werden durchgeführt von <span class="d-inline-flex align-items-center"><img class="ms-1 me-1" alt="Workshops Logo" src="/assets/img/workshops-de-logo.svg" height="16"> <a class="text-workshops" href="https://workshops.de/?utm_source=angular_de&utm_campaign=website-link-right-bottom&utm_medium=link&utm_content=workshops-list" target="_blank" rel="noopener">Workshops.DE</a></span></div>
     <!-- /.col~ -->
     <!-- /.row -->
   </div>
