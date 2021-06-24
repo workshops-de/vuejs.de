@@ -13,6 +13,10 @@ h6,
   word-wrap: break-word; // for mobile
 }
 
+:focus {
+  outline: 3px dotted darken(#40b883, 15%) !important;
+}
+
 // Misc
 //==================================================
 .has-navigation-fixed {}
