@@ -5,6 +5,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 ga_property: "UA-97181121-6"
 gtm_property: "GTM-PNQ82ZX"
+utm_source: "vuejs_de"
 permalink: /artikel/:slug/
 repository_url: "https://github.com/workshops-de/vuejs.de"
 ws_course_id: 37
