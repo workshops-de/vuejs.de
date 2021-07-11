@@ -1,5 +1,6 @@
 title: VueJS.DE
 description: ""
+topic: Vue.js
 url: "https://vuejs.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vue_js_de
 github_username:  jekyll
@@ -8,6 +9,11 @@ gtm_property: "GTM-PNQ82ZX"
 utm_source: "vuejs_de"
 permalink: /artikel/:slug/
 repository_url: "https://github.com/workshops-de/vuejs.de"
+
+navigation:
+  banner:
+    message: "10% Rabatt auf alle Workshops.DE Schulungen mit dem Code: <b>VUEJSDE10</b>"
+    href: "https://workshops.de/schulungsthemen/vuejs?utm_source=vuejs_de&utm_campaign=portal-discount&utm_medium=banner&utm_content=workshops-overview"
 
 plugins_dir: ["_plugins/", "shared/plugins/"]
 
