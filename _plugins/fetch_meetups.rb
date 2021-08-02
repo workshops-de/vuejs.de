@@ -10,7 +10,6 @@ Jekyll::Hooks.register :site, :after_init do |site|
     'Dusseldorf-Vuejs-Meetup-Gruppe',
     'vuejsvienna',
     'Vue-JS-Cologne',
-    'Vue-JS-Cologne-Rheinland',
     'aachen-vue-js-meetup',
     'vue-nfe',
     'vuejsfrankfurt',
