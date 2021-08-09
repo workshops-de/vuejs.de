@@ -16,9 +16,15 @@ permalink: /
             Alle Infos zu Vue.js auf Deutsch!
           </p>
           <h1 class="header-homepage-title">Alles rund um Vue.js</h1>
-          <p class="pt-2 pt-md-4">
-            <a href="/tutorials/" class="btn btn-outline-secondary me-2">Mit einem Tutorial starten &rsaquo;</a>
-            <a href="/schulungen/" class="btn btn-primary">Schulung buchen &rsaquo;</a>
+          <p class="m-0 pt-2 pt-md-4">
+            <div class="row gy-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <a href="/tutorials/" class="btn btn-outline-secondary w-100">Mit einem Tutorial starten &rsaquo;</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <a href="/schulungen/" class="btn btn-primary w-100">Schulung buchen &rsaquo;</a>
+              </div>
+            </div>
           </p>
         </div>
       </div>
@@ -93,7 +99,7 @@ permalink: /
     </div>
   </section>
   <section class="py-5">
-    <h2>Die neusten Artikel</h2>
+    <h2>Die neuesten Artikel</h2>
     <div class="row">
       {% for post in site.posts limit:6 %}
       <div class="col-sm-6 col-md-4 col-lg-4 mb-4">

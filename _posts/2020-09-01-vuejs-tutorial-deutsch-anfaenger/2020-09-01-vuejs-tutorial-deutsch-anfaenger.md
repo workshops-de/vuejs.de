@@ -36,7 +36,7 @@ In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Kompon
       </p>
     </div>
     <div class="col-xs-12 col-md-6">
-      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer in der Veranstaltung Vue-Intensiv-Workshop">
+      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer:innen in der Veranstaltung Vue-Intensiv-Workshop">
     </div>
   </div>
 </div>
@@ -742,7 +742,7 @@ Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das 
       </p>
     </div>
     <div class="col-xs-12 col-md-6">
-      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer der Veranstaltung Vue-Intensiv-Workshop">
+      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer:innen der Veranstaltung Vue-Intensiv-Workshop">
     </div>
   </div>
 </div>
