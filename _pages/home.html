@@ -55,10 +55,10 @@ permalink: /
 </div>
 
 <main class="container">
-  <section class="py-5">
+  <section class="my-5">
     <h2>Community</h2>
-    <div class="row">
-      <div class="col-md-4 col-12">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
         <div class="card h-100">
           <a class="c-img-post" style="height: 150px; background-image: url('shared/assets/img/meetups.png');" href="/meetups/">
             <span class="c-post-categories">
@@ -98,11 +98,11 @@ permalink: /
       </div>
     </div>
   </section>
-  <section class="py-5">
+  <section class="my-5">
     <h2>Die neuesten Artikel</h2>
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
       {% for post in site.posts limit:6 %}
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+      <div class="col">
         {% include shared/_post_card.html %}
       </div>
       {% endfor %}
