@@ -53,6 +53,11 @@
         "source": "/schulungen/vuejs/",
         "destination": "https://vuejs.de/schulungen/vuejs-typescript/",
         "type": 301
+      },
+      {
+        "source": "/artikel/unsere-remote-vuejs-schulungen/",
+        "destination": "https://vuejs.de/schulungen/vuejs-typescript/",
+        "type": 301
       }
     ],
     "headers": [

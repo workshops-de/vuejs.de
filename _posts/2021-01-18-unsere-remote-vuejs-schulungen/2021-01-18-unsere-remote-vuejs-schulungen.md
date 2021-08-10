@@ -5,6 +5,7 @@ author: "Antony Konstantinidis"
 published_at: 2021-01-18 15:45:00.000000Z
 categories: "vuejs remote schulung"
 tutorial_page_order: '1'
+noindex: true
 ---
 
 Vue.js wird immer beliebter und zahlreiche Unternehmen bieten mittlerweile Vue.js Schulungen, Seminare und Workshops an.
@@ -13,17 +14,17 @@ Mit Version 3.0 hat Vue.js sich sogar wieder übertroffen und überzeugt mit vie
 
 ## Vue.js Schulung, Seminar oder Workshop – angepasst an Eure Wünsche
 
-In unserer Vue Schulung vermitteln wir die Grundlagen des Webframeworks und zeigen unseren Teilnehmern, wie sie ein Projekt-Setup planen und aufbauen können. 
-    
-Wir bieten sowohl offene als auch geschlossene Workshops an. Erstere zeichnen sich dadurch aus, dass der Termin bereits vorgegeben ist und die Anmeldung jedem beliebigen Teilnehmer online zur Verfügung steht. 
-Geschlossene bzw. inhouse Schulungen kommen durch Anfragen von Unternehmen zustande und werden sowohl terminlich als auch inhaltlich ganz individuell abgestimmt. 
+In unserer Vue Schulung vermitteln wir die Grundlagen des Webframeworks und zeigen unseren Teilnehmern, wie sie ein Projekt-Setup planen und aufbauen können.
+
+Wir bieten sowohl offene als auch geschlossene Workshops an. Erstere zeichnen sich dadurch aus, dass der Termin bereits vorgegeben ist und die Anmeldung jedem beliebigen Teilnehmer online zur Verfügung steht.
+Geschlossene bzw. inhouse Schulungen kommen durch Anfragen von Unternehmen zustande und werden sowohl terminlich als auch inhaltlich ganz individuell abgestimmt.
 
 Aktuell fokussieren wir uns auf das Homeoffice und bieten 6-Tage-Teilzeit-Workshops an. So könnt Ihr weiterhin an Euren Projekten arbeiten und fallt nicht komplett aus.
 Gerade Entwickler können sich selten für eine ganze Woche freimachen. Ständig meldet sich ein Kunde oder der Chef, weil irgendetwas ganz dringend gemacht werden muss. 🙄
 
 Unsere Schulung wird immer von einem/r erfahrenen Vue Trainer/in durchgeführt. Sobald Fragen aufkommen, können diese direkt beantwortet werden.
 
-Das Besondere: Die Vue.js Schulung (Workshop, Seminar) hat einen Praxisanteil von ca. 60 %. 
+Das Besondere: Die Vue.js Schulung (Workshop, Seminar) hat einen Praxisanteil von ca. 60 %.
 Und das bedeutet, dass Ihr hier nicht nur rumsitzt und zuhört, sondern auch alles gleich ausprobieren könnt.
 Bei Bedarf können jederzeit Fragen gestellt werden. Außerdem geben unsere Trainer:innen viele wertvolle Tipps während der Schulung.
 
@@ -67,17 +68,17 @@ Wir starten mit einer kurzen Einführung in TypeScript (ca. 3 Stunden). Dort ler
 - Generics
 - Promises / Async await
 - Modul-System
- 
+
 ### VueJS Basics und Komponenten
 
-Danach erarbeiten wir die Grundkonzepte von Vue entlang einer durchgehenden Beispiel-Anwendung. Dazu gibt es immer einen kurzen Theorie-Teil, gefolgt von einer Aufgabe. Zu den verschiedenen Schritten stellen wir Musterlösungen bereit. 
+Danach erarbeiten wir die Grundkonzepte von Vue entlang einer durchgehenden Beispiel-Anwendung. Dazu gibt es immer einen kurzen Theorie-Teil, gefolgt von einer Aufgabe. Zu den verschiedenen Schritten stellen wir Musterlösungen bereit.
 - Was ist VueJS?
 - Virtual DOM
 - Arbeiten mit Vue CLI
 - Single File Components
 - Templates & Direktiven
 - Einführung in die Konzepte von Vue (u.a. watch und computed properties)
-- Komponenten und Komponentenarchitektur 
+- Komponenten und Komponentenarchitektur
 - Props und Custom Events
 - Kommunikation zwischen Komponenten
 
@@ -90,15 +91,15 @@ Nach den Grundlagen gehen wir dazu über unsere Demo-Applikation umzusetzen, wob
 - Child Routes
 - Performance-Optimierungen durch Lazy Loading
 - Route Guards
- 
+
 ### Vue Formulare und Rest-APIs
 
-Als Nächstes gehen wir zu den Themen über, die den Kern von nahezu jeder Anwendung bilden. 
+Als Nächstes gehen wir zu den Themen über, die den Kern von nahezu jeder Anwendung bilden.
 - Formulare
 - Validatoren und Fehlermeldungen
 - Zugriff auf eine REST-API
 - Bidirektionales Databinding (Two-Way) durch v-model
- 
+
 ### State management mit Vuex
 
 In mittel bis großen Anwendungen wird die Verwaltung des Zustandes der Applikation immer wichtiger, daher widmen wir uns als letztes der Einbindung von Vuex.
@@ -110,7 +111,7 @@ In mittel bis großen Anwendungen wird die Verwaltung des Zustandes der Applikat
 
 ### Architektur großer Anwendungen
 
-Wie teilt man eine Applikation am besten auf und warum? Wie programmiere ich zukunftssicher? 
+Wie teilt man eine Applikation am besten auf und warum? Wie programmiere ich zukunftssicher?
 - Schneiden von Modulen
 - Wiederverwendbare Pakete
 - Arbeiten mit Monorepos
@@ -119,7 +120,7 @@ Wie teilt man eine Applikation am besten auf und warum? Wie programmiere ich zuk
 ### VueJS weiterführende Themen
 
 Wir verfügen darüber hinaus über viele weitere Module, welche nach Bedarf hinzugefügt werden können.
-- Die Composition API 
+- Die Composition API
 - Teleport
 - Async Components
 - Mixins
@@ -130,7 +131,7 @@ Wir verfügen darüber hinaus über viele weitere Module, welche nach Bedarf hin
 
 ## Was ist eine Remote-Schulung?
 Remote bedeutet einfach nur, dass es keine Präsenz-Workshops vor Ort sind.
-Ihr loggt Euch einfach im Homeoffice in das verwendete Videokonferenz-Tool ein und seid live dabei – sicher vor Corona. 
+Ihr loggt Euch einfach im Homeoffice in das verwendete Videokonferenz-Tool ein und seid live dabei – sicher vor Corona.
 Unter anderem Zoom können wir auch eine gute Video- und Ton-Qualität sicherstellen.
 Unsere Vue.js Trainer:innen können ebenfalls mit den Teilnehmern interagieren sowie Präsentationen oder Code-Beispiele teilen.
 Für weitere Erklärungen steht außerdem ein virtuelles Whiteboard bereit.
@@ -139,7 +140,7 @@ Für weitere Erklärungen steht außerdem ein virtuelles Whiteboard bereit.
 
 Seit 2015 entwickeln wir ein virtuelles Lernsystem, das den Online-Zugriff auf Materialien, Videos, Transkripte und Aufgaben ermöglicht.
 Unsere Vue Schulung ist in verschiedene Kapitel aufgeteilt, die individuell je nach Trainer:in und Teilnehmern zusammengestellt werden kann.
-Derzeit verfügen wir über 67 dieser Lernmodule und können diese je nach Workshop schnell zusammenstellen. 
+Derzeit verfügen wir über 67 dieser Lernmodule und können diese je nach Workshop schnell zusammenstellen.
 
 ## FAQs – häufig gestellte Fragen zu unserer Vue Schulung
 
@@ -150,22 +151,22 @@ Grundsätzlich lassen sich natürlich alle Workshops auch beim Kunden vor Ort du
 Fragen zu Vue Themen können auch in der Schulung besprochen werden, solange sie zum Unterrichtsinhalt passen. Falls Ihr zusätzliche Unterstützung benötigt, könnt Ihr auch außerhalb der Workshops unsere Vue Experten anfragen.
 
 ### Wie groß sind die Gruppen in der Vue Schulung?
-Unsere Schulungen sind so konzipiert, dass bis 12 Teilnehmer gut daran teilnehmen können. Mehr Teilnehmer würden den Unterrichtsfortschritt nur behindern. Wir empfehlen für solche Fälle dann mehrere Trainer:innen zu buchen, damit eine adäquate Betreuung für jeden Teilnehmer sichergestellt werden kann. 
+Unsere Schulungen sind so konzipiert, dass bis 12 Teilnehmer gut daran teilnehmen können. Mehr Teilnehmer würden den Unterrichtsfortschritt nur behindern. Wir empfehlen für solche Fälle dann mehrere Trainer:innen zu buchen, damit eine adäquate Betreuung für jeden Teilnehmer sichergestellt werden kann.
 
 ### Ich kann nicht an allen Tagen teilnehmen. Kann ich trotzdem teilnehmen?
-Natürlich ist es am besten, wenn Ihr jeden Tag dabei seid, um nichts zu verpassen. Da wir aber nach Bedarf und Zustimmung Schulungen aufzeichnen, könnt Ihr Euch den gesamten Workshop auch im Nachhinein noch einmal ansehen. 
+Natürlich ist es am besten, wenn Ihr jeden Tag dabei seid, um nichts zu verpassen. Da wir aber nach Bedarf und Zustimmung Schulungen aufzeichnen, könnt Ihr Euch den gesamten Workshop auch im Nachhinein noch einmal ansehen.
 
 ### Warum gerade Vue.js?
-Vue  füllt eine Lücke zwischen den großen Webframeworks Angular und React. Ob Vue für Euch das richtige Framework ist, müsst Ihr anhand Eurer Projekte selbst entscheiden. Schaut euch dazu doch zum Beispiel unser [Tutorial](https://vuejs.de/artikel/vuejs-tutorial-deutsch-anfaenger/){:target="_blank"} an. 
+Vue  füllt eine Lücke zwischen den großen Webframeworks Angular und React. Ob Vue für Euch das richtige Framework ist, müsst Ihr anhand Eurer Projekte selbst entscheiden. Schaut euch dazu doch zum Beispiel unser [Tutorial](https://vuejs.de/artikel/vuejs-tutorial-deutsch-anfaenger/){:target="_blank"} an.
 
-### Wenn genug Teilnehmer zusammenkommen, gibt es dann die Möglichkeit, einen individuellen eigenen Vue Workshop zu buchen? 
-Sofern sich genug Teilnehmer für einen Kurs zusammenfinden, die alle das Gleiche lernen möchten, können wir diese Schulung auch direkt auf Eure Anforderungen anpassen. 
+### Wenn genug Teilnehmer zusammenkommen, gibt es dann die Möglichkeit, einen individuellen eigenen Vue Workshop zu buchen?
+Sofern sich genug Teilnehmer für einen Kurs zusammenfinden, die alle das Gleiche lernen möchten, können wir diese Schulung auch direkt auf Eure Anforderungen anpassen.
 
 ### Was benötige ich, um an einer Vue Schulung teilzunehmen?
-Zur Teilnahme benötigt Ihr eigentlich nur internetfähiges Gerät. Ein Headset wird empfohlen, ist aber kein Muss. Gut wäre auch eine schnelle Internetverbindung. 
-Da die meisten Entwickler sowieso mit mehreren Monitoren arbeiten, wäre es ratsam, mit zwei Bildschirmen zu arbeiten. Auf einem folgt Ihr der Schulung, auf dem anderen könnt Ihr selbst programmieren. Sorgt außerdem dafür, dass Ihr genug Platz habt, z. B. am Schreibtisch und dass Ihr gut und bequem sitzt. 
+Zur Teilnahme benötigt Ihr eigentlich nur internetfähiges Gerät. Ein Headset wird empfohlen, ist aber kein Muss. Gut wäre auch eine schnelle Internetverbindung.
+Da die meisten Entwickler sowieso mit mehreren Monitoren arbeiten, wäre es ratsam, mit zwei Bildschirmen zu arbeiten. Auf einem folgt Ihr der Schulung, auf dem anderen könnt Ihr selbst programmieren. Sorgt außerdem dafür, dass Ihr genug Platz habt, z. B. am Schreibtisch und dass Ihr gut und bequem sitzt.
 Notfalls geht es auch mit dem 13-Zoll-Laptop auf dem Schoß – aber davon raten wir eher ab. 😜
 
-Ihr habt Fragen oder Anregungen zu unseren Schulungen, Workshops und Seminaren? Schreibt uns einfach eine E-Mail an: <a href="mailto:info@vuejs.de">info@vuejs.de</a> 
-Wenn Ihr den persönlichen Kontakt vorzieht, freut sich Britta auch über Euren Anruf! 
-Mo-Fr von 8 bis 13 Uhr unter <a href="tel:004920187535773">+49 201/875 357 73</a> 
+Ihr habt Fragen oder Anregungen zu unseren Schulungen, Workshops und Seminaren? Schreibt uns einfach eine E-Mail an: <a href="mailto:info@vuejs.de">info@vuejs.de</a>
+Wenn Ihr den persönlichen Kontakt vorzieht, freut sich Britta auch über Euren Anruf!
+Mo-Fr von 8 bis 13 Uhr unter <a href="tel:004920187535773">+49 201/875 357 73</a>
