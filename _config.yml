@@ -6,6 +6,7 @@ twitter_username: vue_js_de
 github_username:  jekyll
 ga_property: "UA-97181121-6"
 gtm_property: "GTM-PNQ82ZX"
+hotjar_id: "2596716"
 utm_source: "vuejs_de"
 permalink: /artikel/:slug/
 repository_url: "https://github.com/workshops-de/vuejs.de"
