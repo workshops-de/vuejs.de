@@ -4,7 +4,6 @@ Jekyll::Hooks.register :site, :after_init do |site|
   filename = '_data/meetups.json'
 
   meetups = [
-    'vue-js-dresden',
     'Stuttgart-Vue-js-Meetup',
     'Hamburg-Vue-js-Meetup',
     'Dusseldorf-Vuejs-Meetup-Gruppe',
