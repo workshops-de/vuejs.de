@@ -145,7 +145,7 @@ async setup() {
 }
 ```
 
-Man musste selber darauf achten, dass sich sämtliche Lifecycle Hooks vor dem ersten `await` befinden, um eine Ausführung sicherzustellen. Einen hervorragender Beitrag, welcher die Details dazu näher beleuchtet findet Ihr [hier](https://antfu.me/posts/async-with-composition-api){:target="_blank"}.
+Man musste selber darauf achten, dass sich sämtliche Lifecycle Hooks vor dem ersten `await` befinden, um eine Ausführung sicherzustellen. Einen hervorragenden Beitrag, welcher die Details dazu näher beleuchtet findet Ihr [hier](https://antfu.me/posts/async-with-composition-api){:target="_blank"}.
 
 In Vue 3.2 wurde dieses Problem behoben. Vue stellt den Kontext nach einem `await`-Aufruf nun wieder her und sorgt dafür, dass dieses Problem verschwindet.
 
