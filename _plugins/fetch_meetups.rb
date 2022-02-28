@@ -6,7 +6,6 @@ Jekyll::Hooks.register :site, :after_init do |site|
   meetups = [
     'Stuttgart-Vue-js-Meetup',
     'Hamburg-Vue-js-Meetup',
-    'Dusseldorf-Vuejs-Meetup-Gruppe',
     'vuejsvienna',
     'Vue-JS-Cologne',
     'vue-nfe',
