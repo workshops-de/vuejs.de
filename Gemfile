@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '~> 4.2.0'
+gem 'jekyll', '~> 4.2.1'
 gem 'rest-client'
 gem 'fastimage'
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
@@ -29,3 +29,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "webrick", "~> 1.7"
+gem 'execjs', '2.7.0'
+gem "rickshaw", "~> 0.5.0"
