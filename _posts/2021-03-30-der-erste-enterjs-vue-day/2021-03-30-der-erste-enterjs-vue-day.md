@@ -9,7 +9,7 @@ tutorial_page_order: '1'
 
 ## Der erste enterJS Vue Day 2021: Von der Community für die Community
 
-Entwickler:innen und Tech-Freunde aufgepasst: Es gibt etwas Neues am Vue-Himmel – In diesem Jahr findet zum allerersten Mal der „enterJS Vue Day“ statt. 
+Entwickler:innen und Tech-Freunde aufgepasst: Es gibt etwas Neues am Vue-Himmel – In diesem Jahr findet zum allerersten Mal der „enterJS Vue Day“ statt.
 Am 15. Juni dreht sich einen ganzen Tag lang alles um das Framework, das wir so lieben: Vue.js.
 
 Hier erfährst du, warum du unbedingt an unserer Online-Konferenz teilnehmen solltest und was dich erwartet.
@@ -18,7 +18,8 @@ Das Wichtigste aber vorweg: Die Community steht beim enterJS Vue Day wie immer a
 ### Call for Proposals ist offen
 
 Du bist Vue-Entwickler:in und möchtest die Community mit einem spannenden Thema oder einem interessanten Workshop begeistern.
-Dann bewirb dich jetzt [hier](https://enterjs.de/proposal_einreichen.php){:target="_blank"} und werde Teil der Konferenz. Der Call for Proposals (CfP) läuft noch bis zum 12. April!
+Dann bewirb dich jetzt hier und werde Teil der Konferenz. Der Call for Proposals (CfP) läuft noch bis zum 12. April!
+**Call for Proposal ist nicht mehr verfügbar**
 
 ### Ein Event für alle
 
@@ -34,7 +35,7 @@ Menschen miteinander connecten und die Community immer weiter wachsen lassen.
 
 Die Themen, die während der Konferenz behandelt werden, sind, passend zur Community und zum Framework, vielseitig.
 Die Umsetzung zeitgemäßer Webanwendungen mit JavaScript, die aktuellen Entwicklungen im Sprachstandard, Sicherheits-Aspekte, Barrierefreiheit,
-UI/UX und zahlreiche weitere Bereiche werden von den Redner:innen abgedeckt und sorgen sowohl für Profis als auch für Einsteiger:innen für reichlich Input. 
+UI/UX und zahlreiche weitere Bereiche werden von den Redner:innen abgedeckt und sorgen sowohl für Profis als auch für Einsteiger:innen für reichlich Input.
 
 ### Wir lieben Vue.js
 

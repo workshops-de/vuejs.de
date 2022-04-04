@@ -213,7 +213,7 @@ export default {
 Als Erstes möchten wir hier auf die Verwendung von `toRefs` am Anfang des `setup` verweisen. Damit stellen wir sicher, dass der Watcher auf Änderungen an der `tag` prop reagiert.
 
 Kurz zusammengefasst: `toRefs` konvertiert ein reaktives Objekt in ein neues Objekt, wobei jede Eigenschaft des resultierenden Objekts ein `ref` ist, der auf die entsprechende Eigenschaft des ursprünglichen Objekts zeigt. Wir erhalten damit ganz viele `ref` anstatt ein `reactive`.
-Mehr Informationen dazu findet Ihr wie gewohnt in der Vue Dokumentation zu [diesem Thema](https://v3.vuejs.org/api/refs-api.html#torefs){:target="_blank"}.
+Mehr Informationen dazu findet Ihr wie gewohnt in der Vue Dokumentation zu [diesem Thema](https://vuejs.org/api/reactivity-core.html){:target="_blank"}.
 
 Dank dieser letzten Änderungen konnten wir den ersten logischen Teil unserer Komponente aus mehreren Optionen an einen Ort in unserer `setup` Methode verschieben.
 

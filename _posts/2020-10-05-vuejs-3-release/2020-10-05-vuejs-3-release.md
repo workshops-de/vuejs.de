@@ -57,7 +57,7 @@ Auf Wunsch vieler Entwickler soll auch bald wieder der Internet Explorer 11 (IE1
 
 * [Composition API](https://vuejs.org/guide/extras/composition-api-faq.html){:target="_blank"} für mehr Übersichtlichkeit
 * [Teleport](https://vuejs.org/guide/built-ins/teleport.html){:target="_blank"} (vorher bekannt als Portale)
-* [Fragments](https://v3-migration.vuejs.org/breaking-changes/fragments.html){:target="_blank"} (virtuelle Elemente, die nicht im DOM gerendert werden)
+* [Fragments](https://v3-migration.vuejs.org/new/fragments.html){:target="_blank"} (virtuelle Elemente, die nicht im DOM gerendert werden)
 * [createRenderer API](https://github.com/vuejs/vue-next/tree/master/packages/runtime-core){:target="_blank"}, um benutzerdefinierte Renderer zu erzeugen
 * [Component-State-driven CSS-Variablen](https://github.com/vuejs/rfcs/blob/sfc-improvements/active-rfcs/0000-sfc-style-variables.md){:target="_blank"} für Single File Components (SFC)
 
@@ -71,7 +71,7 @@ Auf Wunsch vieler Entwickler soll auch bald wieder der Internet Explorer 11 (IE1
 * [Render Function API](https://v3-migration.vuejs.org/breaking-changes/render-function-api.html#overview){:target="_blank"}
 * [Slots Unification](https://v3-migration.vuejs.org/breaking-changes/slots-unification.html){:target="_blank"}
 
-Eine Liste mit weiteren kleinen Änderungen findet Ihr hier: [Other Minor Changes](https://v3-migration.vuejs.org/breaking-changes/introduction.html#other-minor-changes){:target="_blank"}
+Eine Liste mit weiteren kleinen Änderungen findet Ihr hier: [Other Minor Changes](https://v3-migration.vuejs.org/breaking-changes/attribute-coercion.html){:target="_blank"}
 
 ## Welche APIs wurden in Vue.js 3.0 entfernt?
 
@@ -82,10 +82,10 @@ Eine Liste mit weiteren kleinen Änderungen findet Ihr hier: [Other Minor Change
 
 ## Folgende Libraries werden mit Vue.js 3.0 unterstützt – wobei noch einige sich im Beta-Stadium befinden:
 
-* [Vue CLI](https://v3-migration.vuejs.org/breaking-changes/introduction.html#vue-cli){:target="_blank"}
-* [Vue Router](https://v3-migration.vuejs.org/breaking-changes/introduction.html#vue-router){:target="_blank"}
-* [Vuex](https://v3-migration.vuejs.org/breaking-changes/introduction.html#vuex){:target="_blank"} (hier hat sich nur die Art der Installation geändert)
-* [Devtools Extension](https://v3-migration.vuejs.org/breaking-changes/introduction.html#devtools-extension){:target="_blank"} (Vuex und Vue Router soll demnächst integriert werden)
+* [Vue CLI](https://v3-migration.vuejs.org/recommendations.html#build-toolchain){:target="_blank"}
+* [Vue Router](https://v3-migration.vuejs.org/recommendations.html#vue-router){:target="_blank"}
+* [Vuex](https://v3-migration.vuejs.org/recommendations.html#state-managementvuex){:target="_blank"} (hier hat sich nur die Art der Installation geändert)
+* [Devtools Extension](https://v3-migration.vuejs.org/recommendations.html#devtools-extension){:target="_blank"} (Vuex und Vue Router soll demnächst integriert werden)
 
 ## Unser Fazit
 
@@ -95,4 +95,4 @@ Mit Version 3.0 sollten aber auch die letzten Kritiker besänftigt sein.
 Auch wenn viele Projekte noch Work-in-Progress und vermutlich erst Ende 2020 abgeschlossen sind,
 lohnt es sich jetzt schon auf die neue Version zu migrieren.
 
-Ihr habt noch Fragen oder möchtet Euch mehr in die neuen Funktionen einarbeiten? Die überarbeitete Dokumentation findet Ihr unter [v3.vuejs.org](https://v3.vuejs.org/){:target="_blank"}.
+Ihr habt noch Fragen oder möchtet Euch mehr in die neuen Funktionen einarbeiten? Die überarbeitete Dokumentation findet Ihr unter [vuejs.org](https://vuejs.org/guide/introduction.html){:target="_blank"}.

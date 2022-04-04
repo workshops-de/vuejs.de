@@ -129,12 +129,12 @@ Als `prop` erhalten wir mit `tag` das Tag, zu dem wir die Bilder anfragen wollen
 Zur Speicherung von Daten innerhalb unserer Komponente benötigen wir das Property `data`. Darin befindet sich ein Array aller Bilder (`images`), das anfangs leer ist.
 Die Daten hierzu sollen erst beim Erstellen der Komponente über eine externe Schnittstelle angefragt werden.
 Hierzu benötigen wir den Lifecycle-Hook `mounted`. Dieser steht innerhalb des Options-Objekts als Methode bereit.
-Sobald die Komponente erstellt und in den DOM geladen (_mounted_) worden ist, wird auch der darin befindliche Code ausgeführt. Mehr dazu findet ihr unter [Lifecycle-Hooks](https://v3.vuejs.org/api/options-lifecycle-hooks.html#lifecycle-hooks){:target="_blank"}.
+Sobald die Komponente erstellt und in den DOM geladen (_mounted_) worden ist, wird auch der darin befindliche Code ausgeführt. Mehr dazu findet ihr unter [Lifecycle-Hooks](https://vuejs.org/guide/essentials/lifecycle.html){:target="_blank"}.
 Über ein Eingabefeld soll der User die Bilder durchsuchen können, dafür verwenden wir die Eigenschaft `searchQuery`.
 Um die gefilterte Liste dem Nutzer anzuzeigen, nutzen wir eine `computed property`, die unter `filteredImages` zu finden ist.
 Dadurch erreichen wir, dass die Liste jedes Mal neu berechnet wird, sobald sich einer ihrer Abhängigkeiten (`filter`, `images`) verändert.
 
-Das Options-Objekt kann aber noch ganz andere Eigenschaften beinhalten. Für eine vollständige Liste empfehlen wir diesen [Link](https://v3.vuejs.org/api/options-api.html){:target="_blank"}.
+Das Options-Objekt kann aber noch ganz andere Eigenschaften beinhalten. Für eine vollständige Liste empfehlen wir diesen [Link](https://vuejs.org/guide/typescript/options-api.html#typing-component-props){:target="_blank"}.
 
 ## Nutzung der Composition API
 **Wichtig:** Die Composition API wird standardmäßig mit Vue.js 3 ausgeliefert. Für Vue.js 2 ist sie als [Plugin](https://github.com/vuejs/composition-api){:target="_blank"} erhältlich.

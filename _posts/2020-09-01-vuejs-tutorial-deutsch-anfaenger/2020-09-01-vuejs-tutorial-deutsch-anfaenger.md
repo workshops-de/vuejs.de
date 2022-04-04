@@ -577,7 +577,7 @@ Dadurch stehen uns auch alle Möglichkeiten zur Strukturierung und Aufteilung in
 Dafür erweitern wir unseren `Calculator` um ein weiteres Feature, welches von der eigentlichen Berechnung unabhängig ist.
 Wir wollen die [numbers api](http://numbersapi.com){:target="_blank"} verwenden, um uns zu dem errechneten Ergebnis interessante Fakten anzeigen zu lassen.
 
-Jedes Mal, wenn `sum` neu berechnet wird, wollen wir weitere Logik ausführen lassen. Auch hierfür hat Vue mit [watchEffect](https://v3.vuejs.org/api/computed-watch-api.html#watcheffect){:target="_blank"} eine Lösung parat.
+Jedes Mal, wenn `sum` neu berechnet wird, wollen wir weitere Logik ausführen lassen. Auch hierfür hat Vue mit [watchEffect](https://vuejs.org/api/reactivity-core.html#watcheffect){:target="_blank"} eine Lösung parat.
 Ähnlich zu den `computed properties` können wir auch hier wieder eine Funktion hinterlegen, welche Vue analysiert und alle reaktiven Bestandteile als Abhängigkeiten sammelt.
 Die angegebene Funktion wird sofort ausgeführt und automatisch immer wieder dann, wenn sich ein oder mehrere Abhängigkeiten verändern.
 

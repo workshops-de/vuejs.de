@@ -29,7 +29,7 @@ Tickets für den VueDay stehen bereits zum Verkauf und bis zum 1. Juni gibt es n
 
 ## Fünf Workshops für Anfänger:innen und Profis
 
-Rund um den „enterJS Vue Day 2021“ findet ein vielfältiges [Workshop-Programm](https://enterjs.de/vueday.php){:target="_blank"} statt.
+Rund um den „enterJS Vue Day 2021“ findet ein vielfältiges Workshop-Programm statt.
 Dabei sprechen die Speaker mit ihren Themen sowohl Einsteiger:innen als auch Vue-Profis an.
 Die Workshops gehen immer einen ganzen Tag und Tickets kannst du direkt [hier](https://enterjs.de/tickets.php){:target="_blank"} kaufen.
 
@@ -80,7 +80,7 @@ Um diesen Aufwand zu reduzieren wurde Nuxt.js entwickelt – "The Intuitive Vue 
 
 Durch die vordefinierten Ideen und Konzepte in Nuxt.js ist es außerdem einfacher, verschiedene Projekte zu verwalten, da der Aufbau im Projekt immer nahezu identisch ist. Selbst wenn neue Entwickler in das Team kommen, finden sie sich im Code schneller zurecht.
 
-Mit Nuxt.js lassen sich zudem auch statische Seite generieren, während man in der Entwicklung die gewohnte moderne Nuxt.js-Umgebung hat. 
+Mit Nuxt.js lassen sich zudem auch statische Seite generieren, während man in der Entwicklung die gewohnte moderne Nuxt.js-Umgebung hat.
 
 ### 3. Was ist und wie funktioniert eigentlich die neue Composition API?
 
@@ -109,15 +109,15 @@ Das heißt: Dank der neuen Composition API können jetzt sich wiederholende Code
 
 „**[Wie baue ich performante Vue.js-Applikationen?](https://enterjs.de/lecture_compact1.php?id=13045&source=0){:target="_blank"}**“ lautet der Titel des zweiten Workshops von Belá Varga, den er am **28. Juni** abhält.
 
-Geschwindigkeit ist ein sehr wichtiger Erfolgsfaktor von Webapplikationen. Doch was ist gemeint mit Geschwindigkeit? Die Dauer bis alles in den Browser geladen wurde? Die Zeit bis zum ersten Anzeigen von Informationen auf der Seite? Die Geschwindigkeit während Laufzeit und der dazugehörige Speicherverbrauch? 
+Geschwindigkeit ist ein sehr wichtiger Erfolgsfaktor von Webapplikationen. Doch was ist gemeint mit Geschwindigkeit? Die Dauer bis alles in den Browser geladen wurde? Die Zeit bis zum ersten Anzeigen von Informationen auf der Seite? Die Geschwindigkeit während Laufzeit und der dazugehörige Speicherverbrauch?
 
 Diese Fragen werden in diesem Workshop genauer betrachtet. Ihr schaut welche großen Flaschenhälse existieren, um Mikrooptimierungen zu vermeiden. Wie ihr ein Budget für eure Vue.js-Applikation schon frühzeitig im Projekt etablieren und wie euch Werkzeuge und die neue Version 3 von Vue.js dabei unterstützen performante Web-Applikationen zu erstellen. Ihr werdet gemeinsam eine bestehende Vue.js-Webapplikation mit den erworbenen Kenntnisse optimieren.
 
 ### 5. State-Management in Vue.js-Anwendungen
 
-Den Abschluss der Workshop-Reihe im Rahmen des VueDay 2021 macht erneut Evgeny Sacharow mit dem Thema „**[State-Management in Vue.js-Anwendungen](https://enterjs.de/lecture_compact1.php?id=13046&source=0){:target="_blank"}**“. 
+Den Abschluss der Workshop-Reihe im Rahmen des VueDay 2021 macht erneut Evgeny Sacharow mit dem Thema „**[State-Management in Vue.js-Anwendungen](https://enterjs.de/lecture_compact1.php?id=13046&source=0){:target="_blank"}**“.
 
-Vuex ist ein State Management Pattern und eine Bibliothek für Vue.js-Anwendungen. Es dient als zentraler Speicher für alle Komponenten in einer Anwendung. 
+Vuex ist ein State Management Pattern und eine Bibliothek für Vue.js-Anwendungen. Es dient als zentraler Speicher für alle Komponenten in einer Anwendung.
 
 Gemeinsam werdet ihr euch anschauen, wie Vuex in Vue-Anwendungen integriert werden kann und lernt mächtige Pattern zur Verwaltung von Zuständen. In diesem Workshop werdet ihr von einem Boilerplate-Vue-Cli-Projekt zu einer vollwertigen Anwendung gehen, die Vuex in vollem Umfang mit Modulen, Plug-ins und mehr nutzt!
 

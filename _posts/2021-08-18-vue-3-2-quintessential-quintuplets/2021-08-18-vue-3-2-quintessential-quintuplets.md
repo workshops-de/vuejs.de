@@ -19,7 +19,7 @@ Dank der neuen `v-memo` Direktive kann nun ein Teil des Template-Baums gespeiche
 
 ## `v-memo`
 
-Eine der wesentlichsten Performance-Verbesserungen beruht auf der [v-memo](https://v3.vuejs.org/api/directives.html#v-memo){:target="_blank"} Direktive, die vor allem Templates extrem optimieren kann.
+Eine der wesentlichsten Performance-Verbesserungen beruht auf der [v-memo](https://vuejs.org/api/built-in-directives.html#v-memo){:target="_blank"} Direktive, die vor allem Templates extrem optimieren kann.
 
 Beispiel:
 
@@ -90,7 +90,7 @@ Es lassen sich noch viel mehr Sachen mit der neuen API umsetzen. Für einen ausf
 
 ## `expose` API
 
-In Vue 3.2 kommt eine weitere neue API hinzu – die [expose API](https://v3.vuejs.org/api/effect-scope.html){:target="_blank"}. Diese definiert, was von einer Komponente alles weitergegeben wird. Ihr erinnert Euch vielleicht: In der Vorgängerversion wurde noch alles, was im Template verwendbar war, an andere Komponenten über `ref` oder `$parent` weitergegeben.
+In Vue 3.2 kommt eine weitere neue API hinzu – die [expose API](https://vuejs.org/api/reactivity-advanced.html#effectscope){:target="_blank"}. Diese definiert, was von einer Komponente alles weitergegeben wird. Ihr erinnert Euch vielleicht: In der Vorgängerversion wurde noch alles, was im Template verwendbar war, an andere Komponenten über `ref` oder `$parent` weitergegeben.
 
 Die neue Funktion `expose` wird innerhalb von `setup` verwendet. Im folgenden Beispiel wird nur die `toggle` Funktion weitergeben, nicht aber die `collapsed` Variable.
 
@@ -153,9 +153,9 @@ In Vue 3.2 wurde dieses Problem behoben. Vue stellt den Kontext nach einem `awai
 
 Gute Nachrichten: Zwei neue Features für Single File Components gelten nun als stabil. Und daraus ergeben sich einige neue Möglichkeiten:
 
-`<script setup>` ist ein syntaktischer Zucker zur Kompilierungszeit, der die Benutzung der Composition API innerhalb von SFCs erheblich vereinfacht. Die [Dokumentation](https://v3.vuejs.org/api/sfc-script-setup.html){:target="_blank"} wurde bereits entsprechend erweitert, falls Ihr euch dazu etwas mehr Wissen aneignen möchtet.
+`<script setup>` ist ein syntaktischer Zucker zur Kompilierungszeit, der die Benutzung der Composition API innerhalb von SFCs erheblich vereinfacht. Die [Dokumentation](https://vuejs.org/api/sfc-script-setup.html){:target="_blank"} wurde bereits entsprechend erweitert, falls Ihr euch dazu etwas mehr Wissen aneignen möchtet.
 
-`v-bind` kann nun auch in `<style>`-Tags verwendet werden, um CSS-Werte dynamisch an den State der Komponente zu binden. Weitere Informationen hierzu finden sich auch bereits in der [offiziellen Dokumentation](https://v3.vuejs.org/api/sfc-style.html#state-driven-dynamic-css){:target="_blank"}.
+`v-bind` kann nun auch in `<style>`-Tags verwendet werden, um CSS-Werte dynamisch an den State der Komponente zu binden. Weitere Informationen hierzu finden sich auch bereits in der [offiziellen Dokumentation](https://vuejs.org/api/sfc-css-features.html){:target="_blank"}.
 
 Hier ein Beispiel, wie sich diese beiden Elemente verwenden lassen:
 
