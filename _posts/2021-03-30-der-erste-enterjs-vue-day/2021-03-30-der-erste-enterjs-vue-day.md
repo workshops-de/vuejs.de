@@ -1,5 +1,5 @@
 ---
-title: "Der erste enterJS Vue Day 2021: Von der Community für die Community"
+title: "Der erste enterJS Vue Day 2021"
 description: "Der enterJS Vue Day 2021 findet am 15. April zum ersten Mal statt. Einen Tag lang tauscht sich die Community über spannende Themen rund um VueJS aus."
 author: "Antony Konstantinidis"
 published_at: 2021-03-30 17:00:00.000000Z
