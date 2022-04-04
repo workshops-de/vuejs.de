@@ -4,12 +4,11 @@ topic: Vue.js
 url: "https://vuejs.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vue_js_de
 github_username:  jekyll
-ga_property: "UA-97181121-6"
 gtm_property: "GTM-PNQ82ZX"
-hotjar_id: "2596716"
 utm_source: "vuejs_de"
 permalink: /artikel/:slug/
 repository_url: "https://github.com/workshops-de/vuejs.de"
+og_generator_enabled: true
 
 navigation:
   banner:
@@ -30,6 +29,7 @@ defaults:
       layout: "post"
       header_image: "header.jpg"
       toc: true
+      language: "de"
   - scope:
       path: "_pages" # an empty string here means all files in the project
     values:
@@ -38,8 +38,6 @@ defaults:
       path: "assets"
     values:
       sitemap: false
-
-
 
 pagination:
   enabled: true
