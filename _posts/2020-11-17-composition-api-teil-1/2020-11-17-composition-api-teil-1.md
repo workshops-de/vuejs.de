@@ -137,6 +137,7 @@ Dadurch erreichen wir, dass die Liste jedes Mal neu berechnet wird, sobald sich 
 Das Options-Objekt kann aber noch ganz andere Eigenschaften beinhalten. Für eine vollständige Liste empfehlen wir diesen [Link](https://vuejs.org/guide/typescript/options-api.html#typing-component-props){:target="_blank"}.
 
 ## Nutzung der Composition API
+
 **Wichtig:** Die Composition API wird standardmäßig mit Vue.js 3 ausgeliefert. Für Vue.js 2 ist sie als [Plugin](https://github.com/vuejs/composition-api){:target="_blank"} erhältlich.
 
 Um mit der Composition API arbeiten zu können, benötigen wir als Erstes einen Platz dafür.

@@ -82,7 +82,7 @@ Die Composition API ist aufgrund Ihrer Struktur und Simplizität frei von diesen
 ## Vue 3
 Es existieren verschiedene Möglichkeiten, Vue 3 zu installieren.
 Das Team von Vue bietet ein offizielles [CLI](https://cli.vuejs.org){:target="_blank"} an, um Anwendungen aufzusetzen. Da dies in der Regel der optimale Weg ist, gehen wir ebenso vor.
-Zu Beginn installieren wir das CLI zum Beispiel über den [Node Package Manager](https://www.npmjs.com/get-npm){:target="_blank"}:
+Zu Beginn installieren wir das CLI zum Beispiel über den [Node Package Manager](https://docs.npmjs.com/getting-started){:target="_blank"}:
 
 ```shell
 npm install -g @vue/cli@next
@@ -244,7 +244,7 @@ Für unseren Anwendungsfall benötigen wir eine Möglichkeit, eine bidirektional
 Vue sorgt dann dafür, dass die Eingaben des Users in das Eingabefeld in der jeweiligen Variable reflektiert werden. Codeseitige Änderungen an den Variablen führen ebenfalls dazu, dass die Eingabefelder im Browser entsprechend aktualisiert werden.
 
 Letztlich fehlt noch die Ausführung der Addition beim Anklicken des Buttons.
-Wir können die `v-on`-Direktive verwenden, um mit einem [Event Listener](https://developer.mozilla.org/de/docs/Web/API/EventTarget/addEventListener) auf DOM-Events zu lauschen. Beim Auslösen des Events wird der angegebene JavaScript-Code ausgeführt.
+Wir können die `v-on`-Direktive verwenden, um mit einem [Event Listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) auf DOM-Events zu lauschen. Beim Auslösen des Events wird der angegebene JavaScript-Code ausgeführt.
 Die Art des Events wird hinter einem Doppelpunkt angegeben.
 
 ```html

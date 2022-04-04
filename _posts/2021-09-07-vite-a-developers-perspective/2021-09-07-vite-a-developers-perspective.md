@@ -211,7 +211,7 @@ import MyWorker from './worker?worker&inline';
 
 Vite extrahiert automatisch das CSS, das von den Modulen in einem asynchronen Chunk verwendet wird. Dabei wird eine separate Datei generiert. Diese CSS-Datei wird automatisch über einen `<link>`-Tag geladen, sobald der dazugehörige asynchrone Chunk geladen wird.
 
-**Das Besondere**: Der asynchrone Chunk wird tatsächlich erst dann verarbeitet, nachdem das CSS geladen wurde. Dadurch soll [Flash of unstyled content](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css){:target="_blank"} (FOUC) vermieden werden.
+**Das Besondere**: Der asynchrone Chunk wird tatsächlich erst dann verarbeitet, nachdem das CSS geladen wurde. Dadurch soll [Flash of unstyled content](https://web.dev/critical-rendering-path-render-blocking-css/){:target="_blank"} (FOUC) vermieden werden.
 
 Wenn Ihr das gesamte CSS lieber in einer einzigen Datei extrahiert haben möchtet, könnt Ihr die Aufteilung des CSS deaktivieren, indem Ihr `build.cssCodeSplit` auf `false` setzt.
 

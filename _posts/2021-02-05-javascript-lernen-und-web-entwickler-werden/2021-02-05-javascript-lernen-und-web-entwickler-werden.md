@@ -123,8 +123,6 @@ Vue.js ist dagegen völlig unabhängig, leicht zu erlernen und verfügt über ei
 Mit weltweit mehr als 1,3 Mio. Nutzern ist Vue.js eines der erfolgreichsten JavaScript Frameworks derzeit und erfreut sich größter Beliebtheit.
 Eigentlich ist Vue.js der Mittelweg zwischen Angular (für Enterprise-Anwendungen) und React (für individuelle Projekte).
 
-<a href="https://stackoverflow.blog/2020/02/18/die-top-10-frameworks-und-was-tech-recruiter-daruber-wissen-mussen/" target="_blank"><img class="img-fluid img-rounded" src="top-10-frameworks.png" alt="Stackoverflow Framework Trends bis 2020."></a>
-
 ## Welche Vorteile bietet das Vue.js Framework?
 
 Vue ist ein clientseitiges JavaScript Webframework mit dem sich Single-Page-Webanwendungen, aber auch komplexere Multi-Page-Webseiten erstellen lassen.
@@ -177,5 +175,4 @@ Mo-Fr von 8 bis 13 Uhr unter <a href="tel:004920187535773">+49 201/875 357 73</a
 Weitere Informationen:
 - [https://vuejs.de/](https://vuejs.de/)
 - [Remote Vue.js Schulungen](https://vuejs.de/artikel/unsere-remote-vuejs-schulungen/){:target="_blank"}
-- [Die Top-10-Frameworks](https://stackoverflow.blog/2020/02/18/die-top-10-frameworks-und-was-tech-recruiter-daruber-wissen-mussen/){:target="_blank"}
 - [Coding Bootcamp Europe](https://www.coding-bootcamps.eu/){:target="_blank"}
