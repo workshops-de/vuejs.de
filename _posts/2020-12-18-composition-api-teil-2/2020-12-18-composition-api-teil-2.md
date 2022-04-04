@@ -161,7 +161,7 @@ count.value = 5; // trigger watcher
 
 Sobald sich die `count` Variable ändert, wird der Watcher ausgelöst und der Callback ausgeführt. In unserem Fall wird 'The new value is: 5' in unsere Konsole übertragen.
 
-Mit der `watch` Funktion lässt sich noch mehr erreichen. Mehr Informationen hierzu findet Ihr auch in der [Dokumentation[(https://v3.vuejs.org/guide/composition-api-introduction.html#reacting-to-changes-with-watch){:target="_blank"}.
+Mit der `watch` Funktion lässt sich noch mehr erreichen. Mehr Informationen hierzu findet Ihr auch in der [Dokumentation[(https://vuejs.org/api/reactivity-core.html#watch){:target="_blank"}.
 
 ### Die Verwendung des Watchers in unserem Codebeispiel
 
