@@ -8,7 +8,7 @@ tutorial_page_order: '1'
 ---
 
 [Im ersten Teil](https://vuejs.de/artikel/composition-api-teil-1/){:target="_blank"} haben wir Euch schon etwas über die Composition API und deren neuen Funktionen in Vue.js 3 erzählt. Anhand eines Codebeispiels wollen wir Euch die Funktionsweise und den Aufbau einer Komponente mit der Composition API näherbringen.
-Wir haben unser erstes Feature fast vollständig in die `setup` Methode verschoben, welche als Einstiegspunkt für die Composition API benötigt wird. Zur Komplettierung dieses Vorhabens geht es nun weiter damit die Lebenszyklus-Methode und den benötigten Watcher zu überarbeiten. 
+Wir haben unser erstes Feature fast vollständig in die `setup` Methode verschoben, welche als Einstiegspunkt für die Composition API benötigt wird. Zur Komplettierung dieses Vorhabens geht es nun weiter damit die Lebenszyklus-Methode und den benötigten Watcher zu überarbeiten.
 
 ```javascript
 import { ref } from 'vue';
@@ -19,7 +19,7 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     let images = ref([]);
@@ -53,13 +53,13 @@ export default {
     this.fetchImages();
   },
 }
-``` 
+```
 
 ## Lebenszyklus-Methoden und ihre Verwendung
 
-Eine Komponente benötigt häufig weitere Funktionen wie z. B. die Kommunikation mit einer API. 
-Diese Funktionen werden meistens während eines bestimmten Zustandes der Komponente durchgeführt, nach dem mounten, vor der Zerstörung oder anderen. 
-Für diesen Zweck bietet uns Vue die Möglichkeit bestimmte Lebenszyklus-Methoden zu verwenden, mit denen wir Code ausführen können, wenn eine Komponente einen bestimmten Zustand in der Ausführung erreicht. 
+Eine Komponente benötigt häufig weitere Funktionen wie z. B. die Kommunikation mit einer API.
+Diese Funktionen werden meistens während eines bestimmten Zustandes der Komponente durchgeführt, nach dem mounten, vor der Zerstörung oder anderen.
+Für diesen Zweck bietet uns Vue die Möglichkeit bestimmte Lebenszyklus-Methoden zu verwenden, mit denen wir Code ausführen können, wenn eine Komponente einen bestimmten Zustand in der Ausführung erreicht.
 
 Schauen wir uns mal an, welche typischen Lebenszyklus-Methoden es unter anderem gibt:
 
@@ -72,19 +72,19 @@ Schauen wir uns mal an, welche typischen Lebenszyklus-Methoden es unter anderem 
 *beforeUnmount* – wird aufgerufen, kurz bevor die Vue-Instanz zerstört wird.
 *unmounted* – wird aufgerufen, nachdem die Vue-Instanz zerstört wurde.
 
-Wenn Ihr Euch noch mehr mit dem Thema Lebenszyklus-Methoden auseinandersetzen möchtet, empfehlen wir Euch die [API-Dokumentation zu LifeCycle-Hooks](https://vuejs.org/v2/api/#Options-Lifecycle-Hooks){:target="_blank"}. 
+Wenn Ihr Euch noch mehr mit dem Thema Lebenszyklus-Methoden auseinandersetzen möchtet, empfehlen wir Euch die [API-Dokumentation zu LifeCycle-Hooks](https://v2.vuejs.org/v2/api/#Options-Lifecycle-Hooks){:target="_blank"}.
 
 Die Nutzung dieser Methoden mit der Options API sollte bereits bekannt sein und kann dem obigen Codebeispiel auch exemplarisch entnommen werden. Wir wollen uns nun anschauen, wie die Registrierung von Lebenszyklus-Methoden unter Verwendung der Composition API funktioniert.
 
 ### Die Lebenszyklus-Methoden-Registrierung unter `setup`
 
-Dank neuer Vue Funktionen ist dies recht einfach möglich. 
-Das Besondere: Lebenszyklus-Methoden in der Composition API haben die gleiche Bezeichnung wie in der Options API. 
-Der einzige Unterschied: Sie verwenden einen `on`-Präfix, zum Beispiel:  
+Dank neuer Vue Funktionen ist dies recht einfach möglich.
+Das Besondere: Lebenszyklus-Methoden in der Composition API haben die gleiche Bezeichnung wie in der Options API.
+Der einzige Unterschied: Sie verwenden einen `on`-Präfix, zum Beispiel:
 
 ```javascript
 import { onMounted } from 'vue';
-``` 
+```
 
 Diese Funktionen können nur innerhalb der `setup` Option verwendet werden.
 Automatisch wird die aktuelle Komponenten-Instanz ermittelt, die den `setup` Hook aufruft. Damit soll das Problem beim Extrahieren von logischen Bestandteilen in externe Funktionen verringert werden. Auf diesen Teil werden wir später noch einmal genauer eingehen.
@@ -102,7 +102,7 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     let images = ref([]);
@@ -135,7 +135,7 @@ export default {
     tag: 'fetchImages',
   },
 }
-``` 
+```
 
 Auf Änderungen der `tag` prop reagieren wir derzeit mit einem Watcher, welcher ebenfalls noch mit der Options API umgesetzt ist. Als nächstes schauen wir uns an, wie wir diesen auch Composition API kompatibel umsetzen können.
 
@@ -153,7 +153,7 @@ import { ref, watch } from 'vue';
 const count = ref(0);
 
 watch(count, (newValue, oldValue) => {
-  console.log(`The new value is ${newValue}.`);    
+  console.log(`The new value is ${newValue}.`);
 });
 
 count.value = 5; // trigger watcher
@@ -174,7 +174,7 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     const { tag } = toRefs(props);
@@ -208,25 +208,25 @@ export default {
     searchedImages() { ... },
   },
 }
-``` 
+```
 
 Als Erstes möchten wir hier auf die Verwendung von `toRefs` am Anfang des `setup` verweisen. Damit stellen wir sicher, dass der Watcher auf Änderungen an der `tag` prop reagiert.
 
 Kurz zusammengefasst: `toRefs` konvertiert ein reaktives Objekt in ein neues Objekt, wobei jede Eigenschaft des resultierenden Objekts ein `ref` ist, der auf die entsprechende Eigenschaft des ursprünglichen Objekts zeigt. Wir erhalten damit ganz viele `ref` anstatt ein `reactive`.
-Mehr Informationen dazu findet Ihr wie gewohnt in der Vue Dokumentation zu [diesem Thema](https://v3.vuejs.org/api/refs-api.html#torefs){:target="_blank"}. 
+Mehr Informationen dazu findet Ihr wie gewohnt in der Vue Dokumentation zu [diesem Thema](https://v3.vuejs.org/api/refs-api.html#torefs){:target="_blank"}.
 
 Dank dieser letzten Änderungen konnten wir den ersten logischen Teil unserer Komponente aus mehreren Optionen an einen Ort in unserer `setup` Methode verschieben.
 
 > 1. Die Anfrage an eine externe API, um passende Bilder zu einem Tag zu erhalten. Das Tag wird über eine `prop an die Komponente übergeben. Beim Ändern des Tags sollte der Request erneut ausgeführt werden.
 
-Im Folgenden nehmen wir den zweiten logischen Teil vor und setzen diesen ebenfalls mit Hilfe der Composition API um.  
+Im Folgenden nehmen wir den zweiten logischen Teil vor und setzen diesen ebenfalls mit Hilfe der Composition API um.
 
 > {:start="2"}
 > 2. Die Bilder sollen über einen Suchstring `searchQuery` durchsucht werden können.
 
 ## Unabhängige `computed` Eigenschaften
 
-Ähnlich wie bei `ref` und `watch`, können `computed` Properties ebenfalls außerhalb einer Vue Komponente erstellt werden. 
+Ähnlich wie bei `ref` und `watch`, können `computed` Properties ebenfalls außerhalb einer Vue Komponente erstellt werden.
 Hierzu wird nur die importierte `computed` Funktion aus Vue benötigt. Schauen wir uns hierzu noch einmal unser kleines Beispiel an:
 
 ```javascript
@@ -240,7 +240,7 @@ console.log(count.value); // 1
 console.log(doubledCount.value); // 2
 ```
 
-Hier gibt die `computed` Funktion eine read-only reaktive Referenz auf die Ausgabe des Callbacks zurück, der als erste Funktion an `computed` übergeben wurde. 
+Hier gibt die `computed` Funktion eine read-only reaktive Referenz auf die Ausgabe des Callbacks zurück, der als erste Funktion an `computed` übergeben wurde.
 Um auf den Wert der neu erstellten `computed` Variablen zuzugreifen, müssen wir daher ebenfalls die `.value` Eigenschaft verwenden.
 
 Wir verschieben jetzt die Suchfunktion in das setup:
@@ -254,7 +254,7 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     const { tag } = toRefs(props);
@@ -269,7 +269,7 @@ export default {
 
     watch(tag, fetchImages);
 
-    // second feature    
+    // second feature
     const searchQuery = ref('');
 
     const searchedImages = computed(() => images.value.filter(
@@ -298,19 +298,19 @@ export default {
 ```
 
 Wir haben `searchQuery` aus `data` und `searchedImages` aus `computed` entfernt und entsprechende Pendants in die `setup` Methode aufgenommen.
-Natürlich könnten wir dasselbe nun auch für das letzte Feature übernehmen, aber durch die Verschiebung des Codes in die `setup` Option wird diese recht groß. 
+Natürlich könnten wir dasselbe nun auch für das letzte Feature übernehmen, aber durch die Verschiebung des Codes in die `setup` Option wird diese recht groß.
 Aus diesem Grund werden wir den Code in eine eigenständige `composition functions` auslagern.
 
 ## Composition functions aka composables
 
 In Vue 2 gab es leider keinen einfachen und fehlertoleranten Weg gab logische Bestandteile zwischen Komponenten wiederzuverwenden, löste man das Problem auf drei Arten:
-Die Verwendung von Mixins, Mixin Factories und scoped Slots. Jede dieser Lösungen führt allerdings wieder zu neuen Unzulänglichkeiten. Wenn Ihr mehr darüber erfahren möchtet, empfehlen wir Euch folgenden [Link](https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/){:target="_blank"}. 
-Mit Vue 3 und der Composition API lassen sich nun endlich diese ganzen Behelfslösungen durch eine einheitliche und gut verständliche Möglichkeit beheben: Composition Functions, auch bekannt als Composables. 
+Die Verwendung von Mixins, Mixin Factories und scoped Slots. Jede dieser Lösungen führt allerdings wieder zu neuen Unzulänglichkeiten. Wenn Ihr mehr darüber erfahren möchtet, empfehlen wir Euch folgenden [Link](https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/){:target="_blank"}.
+Mit Vue 3 und der Composition API lassen sich nun endlich diese ganzen Behelfslösungen durch eine einheitliche und gut verständliche Möglichkeit beheben: Composition Functions, auch bekannt als Composables.
 
 Wie so eine Composition Function/Composable aussehen kann, zeigen wir Euch anhand des letzten Features unserer Ursprungskomponente:
 
 > {:start="3"}
-> 3. Das Filtern von Bildern mittels eines `filters` Objekts.  
+> 3. Das Filtern von Bildern mittels eines `filters` Objekts.
 
 Hierfür erstellen wir zunächst eine neue Datei `useImageFilters`:
 
@@ -321,7 +321,7 @@ export default function useImageFilters(images) {
   const filters = reactive({
     resolution: '',
     category: '',
-    location: '',  
+    location: '',
   });
 
   function updateFilters(type, value) {
@@ -355,7 +355,7 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     const { tag } = toRefs(props);
@@ -370,7 +370,7 @@ export default {
 
     watch(tag, fetchImages);
 
-    // second feature    
+    // second feature
     const searchQuery = ref('');
 
     const searchedImages = computed(() => images.value.filter(
@@ -394,10 +394,10 @@ export default {
 }
 ```
 
-Da es sich bei `useImageFilters` um eine ganz gewöhnliche JavaScript Funktion handelt, können wir diese auch genau so verwenden. 
+Da es sich bei `useImageFilters` um eine ganz gewöhnliche JavaScript Funktion handelt, können wir diese auch genau so verwenden.
 Wir übergeben als Parameter die Liste von Bildern, welche bereits anhand eines möglicherweise eingegebenen Suchbegriffs gefiltert worden ist.
 
-Sofern Filter gesetzt worden sind, kümmert sich unsere Funktion dann zusätzlich noch darum die ihm übergebene Liste weiter zu filtern. 
+Sofern Filter gesetzt worden sind, kümmert sich unsere Funktion dann zusätzlich noch darum die ihm übergebene Liste weiter zu filtern.
 Ob diese Liste nun vorher bereits gefiltert worden ist oder wie diese überhaupt zustande gekommen ist, ist für das Feature der Filterung vollkommen irrelevant.
 
 Das Ergebnis der Filterung ist wiederum ein Array von passenden Bildern: `filteredImages`.
@@ -422,7 +422,7 @@ import fetchImagesFromAPI from '@/api/fetch-images';
 
 export default function useFetchImages(tag) {
   let images = ref([]);
-  
+
   async function fetchImages() {
     images.value = await fetchImagesFromAPI(tag.value);
   }
@@ -452,14 +452,14 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     const { tag } = toRefs(props);
 
     const { images, fetchImages } = useFetchImages(tag);
 
-    // second feature    
+    // second feature
     const searchQuery = ref('');
 
     const searchedImages = computed(() => images.value.filter(
@@ -495,7 +495,7 @@ import { ref, computed } from 'vue';
 
 export default function useFetchImages(tag) {
   const searchQuery = ref('');
-  
+
   const searchedImages = computed(() => images.value.filter(
     image => image.name.includes(searchQuery.value)
   ));
@@ -520,7 +520,7 @@ export default {
     tag: {
       type: String,
       required: true,
-    }, 
+    },
   },
   setup(props) {
     const { tag } = toRefs(props);
@@ -553,4 +553,4 @@ Wie wir anhand dieses Codebeispiels gesehen haben, können wir dank der Composit
 Es entstehen weder Namenskonflikte noch unklare Beziehungen zwischen Features. Darüber hinaus können wir die kleineren Funktionen wesentlich besser testen und isoliert voneinander betrachten, sodass nachträgliche Änderungen wesentlich einfacherer und sicherer zu bewerkstelligen sind.
 
 Bestimmt habt Ihr noch viele Fragen. Aber vielleicht konnte unsere kleine Einführung Euch die Composition API etwas näherbringen.
-Natürlich gibt es noch viel mehr Möglichkeiten, aber darauf kommen wir ein anderes Mal zu sprechen. 
+Natürlich gibt es noch viel mehr Möglichkeiten, aber darauf kommen wir ein anderes Mal zu sprechen.

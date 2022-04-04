@@ -52,14 +52,14 @@ Wie in allen gängigen Frameworks, wird auch in Vue komponentenorientiert gearbe
 Dadurch werden einfach wiederverwendbare und pflegbare Einheiten erstellt, die in eine hierarchische Struktur gebracht werden, um somit eine größere Anwendung Stück für Stück zusammenzusetzen.
 Komponenten bilden somit die fundamentalen Bausteine einer Anwendung. In folgender Grafik wird veranschaulicht, wie eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht werden kann:
 
-<a href="https://vuejs.org/v2/guide/#Composing-with-Components" target="_blank"><img class="img-fluid center img-rounded" src="components.png" alt="Eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht."></a>
+<a href="https://v2.vuejs.org/v2/guide/#Composing-with-Components" target="_blank"><img class="img-fluid center img-rounded" src="components.png" alt="Eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht."></a>
 
-Weitere Informationen dazu finden sich in der offiziellen [Vue Dokumentation](https://vuejs.org/v2/guide/#Composing-with-Components){:target="_blank"}.
+Weitere Informationen dazu finden sich in der offiziellen [Vue Dokumentation](https://v2.vuejs.org/v2/guide/#Composing-with-Components){:target="_blank"}.
 
 ## Was verbirgt sich hinter der Composition API?
 Das Wichtigste vorweg: Die neue API ist rein additiv, bricht vorhandenen Code nicht und muss darüber hinaus auch gar nicht verwendet werden!
 Es kann weiterhin mit der Options API gearbeitet werden. Die neue Composition API ist lediglich eine Erweiterung des bestehenden Frameworks, um Einschränkungen von Vue 2.x zu beheben, die speziell bei großen Anwendungen aufkamen.
-Die Composition API bietet eine Möglichkeit, die aus Vue bekannte [Reactivity](https://vuejs.org/v2/guide/reactivity.html){:target="_blank"} in allen Teilen der Anwendung nutzbar zu machen, ohne dabei die Organisation und Lesbarkeit zu beeinträchtigen.
+Die Composition API bietet eine Möglichkeit, die aus Vue bekannte [Reactivity](https://v2.vuejs.org/v2/guide/reactivity.html){:target="_blank"} in allen Teilen der Anwendung nutzbar zu machen, ohne dabei die Organisation und Lesbarkeit zu beeinträchtigen.
 
 Im Grunde genommen fügt die Composition API dem Framework nichts Neues hinzu. Sie stellt uns einige der ursprünglich lediglich intern verwendeten Funktionen zur Verfügung, um diese direkt innerhalb und außerhalb von Komponenten nutzen zu können.
 
@@ -146,14 +146,14 @@ Im `components`-Ordner erstellen wir dafür zunächst eine neue Datei mit dem Na
 ```
 
 #### 1. Der Aufbau einer Komponente
-Der Aufbau der Datei folgt dem bekannten [Single-File-Component](https://vuejs.org/v2/guide/single-file-components.html){:target="_blank"}-Schema, welches de facto der Standard für Vue Anwendungen ist.
+Der Aufbau der Datei folgt dem bekannten [Single-File-Component](https://v2.vuejs.org/v2/guide/single-file-components.html){:target="_blank"}-Schema, welches de facto der Standard für Vue Anwendungen ist.
 
-Das `template` stellt das zu rendernde HTML der Komponente dar und kann unter anderem mit [Directives](https://vuejs.org/v2/guide/syntax.html#Directives){:target="_blank"} und [Interpolations](https://vuejs.org/v2/guide/syntax.html#Interpolations){:target="_blank"} angereichert werden, um die Logik abzubilden.
+Das `template` stellt das zu rendernde HTML der Komponente dar und kann unter anderem mit [Directives](https://v2.vuejs.org/v2/guide/syntax.html#Directives){:target="_blank"} und [Interpolations](https://v2.vuejs.org/v2/guide/syntax.html#Interpolations){:target="_blank"} angereichert werden, um die Logik abzubilden.
 Nach diesem Prinzip arbeiten nahezu alle Template-Engines.
 
 Der `script`-Teil wird für die "komplexere" JavaScript-Logik der Komponente verwendet und ermöglicht es, diese zu konfigurieren.
 
-Im `style`-Tag werden schließlich die CSS-Regeln für diese Komponente hinterlegt. Verwendet man allerdings nicht das Attribut [scoped](https://vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS){:target="_blank"}, so beziehen sich dort angegebene Regeln auf die gesamte Anwendung. Es bietet sich an, eine weiterführende Methodik wie [BEM](http://getbem.com/introduction/){:target="_blank"} einzusetzen.
+Im `style`-Tag werden schließlich die CSS-Regeln für diese Komponente hinterlegt. Verwendet man allerdings nicht das Attribut [scoped](https://v2.vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS){:target="_blank"}, so beziehen sich dort angegebene Regeln auf die gesamte Anwendung. Es bietet sich an, eine weiterführende Methodik wie [BEM](http://getbem.com/introduction/){:target="_blank"} einzusetzen.
 Da dies aber den Umfang dieses Tutorials sprengen würde, entfernen wir im Folgenden die `style`-Tags und kümmern uns lediglich um die Logik der Komponente.
 
 #### 2. Schreiben des `script`-Teils
@@ -218,7 +218,7 @@ Als Erstes kümmern wir uns um die Ausgabe des Ergebnisses `sum`, da es sich hie
 </template>
 ```
 
-Der Vue-Compiler rendert an die Stelle von `sum` den Inhalt der Variablen aus `data`. Genau genommen passiert hier aber noch mehr. Als Nutzer des Frameworks erhalten wir out of the box eine [Reaktivität](https://vuejs.org/v2/guide/reactivity.html){:target="_blank"} der Eigenschaften.
+Der Vue-Compiler rendert an die Stelle von `sum` den Inhalt der Variablen aus `data`. Genau genommen passiert hier aber noch mehr. Als Nutzer des Frameworks erhalten wir out of the box eine [Reaktivität](https://v2.vuejs.org/v2/guide/reactivity.html){:target="_blank"} der Eigenschaften.
 Alles, was in `data` definiert wird, erhält automatisch einen Watcher zugeteilt. Dadurch wird bei Änderungen der dort definierten Variablen ein Re-Rendering des Templates ausgelöst.
 
 Neben der Ausgabe einer aktuell noch unveränderlichen Summe der Addition sollten wir uns nun viel mehr um die Verknüpfung der Eingabefelder mit unseren anderen beiden Variablen `num1` und `num2` kümmern.
@@ -270,7 +270,7 @@ Insofern ist es nicht notwendig, einen Klick-Listener auf den Button selbst zu s
 Das Standardverhalten des Browsers führt beim Absenden eines Formulars zu einer Weiterleitung auf die im Formular angegebene `action`.
 Wir wollen das Formular und die eingegebenen Daten im JavaScript-Code auf der aktuellen Seite behandeln und keine Weiterleitung an eine andere URL auslösen. Deshalb verhindern (engl. _to prevent_) wir das Standardverhalten an dieser Stelle.
 
-[Modifikatoren](https://vuejs.org/v2/guide/events.html#Event-Modifiers) können über eine Punktnotation an einen Event-Listener angehängt werden, um automatisch die damit zusammenhängende Logik auszuführen.
+[Modifikatoren](https://v2.vuejs.org/v2/guide/events.html#Event-Modifiers) können über eine Punktnotation an einen Event-Listener angehängt werden, um automatisch die damit zusammenhängende Logik auszuführen.
 In unserem Fall ist es `prevent`, welches das Standardverhalten des Events verhindert, bevor es schließlich unsere `add`-Methode aufruft. Wird das Formular abgesendet, verhindern wir die Weiterleitung und geben das Event stattdessen an die angegebene JavaScript-Funktion weiter.
 
 Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeichen `@` ersetzt werden, sodass wir `@submit.prevent="sum"` erhalten.
@@ -321,7 +321,7 @@ Da wir aber ohnehin SFCs verwenden und diese vorher noch durch den Compiler vera
 * Code-Editoren können Komponentennamen automatisch vervollständigen, da die Pascal Case Schreibweise auch im JavaScript verwendet wird.
 * `<MyComponent />` unterscheidet sich visuell mehr von Standard HTML-Elementen als `<my-component />`, da es durch die Großbuchstaben mehr heraussticht.
 
-Wie genau Vue intern funktioniert und _was_ letztlich von unseren Single-File-Components _wie_ im Browser landet, kann [hier](https://medium.com/js-imaginea/the-vue-js-internals-7b76f76813e3){:target="_blank"} und [hier](https://vuejs.org/v2/guide/render-function.html){:target="_blank"} nachgelesen werden.
+Wie genau Vue intern funktioniert und _was_ letztlich von unseren Single-File-Components _wie_ im Browser landet, kann [hier](https://medium.com/js-imaginea/the-vue-js-internals-7b76f76813e3){:target="_blank"} und [hier](https://v2.vuejs.org/v2/guide/render-function.html){:target="_blank"} nachgelesen werden.
 
 ### 4. Die Vue DevTools
 
