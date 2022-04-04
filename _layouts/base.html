@@ -20,11 +20,21 @@
   {% if page.noindex %}
   <meta name="robots" content="noindex, follow">
   {% else %}
+  <!-- Use canonical_url if available is post -->
+  {% if page.canonical_url %}
+  <link rel="canonical" href="{{ page.canonical_url }}">
+  {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url}}">
   {% endif %}
+  {% endif %}
 
-  {% if post.canonical %}
-  <link rel="canonical" href="{{ post.canonical }}">
+  {% if paginator.total_pages > 1 %}
+  {% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+  {% endif %}
+  {% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+  {% endif %}
   {% endif %}
 
   {% include shared/_social_meta_tags.html %}
