@@ -27,7 +27,7 @@ Natürlich kann JavaScript noch viel mehr: Es wird auch verwendet, um Animatione
 
 *Gute Nachrichten:* Derzeit gibt es einen großen Mangel an erfahrenen JavaScript-Entwicklern.
 Laut einer Studie von [Devskiller.com](https://devskiller.com/it-skills-report-2020/){:target="_blank"} von 2020 suchen 70 Prozent der Unternehmen JavaScript-Entwickler.
-In dem neuesten [HackerRank-Bericht](https://research.hackerrank.com/developer-skills/2020#skills){:target="_blank"} für 2020 wird berichtet, dass JavaScript die populärste Sprache ist, nach der Personalverantwortliche bei einem Webentwickler-Kandidaten suchen.
+In dem neuesten [HackerRank-Bericht](https://www.hackerrank.com/research/developer-skills/2020#skills){:target="_blank"} für 2020 wird berichtet, dass JavaScript die populärste Sprache ist, nach der Personalverantwortliche bei einem Webentwickler-Kandidaten suchen.
 
 Gibt man beispielsweise auf der Jobbörse [Indeed](https://de.indeed.com/jobs?q=Javascript&l=){:target="_blank"} den Suchbegriff "JavaScript" ein, so findet man für Deutschland über 16.000 Jobs.
 Die gleiche Suche auf der Karriere-Plattform [LinkedIn](https://www.linkedin.com/jobs/search/?geoId=101282230&keywords=Javascript&location=Deutschland){:target="_blank"}, führt zu über 65.000 Suchergebnissen.

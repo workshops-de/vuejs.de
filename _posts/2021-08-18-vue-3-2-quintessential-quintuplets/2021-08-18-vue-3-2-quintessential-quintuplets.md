@@ -183,7 +183,7 @@ Das Beispiel kann im [SFC Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHN
 
 ## Web Components
 
-Mit Vue 3.2 wird eine neue `defineCustomElement`-Methode für die einfache Erstellung von [Web Components aus Vue Komponenten](https://v3.vuejs.org/guide/web-components.html){:target="_blank"} eingeführt:
+Mit Vue 3.2 wird eine neue `defineCustomElement`-Methode für die einfache Erstellung von [Web Components aus Vue Komponenten](https://vuejs.org/guide/extras/web-components.html){:target="_blank"} eingeführt:
 
 ```
 import { defineCustomElement } from 'vue'

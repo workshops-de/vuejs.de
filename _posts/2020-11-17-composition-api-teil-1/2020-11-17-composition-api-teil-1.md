@@ -146,7 +146,7 @@ Das Besondere: Die neue `setup` Komponenten-Option wird ausgeführt, bevor die K
 Wenn Ihr mehr über die `setup` Komponenten-Option erfahren möchtet, schaut Euch am besten dieses [Video](https://www.vuemastery.com/courses/vue-3-essentials/setup-and-reactive-references/){:target="_blank"} an.
 
 **Doch Vorsicht:** Da die Komponenten-Instanz noch nicht erstellt, aber `setup` ausgeführt wurde, gibt es keinen Zugriff auf `this` in der `setup` Option. Und das bedeutet wiederum, dass (mit Ausnahme von `props`) Ihr keinen Zugang zu Optionen habt, die in der Komponente angegeben wurden, z. B. state (`data`), `computed properties` oder `methods`.
-Der Zugriff auf `props` ist natürlich essenziell, weshalb wir diese als ersten Parameter in unserer `setup` Funktion hereinbekommen. Ihr möchtet mehr über [props und context beim setup](https://v3.vuejs.org/guide/composition-api-setup.html#arguments){:target="_blank"} erfahren?
+Der Zugriff auf `props` ist natürlich essenziell, weshalb wir diese als ersten Parameter in unserer `setup` Funktion hereinbekommen. Ihr möchtet mehr über [props und context beim setup](https://vuejs.org/api/composition-api-setup.html){:target="_blank"} erfahren?
 
 ### Das Teilen von Daten zwischen der Composition API und der restlichen Komponente
 

@@ -72,9 +72,9 @@ Zusätzlich dazu existieren noch eine Vielzahl sogenannter _Lifecycle_-Methoden,
 Aufgrund dieser Einteilung sind Komponenten mit steigender Größe schwer zu lesen, da man häufig zwischen den einzelnen Abschnitten hin und her springt, um die Funktionsweise nachvollziehen zu können.
 Ein weiterer Nachteil dieser Organisation ist, dass sie die Wiederverwendung von Code erschwert, da ein Feature über die gesamte Datei verstreut sein kann. Es existieren zwar diverse Lösungsmöglichkeiten, welche aber wiederum eigene Nachteile mit sich bringen.
 
-Die [offizielle Vue Dokumentation](https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api){:target="_blank"} enthält dieses ausgezeichnete Diagramm, welches die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung unterschiedlicher Farben sichtbar macht:
+Die [offizielle Vue Dokumentation](https://vuejs.org/guide/extras/composition-api-faq.html#better-logic-reuse){:target="_blank"} enthält dieses ausgezeichnete Diagramm, welches die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung unterschiedlicher Farben sichtbar macht:
 
-<a href="https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api" target="_blank"><img class="img-fluid center img-rounded" src="component-feature-structure.png" alt="Die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung verschiedener Farben sichtbar gemacht."></a>
+<a href="https://vuejs.org/guide/extras/composition-api-faq.html#better-logic-reuse" target="_blank"><img class="img-fluid center img-rounded" src="component-feature-structure.png" alt="Die Zusammengehörigkeit verschiedener Features in derselben Komponente durch die Verwendung verschiedener Farben sichtbar gemacht."></a>
 
 Als weiterer wichtiger Punkt ist der aktuelle TypeScript-Support zu nennen. Die Options API beruht auf einer Menge "Magie" des Vue-Compilers, wodurch sich die Verwendung von `this` innerhalb von Komponenten nur sehr schwierig mit TypeScript verbinden lässt.
 Die Composition API ist aufgrund Ihrer Struktur und Simplizität frei von diesen Nachteilen, sodass sie sich wie in JavaScript erwartet verhält. Dies ermöglicht eine viel bessere TypeScript-Unterstützung bei der Verwendung der Composition API.
@@ -430,7 +430,7 @@ Wechseln wir nun zurück in den Browser, sollten wir weiterhin die bereits bekan
 
 Die gesamte Reaktivität, welche sonst vom Framework hinter den Kulissen gehandhabt und uns als Nutzer out of the box nahezu magisch zur Verfügung gestellt wird, ist nun mittels einzelner exportierter Funktionen nutzbar.
 
-Im Beispiel sehen wir die Verwendung von `ref`. Auf diese Art machen wir die Variable nun sozusagen händisch **reaktiv**. Die Funktion `ref` akzeptiert einen Wert und gibt daraufhin eine [Reactive Reference](https://v3.vuejs.org/guide/composition-api-introduction.html#reactive-variables-with-ref){:target="_blank"} zurück.
+Im Beispiel sehen wir die Verwendung von `ref`. Auf diese Art machen wir die Variable nun sozusagen händisch **reaktiv**. Die Funktion `ref` akzeptiert einen Wert und gibt daraufhin eine [Reactive Reference](https://vuejs.org/api/reactivity-core.html){:target="_blank"} zurück.
 Das Konzept, mit solchen Referenzen zu arbeiten, zieht sich durch die gesamte Composition API. Für Webentwickler ist es wichtig, die grundlegende Funktionsweise zu verstehen.
 Eine ausführliche Beschreibung findet sich unter anderem in folgendem Artikel: [Die Composition API](https://vuejs.de/artikel/composition-api-teil-1/){:target="_blank"}.
 
