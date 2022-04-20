@@ -15,7 +15,7 @@ Für Entwickler von Plugins oder Komponentenbibliotheken ergeben sich ebenfalls 
 
 Diese sind sogar noch schwerwiegender, da man keinen Zugriff auf die konsumierende Anwendung hat.
 
-Diese Probleme können durch die beiden Methoden `provide` und `inject` umgeben werden. Durch sogenannte dependency provider können Daten jeder Kindkomponente bereit gestellt werden. Ganz ohne prop drilling.
+Diese Probleme können durch die beiden Methoden `provide` und `inject` umgangen werden. Durch sogenannte dependency provider können Daten jeder Kindkomponente bereit gestellt werden. Ganz ohne prop drilling.
 
 ```typescript
 // Parent.vue
