@@ -77,5 +77,13 @@ $footer-background: #262a2f;
 //
 @import "../../shared/theme/theme";
 
+@include media-breakpoint-up(sm) {
+  .header {
+    &.header-homepage  .header-homepage-title {
+      font-size: 4rem;
+    }
+  }
+}
+
 // Nothing else
 // Pay 10 Euros if you commit sth. here
