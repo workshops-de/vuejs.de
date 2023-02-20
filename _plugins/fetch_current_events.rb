@@ -1,7 +1,7 @@
 Jekyll::Hooks.register :site, :after_init do |site|
   require 'rest-client'
   if(ENV["JEKYLL_ENV"] != "local") then
-    puts "Fetching course..."
+    puts "Fetching events..."
     response = RestClient.get('https://workshops.de/api/course/37/events')
     File.write('_data/events/vuejs-typescript.json', response.body)
 
