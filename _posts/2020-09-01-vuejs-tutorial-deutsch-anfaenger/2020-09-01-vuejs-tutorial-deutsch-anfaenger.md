@@ -285,7 +285,7 @@ Diese Änderung führt dazu, dass der oben gezeigte Code nun endlich valide ist 
 Um unsere Komponente testen zu können, müssen wir diese in unserer Anwendung einbinden und verwenden. Dafür öffnen wir `src/App.vue` und importieren zunächst unsere Komponente, indem wir im `script`-Teil über den `export` die folgende Zeile hinzufügen:
 
 ```javascript
-import Calculator from './components/Calculator.vue';
+import CalculatorApp from './components/Calculator.vue';
 ```
 
 Unsere Komponente registrieren wir nun als solche und machen sie der Anwendung bekannt. Dafür bietet die Options API eine weitere Eigenschaft, nämlich `components`.
@@ -296,24 +296,24 @@ Die Option `components` ist ein Objekt, welches als Key den Namen des Tags und a
 export default {
   name: 'App',
   components: {
-    Calculator
+    CalculatorApp
   }
 }
 ```
 
-Hier verwenden wir die [Kurzschreibweise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions){:target="_blank"}, welche seit ECMAScript 2015 (ES6) verwendet werden kann, indem wir lediglich `Calculator` angeben.
+Hier verwenden wir die [Kurzschreibweise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions){:target="_blank"}, welche seit ECMAScript 2015 (ES6) verwendet werden kann, indem wir lediglich `CalculatorApp` angeben.
 
-Im `template`-Teil unserer Root-Komponente `App.vue` können wir nun an beliebiger Stelle `<Calculator />` verwenden, um dort unsere Komponente rendern zu lassen:
+Im `template`-Teil unserer Root-Komponente `App.vue` können wir nun an beliebiger Stelle `<CalculatorApp />` verwenden, um dort unsere Komponente rendern zu lassen:
 
 ```html
 <template>
   <div id="app">
-    <Calculator />
+    <CalculatorApp />
   </div>
 </template>
 ```
 
-Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (**SFC**) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculator`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`Calculator`) schreiben.
+Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (**SFC**) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculatorApp`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`CalculatorApp`) schreiben.
 
 Normalerweise ist Kebab Case vorzuziehen, da diese Schreibweise dem W3C-Standard entspricht und HTML [case-insensitive](https://html.spec.whatwg.org/multipage/syntax.html){:target="_blank"} ist. Das heißt, es wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 Da wir aber ohnehin SFCs verwenden und diese vorher noch durch den Compiler verarbeitet werden, empfiehlt es sich in Vue Anwendungen unter anderem aus folgenden Gründen die Pascal Case Schreibweise zu verwenden:
@@ -334,7 +334,7 @@ Nach der Installation und einem Neustart des Browsers können wir über die Tast
 
 <img class="img-fluid" src="vue-devtools.png" alt="Eine Ansicht der Vue-Devtools für unsere aktuelle Vue-Anwendung.">
 
-In der Abbildung sehen wir links den Komponentenbaum, welcher die Komponente `App` und darunter unsere selbsterstellte Komponente `Calculator` enthält.
+In der Abbildung sehen wir links den Komponentenbaum, welcher die Komponente `App` und darunter unsere selbsterstellte Komponente `CalculatorApp` enthält.
 Im rechten Bereich sehen wir Detailinformationen zu der ausgewählten Komponente.
 
 ## Refactoring mit der Composition API
@@ -574,7 +574,7 @@ Allerdings ist das Gegenteil der Fall.
 Die `setup`-Methode führt keine Magie mehr im Hintergrund aus. Wir haben sämtliche Logik aus einfachen JavaScript-Konstrukten mit kleineren Funktionen aus dem Framework angereichert und aufgebaut.
 Dadurch stehen uns auch alle Möglichkeiten zur Strukturierung und Aufteilung in Teilfunktionen zur Verfügung.
 
-Dafür erweitern wir unseren `Calculator` um ein weiteres Feature, welches von der eigentlichen Berechnung unabhängig ist.
+Dafür erweitern wir unsere `CalculatorApp` um ein weiteres Feature, welches von der eigentlichen Berechnung unabhängig ist.
 Wir wollen die [numbers api](http://numbersapi.com){:target="_blank"} verwenden, um uns zu dem errechneten Ergebnis interessante Fakten anzeigen zu lassen.
 
 Jedes Mal, wenn `sum` neu berechnet wird, wollen wir weitere Logik ausführen lassen. Auch hierfür hat Vue mit [watchEffect](https://vuejs.org/api/reactivity-core.html#watcheffect){:target="_blank"} eine Lösung parat.
@@ -682,7 +682,7 @@ Wir können in unseren JavaScript-Dateien Vue-Konzepte wie die Reaktivität, `co
 Die Logik ist direkt klar erkennbar, da die Dateien klein und leicht lesbar sind.
 
 Ebenfalls gewinnen wir durch die Aufteilung der Logik in einzelne Dateien die Möglichkeit, dass wir auch in anderen Komponenten oder an anderen Stellen der Anwendung diese `composition functions` jederzeit wiederverwenden können.
-Dies wollen wir am Beispiel unserer `Calculator`-Komponente demonstrieren:
+Dies wollen wir am Beispiel unserer `CalculatorApp`-Komponente demonstrieren:
 
 ```javascript
 import useAddition from '@/modules/use-addition';
