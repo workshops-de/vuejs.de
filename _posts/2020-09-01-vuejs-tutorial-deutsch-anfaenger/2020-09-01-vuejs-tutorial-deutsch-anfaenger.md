@@ -273,7 +273,7 @@ Wir wollen das Formular und die eingegebenen Daten im JavaScript-Code auf der ak
 [Modifikatoren](https://v2.vuejs.org/v2/guide/events.html#Event-Modifiers) können über eine Punktnotation an einen Event-Listener angehängt werden, um automatisch die damit zusammenhängende Logik auszuführen.
 In unserem Fall ist es `prevent`, welches das Standardverhalten des Events verhindert, bevor es schließlich unsere `add`-Methode aufruft. Wird das Formular abgesendet, verhindern wir die Weiterleitung und geben das Event stattdessen an die angegebene JavaScript-Funktion weiter.
 
-Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeichen `@` ersetzt werden, sodass wir `@submit.prevent="sum"` erhalten.
+Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeichen `@` ersetzt werden, sodass wir `@submit.prevent="add"` erhalten.
 
 #### Multi-Root Templates
 
