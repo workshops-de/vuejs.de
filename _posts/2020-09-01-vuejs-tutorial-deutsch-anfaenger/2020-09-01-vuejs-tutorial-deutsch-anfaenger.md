@@ -732,11 +732,11 @@ Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das 
   <div class="h3">Hat dir das Tutorial geholfen?</div>
   <div class="row mb-2">
     <div class="col-xs-12 col-md-6">
-      <p> Wir bieten auch <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=link&utm_content=text-buttom">Vue-Intesiv-Schulungen</a>        an, um dich möglichst effektiv in das Thema Vue zu begleiten. Im Kurs kannst Du die Fragen stellen, die Du nur
+      <p> Wir bieten auch <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=link&utm_content=text-bottom">Vue-Intesiv-Schulungen</a>        an, um dich möglichst effektiv in das Thema Vue zu begleiten. Im Kurs kannst Du die Fragen stellen, die Du nur
         schlecht googeln kannst, z.B. “Besserer Weg, um meine Applikation zu strukturieren?”. Wir können sie Dir beantworten.
       </p>
       <p class="text-center">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=button&utm_content=text-buttom">
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=button&utm_content=text-bottom">
           <button class="btn btn-danger">Jetzt weiter lernen</button>
         </a>
       </p>
