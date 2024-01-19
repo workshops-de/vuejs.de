@@ -313,7 +313,7 @@ Im `template`-Teil unserer Root-Komponente `App.vue` können wir nun an beliebig
 </template>
 ```
 
-Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (**SFC**) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculatorApp`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`CalculatorApp`) schreiben.
+Durch die hier verwendete Art der Komponentenregistrierung, können wir die Komponente in Single-File-Components (**SFC**) sowohl im [Kebab Case](https://wiki.c2.com/?KebabCase){:target="_blank"} (`calculator-app`) als auch im [Pascal Case](https://wiki.c2.com/?PascalCase){:target="_blank"} (`CalculatorApp`) schreiben.
 
 Normalerweise ist Kebab Case vorzuziehen, da diese Schreibweise dem W3C-Standard entspricht und HTML [case-insensitive](https://html.spec.whatwg.org/multipage/syntax.html){:target="_blank"} ist. Das heißt, es wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 Da wir aber ohnehin SFCs verwenden und diese vorher noch durch den Compiler verarbeitet werden, empfiehlt es sich in Vue Anwendungen unter anderem aus folgenden Gründen die Pascal Case Schreibweise zu verwenden:
