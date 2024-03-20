@@ -255,43 +255,6 @@ Die Migration zwischen verschiedenen Diensten ist ebenfalls nahtlos. Um von Netl
 So machen Astros Adapter Deployments unglaublich einfach. Sie ermöglichen reibungslose Migrationen zwischen Diensten, während sie automatisch die gesamte SSR-Konfiguration für uns übernehmen.
 
 
-## Projekt generieren und deployen
-Der Einstieg in Astro ist dank der intuitiven Projekteinrichtung und Befehle unkompliziert.
-
-Um ein neues Astro-Projekt zu starten, führen Sie einen der folgenden Befehle in Ihrem Terminal innerhalb Ihres Projektordners aus:
-
-```cmd
-// Mit NPM
-npm create astro@latest
-
-// Mit Yarn
-yarn create astro
-
-// Mit PNPM
-pnpm create astro
-```
-
-Dies wird ein neues Astro-Projekt mit Ihrem bevorzugten Paketmanager initialisieren. Folgen Sie den Aufforderungen, um Ihrem Projekt einen Namen zu geben, eine Vorlage auszuwählen und Abhängigkeiten zu installieren.
-
-Um ein Framework wie Vue hinzuzufügen, führen Sie einfach aus:
-
-```cmd
-npx astro add vue
-```
-
-Dies wird automatisch Vue installieren, Astro konfigurieren, es zu verwenden, und die TypeScript-Konfiguration bei Bedarf aktualisieren. Die gleichen Befehle funktionieren für das Hinzufügen anderer UI-Frameworks wie React, Preact, Svelte, Solid und mehr.
-
-Schließlich ist das Deployment eines Astro-Projekts sofort dank offizieller Adapter möglich. Zum Beispiel, um auf Netlify zu deployen, installieren Sie den Adapter:
-
-```cmd
-npx astro add netlify
-```
-
-Der Adapter wird die Konfiguration übernehmen und Deployments können innerhalb von Minuten eingerichtet werden. Die meisten beliebten Dienste haben offizielle Adapter verfügbar für One-Click-Deployments.
-
-Mit dieser schnellen Projekteinstellung, Framework-Integration und Deployment können Sie in kürzester Zeit mit Astro loslegen!
-
-
 ## Zusätzliche Ressourcen
 
 Um tiefer einzutauchen, schauen Sie sich diese zusätzlichen Astro-Ressourcen an:
