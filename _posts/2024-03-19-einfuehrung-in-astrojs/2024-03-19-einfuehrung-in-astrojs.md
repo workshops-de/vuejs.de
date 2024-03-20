@@ -144,7 +144,11 @@ import Component from './Component.vue';
 ---
 ```
 
-## Astro Island Architektur
+## Hydration: Die Astro Island Architektur
+
+In der Webentwicklung, speziell im Kontext von JavaScript-Frameworks oder Bibliotheken wie React, Vue oder Astro, bezieht sich der Begriff "hydratisieren" auf den Prozess, bei dem ein initial vom Server gerendertes HTML-Dokument anschließend auf dem Client (im Browser) mit interaktiven Funktionen "belebt" oder angereichert wird. Dies geschieht, indem eventuell vorhandenes statisches HTML mit den entsprechenden JavaScript-Event-Handlern und weiterem dynamischen Verhalten verbunden wird, das Interaktionen auf der Webseite ermöglicht.
+
+Bei serverseitigem Rendering (SSR) wird eine Webseite auf dem Server in HTML umgewandelt und an den Browser gesendet, bevor jegliches JavaScript ausgeführt wird. Das "Hydratisieren" ist dann der Schritt, bei dem das JavaScript im Browser ausgeführt wird, um die statische Seite in eine vollständig interaktive Anwendung zu verwandeln. Dies ermöglicht eine schnellere erste Darstellung der Seite, da der Benutzer den initialen Inhalt sehen kann, bevor alle JavaScript-Bundles vollständig geladen und ausgeführt sind.
 
 Interaktive Komponenten in Astro werden in speziellen Direktiven, den sogenannten "Client-Direktiven", eingewickelt. Diese Direktiven weisen Astro an, die Komponente mit dem notwendigen JavaScript zu hydratisieren, um sie interaktiv zu machen.
 
