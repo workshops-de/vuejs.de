@@ -18,8 +18,6 @@ Einige Schlüsselfunktionen von Astro:
 
 - **Einfach zu deployen**: Dank seines reichen Ökosystems kommt es mit vielen Integrationen, um Ihre Site mit Leichtigkeit in die Cloud zu deployen.
 
-Lassen Sie uns diese Punkte genauer durchgehen, um einige praktische Beispiele dafür zu sehen, wie Astro funktioniert. Aber zuerst, wie richten wir ein neues Astro-Projekt ein?
-
 ## Vorteile von Astro
 
 Astro bietet viele Vorteile im Vergleich zu traditionellen statischen Site-Generatoren:
