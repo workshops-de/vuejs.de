@@ -22,19 +22,19 @@ Einige Schlüsselfunktionen von Astro:
 
 Astro bietet viele Vorteile im Vergleich zu traditionellen statischen Site-Generatoren:
 
-### Schnellere Seitenladezeiten
+**Schnellere Seitenladezeiten**
 
 Dank Astros Ansatz ohne JavaScript laden Seiten unglaublich schnell. Astro entfernt jedes unnötige JavaScript auf Seiten, wo Interaktivität nicht benötigt wird. Dies führt zu einem viel geringeren Seitengewicht und schnelleren Ladezeiten im Vergleich zu anderen beliebten SSGs.
 
-### Framework-Agnostisch
+**Framework-Agnostisch**
 
 Astro ist vollständig framework-agnostisch, was bedeutet, dass Sie Astro-Sites mit jedem großen JavaScript-UI-Framework wie React, Vue, Svelte usw. bauen können. Es ist nicht notwendig, bestehenden Code umzuschreiben - Integrationen erlauben es, Komponenten aus anderen Frameworks nahtlos einzubinden.
 
-### Granulare Kontrolle über Islands
+**Granulare Kontrolle über Islands**
 
 Astro führt das Konzept der "Islands" ein - interaktive Komponenten, die selektiv auf dem Client hydratisiert werden können. Dies ermöglicht eine granulare Kontrolle darüber, welche Teile einer Seite Interaktivität benötigen. Islands geben Entwicklern vollständige Macht darüber, welches JavaScript an den Client geliefert wird.
 
-### Einfaches Deployment
+**Einfaches Deployment**
 
 Astro kommt mit offiziellen Adaptern für Dienste wie Netlify, Vercel, Cloudflare Pages und mehr. Diese Adapter machen das Deployment nahtlos. Installieren Sie einfach den Adapter, konfigurieren Sie ihn und deployen Sie sofort auf führenden Plattformen.
 
