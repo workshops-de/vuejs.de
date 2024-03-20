@@ -267,8 +267,6 @@ Die Astro-Dokumente bieten umfassende Anleitungen und API-Referenzen. Das Studiu
 
 ## Fazit
 
-### Schlüsselvorteile der Verwendung von Astro
-
 Mit seinen vielen Vorteilen und der blühenden Community ist Astro eine großartige Option, die Sie für Ihr nächstes Projekt in Betracht ziehen sollten. Es kann helfen, Seiten unglaublich schnell zu erstellen und gleichzeitig Flexibilität durch seine umfangreichen Integrationen zu ermöglichen.
 
 Zusammenfassend bietet Astro viele Vorteile als statischer Site-Generator:
