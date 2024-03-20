@@ -14,7 +14,7 @@ Einige Schlüsselfunktionen von Astro:
 
 - **Außergewöhnliche Leistung**: Dank seines Ansatzes ohne JavaScript und der Island-Architektur bietet Astro auch extrem schnelle Seitenladezeiten.
 
-- **Anpassbar**: Astro nutzt intern Vite, was bedeutet, dass auch Vite-spezifische Build-Optionen verfügbar sind. Darüber hinaus hat Astro seine eigene API für den Bau von Integrationen. Es gibt mehr als 100 Integrationen zur Auswahl, um Ihre Arbeit zu beschleunigen.
+- **Anpassbar**: Astro nutzt intern Vite, was bedeutet, dass auch Vite-spezifische Build-Optionen verfügbar sind. Darüber hinaus hat Astro seine eigene API für den Bau von Integrationen. Es gibt bereits mehr als 100 Integrationen zur Auswahl.
 
 - **Einfach zu deployen**: Dank seines reichen Ökosystems kommt es mit vielen Integrationen, um Ihre Site mit Leichtigkeit in die Cloud zu deployen.
 
