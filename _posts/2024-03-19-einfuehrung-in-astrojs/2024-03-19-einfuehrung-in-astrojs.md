@@ -168,7 +168,7 @@ Dieser selektive Hydratisierungsansatz hat mehrere Vorteile:
 - Kontrolliert Priorität und Ladeordnung
 - Visuelle Trennung von statischen und interaktiven Elementen
 
-Insgesamt ermöglichen Astro Islands das Bauen von Apps mit großartiger Benutzererfahrung, indem das minimal notwendige JavaScript für Interaktivität geladen wird.
+Insgesamt ermöglichen Astro Islands das Bauen von Apps mit großartiger UX, indem das minimal notwendige JavaScript für Interaktivität geladen wird.
 
 ## Anpassen von Builds durch Vite
 
