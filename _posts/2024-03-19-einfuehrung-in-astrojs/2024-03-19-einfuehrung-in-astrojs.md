@@ -12,7 +12,7 @@ Einige Schlüsselfunktionen von Astro:
 
 - **UI-agnostisch**: Ein großer Vorteil von Astro im Vergleich zu anderen SSGs ist, dass es UI-agnostisch ist. Das bedeutet, Sie können ein Astro-Projekt mit Ihren bevorzugten Frameworks wie React, Preact, Svelte, Vue, Solid, Lit und AlpineJS erstellen.
 
-- **Außergewöhnliche Leistung**: Dank seines Ansatzes ohne JavaScript und der Inselarchitektur bietet Astro auch extrem schnelle Seitenladezeiten.
+- **Außergewöhnliche Leistung**: Dank seines Ansatzes ohne JavaScript und der Island-Architektur bietet Astro auch extrem schnelle Seitenladezeiten.
 
 - **Anpassbar**: Astro nutzt intern Vite, was bedeutet, dass auch Vite-spezifische Build-Optionen verfügbar sind. Darüber hinaus hat Astro seine eigene API für den Bau von Integrationen. Es gibt mehr als 100 Integrationen zur Auswahl, um Ihre Arbeit zu beschleunigen.
 
