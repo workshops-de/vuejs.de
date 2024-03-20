@@ -152,7 +152,7 @@ Komponenten, die in Client-Direktiven eingewickelt sind, werden "Astro Islands" 
 
 Einige häufig verwendete Client-Direktiven sind:
 
-- `client:load` - Hydratisiert die Komponente beim Seitenladen. Nützlich für kritische oberhalb-der-Falte-Komponenten.
+- `client:load` - Hydratisiert die Komponente beim Seitenladen. Nützlich für kritische "above-the-fold"-Komponenten.
 
 - `client:idle` - Hydratisiert nach dem ersten Laden während der Leerlaufzeit des Browsers. Für nicht kritische Komponenten.
 
