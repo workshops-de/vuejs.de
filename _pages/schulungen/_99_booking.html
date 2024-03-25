@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    {% for event in site.data.events[include.data_key] %}
+    {% for event in site.data.events[include.data_key] limit:3 %}
     <hr class="d-block d-md-none" />
     <div class="row mb-4 mb-md-2" itemscope="" itemtype="http://schema.org/Event">
       <div class="d-none d-md-block col-1">
