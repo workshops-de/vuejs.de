@@ -2,7 +2,7 @@
 title: "VitePress: Eine neue Ära der schnellen und flexiblen Static Site Generation"
 description: "VitePress, ein Vue-basierter Generator für statische Websites, zeichnet sich durch die schnelle Erstellung von technischen Dokumenten mit Markdown, Theming und i18n aus."
 author: "Robin Böhm"
-published_at: 2024-03-19 19:30:00.000000Z
+published_at: 2026-03-26 19:30:00.000000Z
 categories: "vitepress tooling development"
 ---
 
