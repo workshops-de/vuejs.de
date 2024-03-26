@@ -20,28 +20,6 @@ In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 
 In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js.
 
-<hr>
-<div class="workshop-hint">
-  <div class="h3">Keine Lust zu lesen?</div>
-  <div class="row mb-2">
-    <div class="col-xs-12 col-md-6">
-      <p>
-        Nicht jeder lernt am besten aus Büchern und Artikeln. Lernen darf interaktiv sein und Spaß machen. Wir bieten dir auch
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=link&utm_content=text-top">Vue Intensiv-Schulungen</a> an, damit du tiefer in die Thematik einsteigen kannst.
-      </p>
-      <p class="">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=button&utm_content=text-top">
-          <button class="btn btn-danger">Mehr Informationen zur Vue3-Schulung</button>
-        </a>
-      </p>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer:innen in der Veranstaltung Vue-Intensiv-Workshop">
-    </div>
-  </div>
-</div>
-<hr>
-
 ## Was ist Vue?
 
 Vue (oder Vue.js) ist ein Open-Source Javascript-Framework für die Frontendentwicklung.
@@ -270,6 +248,29 @@ Wir wollen das Formular und die eingegebenen Daten im JavaScript-Code auf der ak
 In unserem Fall ist es `prevent`, welches das Standardverhalten des Events verhindert, bevor es schließlich unsere `add`-Methode aufruft. Wird das Formular abgesendet, verhindern wir die Weiterleitung und geben das Event stattdessen an die angegebene JavaScript-Funktion weiter.
 
 Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeichen `@` ersetzt werden, sodass wir `@submit.prevent="add"` erhalten.
+
+
+<hr>
+<div class="workshop-hint">
+  <div class="h3">Keine Lust zu lesen?</div>
+  <div class="row mb-2">
+    <div class="col-xs-12 col-md-6">
+      <p>
+        Nicht jeder lernt am besten aus Büchern und Artikeln. Lernen darf interaktiv sein und Spaß machen. Wir bieten dir auch
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=link&utm_content=text-top">Vue Intensiv-Schulungen</a> an, damit du tiefer in die Thematik einsteigen kannst.
+      </p>
+      <p class="">
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=button&utm_content=text-top">
+          <button class="btn btn-danger">Mehr Informationen zur Vue3-Schulung</button>
+        </a>
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer:innen in der Veranstaltung Vue-Intensiv-Workshop">
+    </div>
+  </div>
+</div>
+<hr>
 
 #### Multi-Root Templates
 
