@@ -18,7 +18,7 @@ In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 * Warum wurde die Composition API eingeführt?
 * Wie funktioniert die Composition API?
 
-In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js.
+In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js. Wenn du eine mehr strukturierte und Hands-On Einführung in Form einer Schulung möchtest schau doch mal bei unser <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=link&utm_content=text-top">Vue & TypeScript Intensiv-Schulungen</a> vorbei.
 
 ## Was ist Vue?
 
