@@ -13,7 +13,7 @@ og_generator_enabled: true
 navigation:
   banner:
     message: "Wir bieten nun einen <b>Gruppenrabatt</b> auf Schulungen an! Buche 2 Teilnehmer:innen und der/die Dritte ist kostenfrei."
-    href: "https://workshops.de/schulungsthemen/vuejs?utm_source=vuejs_de&utm_campaign=portal-discount&utm_medium=banner&utm_content=workshops-overview"
+    href: "https://workshops.de/schulungsthemen/vuejs?utm_source=vuejs_de&utm_campaign=group_discount&utm_medium=portal&utm_content=banner"
 
 plugins_dir: ["_plugins/", "shared/plugins/"]
 
