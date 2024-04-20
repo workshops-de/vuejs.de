@@ -18,7 +18,7 @@ In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 * Warum wurde die Composition API eingeführt?
 * Wie funktioniert die Composition API?
 
-In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js. Wenn du eine mehr strukturierte und Hands-On Einführung in Form einer Schulung möchtest schau doch mal bei unser <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source={{ site.utm_source }}&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue & TypeScript Intensiv-Schulungen</a> vorbei.
+In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js. Wenn du eine mehr strukturierte und Hands-On Einführung in Form einer Schulung möchtest schau doch mal bei unser <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue & TypeScript Intensiv-Schulungen</a> vorbei.
 
 ## Was ist Vue?
 
@@ -257,10 +257,10 @@ Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeic
     <div class="col-xs-12 col-md-6">
       <p>
         Nicht jeder lernt am besten aus Büchern und Artikeln. Lernen darf interaktiv sein und Spaß machen. Wir bieten dir auch
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source={{ site.utm_source }}&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue Intensiv-Schulungen</a> an, damit du tiefer in die Thematik einsteigen kannst.
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue Intensiv-Schulungen</a> an, damit du tiefer in die Thematik einsteigen kannst.
       </p>
       <p class="">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source={{ site.utm_source }}&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">
           <button class="btn btn-danger">Mehr Informationen zur Vue3-Schulung</button>
         </a>
       </p>
@@ -729,11 +729,11 @@ Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das 
   <div class="h3">Hat dir das Tutorial geholfen?</div>
   <div class="row mb-2">
     <div class="col-xs-12 col-md-6">
-      <p> Wir bieten auch <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source={{ site.utm_source }}&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">Vue-Intesiv-Schulungen</a>        an, um dich möglichst effektiv in das Thema Vue zu begleiten. Im Kurs kannst Du die Fragen stellen, die Du nur
+      <p> Wir bieten auch <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">Vue-Intesiv-Schulungen</a>        an, um dich möglichst effektiv in das Thema Vue zu begleiten. Im Kurs kannst Du die Fragen stellen, die Du nur
         schlecht googeln kannst, z.B. “Besserer Weg, um meine Applikation zu strukturieren?”. Wir können sie Dir beantworten.
       </p>
       <p class="text-center">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source={{ site.utm_source }}&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">
           <button class="btn btn-danger">Jetzt weiter lernen</button>
         </a>
       </p>
