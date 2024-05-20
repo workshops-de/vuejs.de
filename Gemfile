@@ -12,6 +12,8 @@ ruby RUBY_VERSION
 gem 'jekyll', '~> 4.2.1'
 gem 'rest-client'
 gem 'fastimage'
+gem 'down'
+gem 'fileutils'
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -20,7 +22,7 @@ gem 'fastimage'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-autoprefixer', '~> 1.0'
+  gem 'jekyll-autoprefixer'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
   gem 'jekyll-paginate-v2'
