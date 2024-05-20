@@ -7,7 +7,6 @@ Jekyll::Hooks.register :site, :after_init do |site|
     'Stuttgart-Vue-js-Meetup',
     'Hamburg-Vue-js-Meetup',
     'vuejsvienna',
-    'Vue-JS-Cologne',
     'vue-nfe',
     'vuejsfrankfurt',
     'Vue-js-Berlin',
