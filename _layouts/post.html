@@ -6,31 +6,59 @@ layout: base
 {% if page.author == user_hash[1].name %}
 {% assign author = user_hash[1] %}
 {% endif %}
+{% if page.co_author == user_hash[1].name %}
+{% assign co_author = user_hash[1] %}
+{% endif %}
 {% endfor %}
 
-<div class="header header-post shadow-sm d-flex align-items-center justify-content-center mb-5" style="background-image: url('{{page.header_image}}');">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 d-none d-lg-block"></div>
-      <div class="col-md-12 col-lg-8">
-        <h1 class="header-post-title">{{ page.title }}</h1>
-        <span>{{ page.author }}</span>
-        <span class="ms-1 me-1">•</span>
-        {% include shared/_reading_time.html text=page.content %}
-      </div>
+
+<main role="main" class="mt-4">
+  <article lang="{{ page.language }}" class="container">
+
+    <div class="ratio mb-4" style="--bs-aspect-ratio: 30%;">
+      <img src="{{page.header_image}}" class="rounded w-100" style="object-fit: cover;" />
     </div>
-  </div>
-</div>
+    <div class="row mb-5 gx-6">
+      <div class="col-md-12 col-lg-8 mb-2">
+        <h1 class="header-post-title">{{ page.title }}</h1>
 
-<main role="main">
-  <div class="container">
+        <p class="text-muted">
+          <small>
+            {% for category in page.categories %}
+            <a href="/kategorie/{{category}}/" class="badge bg-secondary text-bg-secondary text-uppercase">{{category}}</a>
+            {% endfor %}
+            <span class="ms-1 me-1">|</span>
+            {{ page.author }}
+            {% if author.twitter %}
+            <a href="https://twitter.com/{{ author.twitter }}" target="_blank" style="margin-bottom: 5px;">
+              <img src="/shared/assets/img/twitter-logo.svg" height="12" alt="Twitter Logo" />
+            </a>
+            {% endif %}
+            {% if page.co_author %}
+              <span class="ms-1 me-1">|</span>
+              {{ page.co_author }}
+              {% if co_author.twitter %}
+              <a href="https://twitter.com/{{ co_author.twitter }}" target="_blank" style="margin-bottom: 5px;">
+                <img src="/shared/assets/img/twitter-logo.svg" height="12" alt="Twitter Logo" />
+              </a>
+              {% endif %}
+            {% endif %}
+            <span class="ms-1 me-1">•</span> <time>{{ page.published_at | date: "%d.%m.%Y" }}</time>
+            <span class="ms-1 me-1">|</span>
+            {% include shared/_reading_time.html text=page.content %}
+          </small>
+        </p>
 
-    <div class="row mb-5">
-      <div class="col-lg-3 d-none d-lg-block">
+
+        <div class="c-content">
+          {{ content }}
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
         <div class="position-sticky c-top-4 ms-2">
           <p class="text-muted text-uppercase"><small>Inhaltsverzeichnis</small></p>
           <nav id="toc" data-toggle="toc"></nav>
-          <hr class="my-4">
+          <hr>
           <div>
             <div class="h5 mb-2">Email Newsletter</div>
             <p class="small mb-2">Um alle Neuigkeiten zu erfahren, abonniere hier unseren Newsletter!</p>
@@ -49,38 +77,17 @@ layout: base
 
         </div>
       </div>
-      <div class="col-md-12 col-lg-8 mb-2">
-        <p class="text-muted">
-          <small>
-            {% for category in page.categories %}
-            <span class="text-uppercase">{{category}}</span>
-            {% unless forloop.last %}<span class="ms-1 me-1">•</span>{% endunless %}
-            {% endfor %}
-            <span class="ms-1 me-1">|</span>
-            {{ page.author }}
-            {% if author.twitter %}
-            <a href="https://twitter.com/{{ author.twitter }}" target="_blank" style="margin-bottom: 5px;">
-              <img src="/shared/assets/img/twitter-logo.svg" height="12" alt="Twitter Logo" />
-            </a>
-            {% endif %}
-            <span class="ms-1 me-1">•</span> <time>{{ page.published_at | date: "%d.%m.%Y" }}</time>
-            <span class="ms-1 me-1">|</span>
-            {% include shared/_reading_time.html text=page.content %}
-          </small>
-        </p>
-
-
-        <div class="c-content">
-          {{ content }}
-        </div>
-      </div>
     </div>
-    <div class="row justify-content-md-center">
-      <div class="col-lg-2 d-none d-lg-block"></div>
+    <div class="row">
       <div class="col-md-12 col-lg-8 mb-2">
         <div class="mb-4">
           {% include shared/_post_author.html %}
         </div>
+        {% if page.co_author %}
+          <div class="mb-4">
+            {% include shared/_post_author.html author=co_author %}
+          </div>
+        {% endif %}
         <div class="mb-2 text-end">
           <a class="btn btn-sm btn-primary" href="{{site.repository_url}}/edit/master/{{page.path}}" target="_blank">
             Diesen Artikel auf GitHub verbessern
@@ -89,7 +96,7 @@ layout: base
 
       </div>
     </div>
-  </div>
+  </article>
 
   <div class="container-fluid">
     <div class="row justify-content-md-center no-gutters mt-6">
