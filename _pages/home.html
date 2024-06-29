@@ -60,7 +60,7 @@ permalink: /
 <main class="container">
   <section class="my-5">
     <h2>Community</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 gy-4 gx-5">
       <div class="col">
         <div class="card h-100">
           <a class="c-img-post" style="height: 150px; background-image: url('shared/assets/img/meetups.png');"
@@ -73,7 +73,7 @@ permalink: /
               <span class="text-uppercase">Schweiz</span>
             </span>
           </a>
-          <a class="card-body" href="/meetups/">
+          <a class="card-body px-0" href="/meetups/">
             <div class="text-muted">Meetups in der DACH Region</div>
             <span class="fw-bold">
               Finde dein Vue.js Meetup in deiner Nähe oder gründe selbst eins!
@@ -94,7 +94,7 @@ permalink: /
               <span class="text-uppercase">Lernen</span>
             </span>
           </a>
-          <a class="card-body" href="/discord" rel="noopener nofollow">
+          <a class="card-body px-0" href="/discord" rel="noopener nofollow">
             <div class="text-muted">Dein Vue.js Discord auf Deutsch</div>
             <span class="fw-bold">
               Tausche dich mit anderen über Herausforderungen, Lösungen und Events aus
@@ -106,7 +106,7 @@ permalink: /
   </section>
   <section class="my-5">
     <h2>Die neuesten Artikel</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 gy-4 gx-5">
       {% for post in site.posts limit:6 %}
       <div class="col">
         {% include shared/_post_card.html %}
