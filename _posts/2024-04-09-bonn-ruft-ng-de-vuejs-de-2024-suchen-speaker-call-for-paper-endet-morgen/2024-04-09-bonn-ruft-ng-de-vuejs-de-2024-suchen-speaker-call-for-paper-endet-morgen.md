@@ -5,7 +5,7 @@ author: "Lulëzim Ukaj"
 published_at: 2024-04-09 17:00:00
 header_source:
 header_image: header.jpg
-categories: "angular vue ng-de vuejs konferenz call-for-paper"
+categories: "angular ng-de vuejs conference call-for-paper"
 ---
 
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/oLYbPS-Zrr0" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe></p>
