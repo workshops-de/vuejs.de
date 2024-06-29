@@ -8,10 +8,7 @@ header_image: header.jpg
 categories: "angular vue ng-de vuejs konferenz call-for-paper"
 ---
 
-
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/oLYbPS-Zrr0" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe></p>
-
-
 
 Vom 8. bis zum 11. Oktober 2024 verwandeln wir die Stadt Bonn, die traditionell eher bekannt ist als Ort der Geschichte, in eine Stadt der digitalen Zukunft: Die [Ng-de](https://ng-de.org/) und [Vuejs.de](https://conf.vuejs.de/) Konferenzen stehen wieder an! Beide Events sind nicht nur Tech-Konferenzen mit internationaler Strahlkraft, sondern auch ein wichtiger Treffpunkt der deutschen Webentwickler-Community. Die ng-de ist die erste von der Community selbst organisierte Angular-Konferenz in Deutschland und versteht sich als Plattform für Wissensaustausch, Networking und Weiterbildung. Mit insgesamt 1300 erwarteten Teilnehmern, 60 nationalen und internationalen Speakern und Trainern sowie einem Programm, das über vier Tage 9 Workshops und 32 Sessions umfasst, sind die Ng-de und die Vuejs.de das europäischen Key-Events für alle, die im Angular-Bereich tätig sind oder sich dafür interessieren. Hier werden Best Practices und Trends ausgetauscht und kräftig innerhalb der deutschen und internationalen Entwickler-Community networked.
 
@@ -19,29 +16,22 @@ Vom 8. bis zum 11. Oktober 2024 verwandeln wir die Stadt Bonn, die traditionell 
 
 Derzeit läuft unser Countdown für Call for Papers (CfP) für beide Konferenzen auf Hochtouren. Die ng-de und vuejs.de suchen nach Speakern, die bereit sind, ihr Wissen und ihre Leidenschaft mit der Community zu teilen. Egal, ob alte Hasen oder noch frisch hinter den Ohren in der Welt der Webentwicklung, viele von euch haben die Gelegenheit genutzt und spannende Themen eingereicht. Für alle anderen ist hier noch die letze Erinnerung: Ihr habt noch Zeit bis morgen, dem 10. April 2024 um 23:59 Uhr CET, eure Paper einzureichen und Teil des Speaker-Teams zu werden. Also seid mutig und schickt uns eure Paper!
 
-
 * Für die ng-de habt ihr die Möglichkeit, hier eure Paper einzureichen: [Ng-de: Call for Paper](https://ng-de.org/call-for-papers/)
 * Für die vuejs.de habt ihr die Möglichkeit, hier eure Paper einzureichen: [Vuejs.de: Call for Paper](https://conf.vuejs.de/call-for-paper/)
 
-
 ## Wie sieht der Bewerbungsprozess aus?
-
 
 Wir folgen dem Prozess der jsconf.eu für die Auswahl der Vorträge. Das bedeutet, dass eure Paper zunächst anonymisiert werden, um eine unvoreingenommene Bewertung zu gewährleisten. Erst dann bewertet unsere Jury eure eingereichten Paper. Die Top-Beiträge werden anschließend de-anonymisiert, um eure Speaker-Biography mit in die endgültige Entscheidung einfließen zu lassen.
 
-
 Nach Abschluss des Bewertungsprozesses werden die Ergebnisse zusammengetragen und analysiert. Vorträge, die durchweg positive Bewertungen erhalten haben, werden für das Konferenzprogramm in Betracht gezogen. Bei Vorträgen, bei denen die Meinungen auseinandergehen, kann eine Diskussion innerhalb der Jury dazu führen, dass eine gemeinsame Entscheidung getroffen wird.
 
-
 Dieser Prozess zielt darauf ab, eine ausgewogene und vielfältige Auswahl an Vorträgen für die Konferenz zu gewährleisten. Dabei spielen Faktoren wie Aktualität des Themas, Innovationsgrad, praktischer Nutzen für die Teilnehmenden und die Fähigkeit, komplexe Inhalte verständlich zu vermitteln, eine entscheidende Rolle.
-
 
 Abschließend wird bei der endgültigen Auswahl der Vorträge auch darauf geachtet, dass eine Vielfalt an Perspektiven und Hintergründen vertreten ist. Dies soll nicht nur die Qualität des Konferenzprogramms steigern, sondern auch die Inklusivität und Breite der Developer-Community widerspiegeln.
 
 ## Tipps für eine erfolgreiche Einreichung: Wonach suchen wir?
 
 Damit dein Beitrag beim Call for Papers der ng-de und vuejs.de Konferenzen erfolgreich ist, sollte er am besten folgende Merkmale haben:
-
 
 - **Klarer und ansprechender Vortragstitel**: Dein Titel sollte informativ und gleichzeitig auch Neugier beim Publikum wecken. Vermeide daher immer generische Titel. Es ist am besten, dein Thema präzise und locker zusammenzufassen. Wenn es dir möglich ist, beziehe die Kernbotschaft deines Vortrags mit im Titel ein.
 - **Detaillierte und überzeugende Beschreibung**: Deine Beschreibung des Vortrags ist entscheidend. Sie sollte nicht nur das Was und Warum der Vortragsthemen erklären, sondern auch aufzeigen, welchen Nutzen deine Zuhörer aus dem Ganzen ziehen können. Es ist wichtig, den Inhalt so detailliert wie möglich zu beschreiben: Was werden die Zuhörer lernen? Wie können sie das Gelernte in ihrer eigenen Arbeit anwenden?
@@ -76,8 +66,8 @@ Die ng-de und vuejs.de Konferenzen spielen eine wichtige Rolle in der deutschen 
 - **Die Zukunft mitgestalten**: Unsere Vorträge und Feedback-Sessions haben großen Einfluss auf die Ausrichtung der Frameworks. Unsere Community gestaltet die Technologien aktiv mit. Werde aktiver Teil der Zukunft!
 
 ## Ran an die Tasten – Deine Chance auf der ng-de und vuejs.de
-Hast du eine bahnbrechende Idee, ein spannendes Projekt oder einfach nur ein paar coole Tipps und Tricks, die du mit Gleichgesinnten teilen möchtest? Egal, ob du auf der Bühne stehen willst oder lieber im Hintergrund zuhören willst – Wir freuen uns auf dich. Die ng-de und vuejs.de sind in erster Linie ein Community-Fest. Nutze die Gelegenheit, dabei zu sein. Wir können es kaum erwarten, dich im Oktober in Bonn willkommen zu heißen.
 
+Hast du eine bahnbrechende Idee, ein spannendes Projekt oder einfach nur ein paar coole Tipps und Tricks, die du mit Gleichgesinnten teilen möchtest? Egal, ob du auf der Bühne stehen willst oder lieber im Hintergrund zuhören willst – Wir freuen uns auf dich. Die ng-de und vuejs.de sind in erster Linie ein Community-Fest. Nutze die Gelegenheit, dabei zu sein. Wir können es kaum erwarten, dich im Oktober in Bonn willkommen zu heißen.
 
 Falls du Fragen hast oder mehr Infos brauchst, schreib uns einfach an info@ng-de.org. Lass uns zusammen die Webentwicklung rocken!
 
