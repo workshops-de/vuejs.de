@@ -12,7 +12,7 @@ og_generator_enabled: true
 
 navigation:
   banner:
-    message: "Die <strong>Vue.js Konferenz</strong> in Deutschland! Am 08. - 09.2024 im Maritim Hotel, Bonn. <b><u>Sichere dein Ticket!</u></b>"
+    message: "Die <strong>Vue.js Konferenz</strong> in Deutschland! Am 08.10. - 09.10.2024 im Maritim Hotel, Bonn. <b><u>Sichere dein Ticket!</u></b>"
     href: "https://conf.vuejs.de?utm_source=vuejs_de&utm_campaign=conference2024&utm_medium=portal&utm_content=banner"
 
 plugins_dir: ["_plugins/", "shared/plugins/"]
