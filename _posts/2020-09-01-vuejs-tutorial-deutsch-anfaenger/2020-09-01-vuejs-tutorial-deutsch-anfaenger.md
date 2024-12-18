@@ -148,7 +148,7 @@ export default {
 }
 ```
 
-Um die Addition auszuführen, verwenden wir noch eine Methode. Diese wird in der Option `methods` deklariert. Die Funktion darf nicht als [arrow function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Pfeilfunktionen){:target="_blank"} geschrieben werden, da wir sonst den Bezug zu `this` verlieren.
+Um die Addition auszuführen, verwenden wir noch eine Methode. Diese wird in der Option `methods` deklariert. Die Funktion darf nicht als [arrow function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Arrow_functions){:target="_blank"} geschrieben werden, da wir sonst den Bezug zu `this` verlieren.
 
 ```javascript
 export default {
@@ -501,7 +501,7 @@ export default {
 ```
 
 Die `computed`-Funktion gibt ein *immutable* (nicht veränderbares) `ref`-Objekt zurück, auf dessen Wert, ebenfalls mit `.value` zugegriffen werden kann. Als Parameter akzeptiert `computed` eine Funktion.
-Wir verwenden eine [arrow function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Pfeilfunktionen){:target="_blank"} in gekürzter Schreibweise, weshalb wir hier kein `return` benötigen, um das Ergebnis der Addition zurückzugeben.
+Wir verwenden eine [arrow function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Arrow_functions){:target="_blank"} in gekürzter Schreibweise, weshalb wir hier kein `return` benötigen, um das Ergebnis der Addition zurückzugeben.
 `computed` kann auch ein Objekt mit einer Setter-Funktion akzeptieren, um es bei Bedarf veränderbar zu machen.
 
 Vue sammelt alle im Body verwendeten Variablen als Abhängigkeiten ein und berechnet `sum` jedes Mal automatisch neu, sobald sich einer der Werte dieser Abhängigkeiten ändert. In unserem Falle sind das `num1` und `num2`.
