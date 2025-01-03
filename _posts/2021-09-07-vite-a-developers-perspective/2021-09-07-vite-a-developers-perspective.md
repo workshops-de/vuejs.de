@@ -19,7 +19,7 @@ Vite erkennt Modul-Importe in Sourcedateien und analyisiert diese anhand des Pfa
 
 Vor allem beim Kaltstart eines Dev-Servers muss ein Bundler zuerst alle Abhängigkeiten durchforsten und aufbauen. Vite verkürzt die Startzeit des Dev-Servers, indem es die Module in zwei Kategorien separiert: Abhängigkeiten (Dependencies) und Sourcecode.
 
-Abhängigkeiten – wie z. B. Komponentenbibliotheken – ändern sich oft nicht in der Entwicklung, sind aber aufwändig in der Bereitstellung. Diese können einfach mit dem bereits genannten `esbuild` vorgebündelt werden, um wichtige Zeit zu sparen: [Pre-Bundling](https://vitejs.dev/guide/dep-pre-bundling.html#customizing-the-behavior){:target="_blank"}.
+Abhängigkeiten – wie z. B. Komponentenbibliotheken – ändern sich oft nicht in der Entwicklung, sind aber aufwändig in der Bereitstellung. Diese können einfach mit dem bereits genannten `esbuild` vorgebündelt werden, um wichtige Zeit zu sparen: [Pre-Bundling](https://vite.dev/guide/dep-pre-bundling.html){:target="_blank"}.
 
 **Das Besondere**: Das Bundling geschieht anschließend mit Rollup. Warum hierfür nicht auch `esbuild` genommen wurde? Leider sind einige der wichtigen Funktionen, die für die Bündelung von Anwendungen benötigt werden, noch nicht ausgereift – insbesondere das Code-Splitting und die CSS-Handhabung. Zusätzlich fand Evan You, dass Rollup bessere Zukunftsaussichten hat, als z. B. webpack. So verwendet Rollup bereits das neue standardisierte Format für Code-Module: [ES Modules](https://rollupjs.org/guide/en/#es-module-syntax){:target="_blank"}.
 
@@ -33,7 +33,7 @@ Wichtig: Um Zeit zu sparen, werden diese Optimierungen von Vite nur bei einer ve
 
 Der neue Aufbau eines Bundles ist zeitaufwändig und ressourcen-intensiv. Zudem kann das Neuladen der Seite aktuelle Parameter verändern. Aus diesem Grund unterstützt auch Vite das Hot Module Replacement (HMR). Dadurch lässt sich ein Modul während des Anwendungsvorgangs neu laden, ohne die Seite zu beeinflussen.
 
-Vite bietet eine [HMR-API](https://vitejs.dev/guide/api-hmr.html){:target="_blank"} über native ES-Module. Frameworks mit HMR-Funktionen können die API nutzen, um einzelne Module anzupassen, ohne die Seite erneut laden zu müssen. Vite bietet HMR-Integrationen für [Vue Single File Components](https://github.com/vitejs/vite/tree/main/packages/plugin-vue){:target="_blank"} und [React Fast Refresh](https://github.com/vitejs/vite/tree/main/packages/plugin-react-refresh){:target="_blank"} an.
+Vite bietet eine [HMR-API](https://vite.dev/guide/api-hmr.html){:target="_blank"} über native ES-Module. Frameworks mit HMR-Funktionen können die API nutzen, um einzelne Module anzupassen, ohne die Seite erneut laden zu müssen. Vite bietet HMR-Integrationen für [Vue Single File Components](https://github.com/vitejs/vite/tree/main/packages/plugin-vue){:target="_blank"} und [React Fast Refresh](https://github.com/vitejs/vite/tree/main/packages/plugin-react-refresh){:target="_blank"} an.
 
 **Gut zu wissen**: Ihr müsst HMR nicht manuell einrichten, wenn Ihr eine App über `create vite` erstellt, da diese bereits vorkonfiguriert sind.
 
@@ -75,7 +75,7 @@ Beim Importieren von `.css`-Dateien wird der Inhalt über das `<style>`-Tag mit 
 
 Vite ist vorkonfiguriert, um CSS `@import` Inlining über `postcss-import` zu unterstützen. Konfigurierte Vite-Aliase werden dabei auch für CSS `@import`-Anweisungen akzeptiert. Zusätzlich werden alle CSS `url()`-Referenzen automatisch angepasst, um zu gewährleisten, dass sie stets korrekt sind.
 
-**Gut zu wissen**: `@import`-Aliase und URL-Anpassungen werden auch für Sass- und Less-Dateien unterstützt (siehe [CSS-Präprozessoren](https://vitejs.dev/guide/features.html#css-pre-processors){:target="_blank"}).
+**Gut zu wissen**: `@import`-Aliase und URL-Anpassungen werden auch für Sass- und Less-Dateien unterstützt (siehe [CSS-Präprozessoren](https://vite.dev/guide/features.html#css-pre-processors){:target="_blank"}).
 
 ## Importieren von statischen Assets
 
@@ -108,7 +108,7 @@ import json from './example.json';
 import { field } from './example.json';
 ```
 
-Mehr dazu findet Ihr in der Dokumentation auch im Bereich [Static Asset Handling](https://vitejs.dev/guide/assets.html){:target="_blank"}.
+Mehr dazu findet Ihr in der Dokumentation auch im Bereich [Static Asset Handling](https://vite.dev/guide/assets.html){:target="_blank"}.
 
 ## Glob Import und WebAssembly
 
@@ -221,13 +221,13 @@ In realen Anwendungen generiert Rollup oft „allgemeine" Chunks, welche von zwe
 
 Deshalb schreibt Vite diese Importketten automatisch um, so dass, gleichzeitig zum angefragten Chunk weitere benötigte Chunks geladen werden können. Die Optimierung durch Vite verfolgt alle direkten Importe, um die störenden Roundtrips zu beseitigen, ganz gleich, wie tiefgehend die Importe dabei sind.
 
-Wir hoffen, dass Euch unsere kleine Vite-Übersicht gefallen hat und sich vielleicht einige Eurer Fragen geklärt haben. Falls Ihr mehr über die Möglichkeiten von Vite lernen möchtet, empfehlen wir Euch einen Blick auf die hervorragende [Dokumentation](https://vitejs.dev/){:target="_blank"}. Hier können wir noch mal intensiv auf Eure Projekte und Fragen eingehen.
+Wir hoffen, dass Euch unsere kleine Vite-Übersicht gefallen hat und sich vielleicht einige Eurer Fragen geklärt haben. Falls Ihr mehr über die Möglichkeiten von Vite lernen möchtet, empfehlen wir Euch einen Blick auf die hervorragende [Dokumentation](https://vite.dev/){:target="_blank"}. Hier können wir noch mal intensiv auf Eure Projekte und Fragen eingehen.
 
 Bis dahin wünschen wir Euch schon mal viel Spaß und viel Erfolg mit Vite!
 
 ## Weitere Informationen
 
-- Vite Homepage: [https://vitejs.dev/](https://vitejs.dev/){:target="_blank"}
+- Vite Homepage: [https://vite.dev/](https://vite.dev/){:target="_blank"}
 - Vite auf Github: [https://github.com/vitejs/vite](https://github.com/vitejs/vite){:target="_blank"}
-- Offizielle Plugins: [https://vitejs.dev/plugins/#vitejs-plugin-vue](https://vitejs.dev/plugins/#vitejs-plugin-vue){:target="_blank"}
+- Offizielle Plugins: [https://vite.dev/plugins/#vitejs-plugin-vue](https://vite.dev/plugins/#vitejs-plugin-vue){:target="_blank"}
 - Awesome Vite: [https://github.com/vitejs/awesome-vite](https://github.com/vitejs/awesome-vite){:target="_blank"}

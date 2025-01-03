@@ -49,7 +49,7 @@ _Evan You // Keynote: Live Free Online Announcement // Vuejs Global Online_
 die aber voraussichtlich erst mit Version 3.1 final sind.
 `<script setup>` solltet Ihr Euch näher ansehen, da sich hiermit in den Composition API inside Single File Components ein Kompilierungsschritt einbauen lässt.
 Außerdem wurde die Beta-Version der neuen Vue Devtools veröffentlicht.
-Seit dem 2. September findet Ihr hierzu auch die Devtools Erweiterung im [Chrome Web Store](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg){:target="_blank"}.
+Seit dem 2. September findet Ihr hierzu auch die Devtools Erweiterung im [Chrome Web Store](https://chromewebstore.google.com/detail/vuejs-devtools-beta/ljjemllljcmogpfapbkkighbhhppjdbg){:target="_blank"}.
 
 Auf Wunsch vieler Entwickler soll auch bald wieder der Internet Explorer 11 (IE11) in Vue.js 3.0 unterstützt werden.
 

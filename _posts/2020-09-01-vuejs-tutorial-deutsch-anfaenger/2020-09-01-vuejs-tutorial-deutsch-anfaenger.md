@@ -324,7 +324,7 @@ Wie genau Vue intern funktioniert und _was_ letztlich von unseren Single-File-Co
 
 Bei der Arbeit mit Vue gehören neben den kennengelernten Werkzeugen unbedingt auch die Vue DevTools. Es handelt sich dabei um ein Add-On für den Chrome- oder Firefox-Browser, welches die Entwicklertools um einen zusätzlichen Bereich für Vue erweitert. Dieser stellt uns viele Informationen über die Anwendung und die verwendeten Vue-Komponenten bereit.
 
-* [Vue DevTools für Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg){:target="_blank"}
+* [Vue DevTools für Chrome](https://chromewebstore.google.com/detail/vuejs-devtools-beta/ljjemllljcmogpfapbkkighbhhppjdbg){:target="_blank"}
 * [Vue DevTools für Firefox](https://github.com/vuejs/vue-devtools/releases/download/v6.0.0-beta.2/vuejs_devtools_beta-6.0.0.2-an+fx.xpi){:target="_blank"}
 
 Nach der Installation und einem Neustart des Browsers können wir über die Tastenkombination [**Cmd+Option+I**] (Mac) oder [**Strg+Shift+I**] (Windows) die Entwicklertools öffnen. In der Liste der Reiter suchen wir den Eintrag **Vue** und klicken diesen an:
@@ -703,7 +703,7 @@ export default {
 Die `setup`-Methode ist auf ein absolutes Minimum reduziert. Die im Template benötigten Eigenschaften werden uns durch die ausgelagerten Funktionen zur Verfügung gestellt.
 Zurückgeben müssen wir diese allerdings weiterhin mittels `return` in der Komponente selbst.
 
-Mit [Destructuring](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Destrukturierende_Zuweisung){:target="_blank"} werden die Rückgaben der `composition functions` in ihre einzelnen Bestandteile zerlegt und in die angegebenen Variablen geschrieben.
+Mit [Destructuring](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment){:target="_blank"} werden die Rückgaben der `composition functions` in ihre einzelnen Bestandteile zerlegt und in die angegebenen Variablen geschrieben.
 Wie auch bei der Übergabe von `sum` an `useApi` würden wir hierbei ohne das Konzept der `refs` und `Reactive References` die gewünschte Funktionalität der Reaktivität nicht abbilden können und die Referenzen verlieren.
 
 Durch dieses Konzept der Zusammensetzung von Komponenten erhalten wir eine wesentlich bessere Strukturierung und Wartbarkeit. Die Möglichkeit, Komponenten nun endlich nach Logik strukturieren zu können, ist erst mit der Composition API in diesem Ausmaß möglich.

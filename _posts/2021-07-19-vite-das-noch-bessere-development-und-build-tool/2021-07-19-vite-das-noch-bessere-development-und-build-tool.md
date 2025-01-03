@@ -65,7 +65,7 @@ Wir sind jedenfalls gespannt, wie sich Vite weiterentwickeln wird und nutzen es 
 
 ## Weitere Informationen
 
-- Vite Homepage: [https://vitejs.dev/](https://vitejs.dev/){:target="_blank"}
+- Vite Homepage: [https://vite.dev/](https://vite.dev/){:target="_blank"}
 - Vite auf Github: [https://github.com/vitejs/vite](https://github.com/vitejs/vite){:target="_blank"}
-- Offizielle Plugins: [https://vitejs.dev/plugins/#vitejs-plugin-vue](https://vitejs.dev/plugins/#vitejs-plugin-vue){:target="_blank"}
+- Offizielle Plugins: [https://vite.dev/plugins/#vitejs-plugin-vue](https://vite.dev/plugins/#vitejs-plugin-vue){:target="_blank"}
 - Awesome Vite: [https://github.com/vitejs/awesome-vite](https://github.com/vitejs/awesome-vite){:target="_blank"}
