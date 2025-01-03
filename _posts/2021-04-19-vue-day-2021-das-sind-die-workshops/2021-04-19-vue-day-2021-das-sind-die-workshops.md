@@ -35,7 +35,7 @@ Die Workshops gehen immer einen ganzen Tag und Tickets kannst du direkt [hier](h
 
 ### 1. Einführung in Vue 3
 
-Den Start macht JavaScript-Entwickler und -Trainer Belá Varga am **18. Juni** mit einer **[Einführung in Vue 3](https://enterjs.de/lecture_compact1.php?id=13043&source=0){:target="_blank"}**, der neuesten Version von Vue.js.
+Den Start macht JavaScript-Entwickler und -Trainer Belá Varga am **18. Juni** mit einer **[Einführung in Vue 3](https://enterjs.de/2021/lecture_compact1.php?id=13043&source=0){:target="_blank"}**, der neuesten Version von Vue.js.
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
@@ -61,7 +61,7 @@ Ihr probiert anhand von kleinen Beispielen einige Features aus und schaut, wie a
 
 ### 2. Building Nuxt.js Applications
 
-Weiter geht es am **22. Juni** mit Full-Stack-Entwickler Evgeny Sacharow, der erklärt, wie sich mit dem **[Framework Nuxt.js](https://enterjs.de/lecture_compact1.php?id=13044&source=0){:target="_blank"}** ordentlich Zeit beim Erstellen von Applikationen sparen lässt.
+Weiter geht es am **22. Juni** mit Full-Stack-Entwickler Evgeny Sacharow, der erklärt, wie sich mit dem **[Framework Nuxt.js](https://enterjs.de/2021/lecture_compact1.php?id=13044&source=0){:target="_blank"}** ordentlich Zeit beim Erstellen von Applikationen sparen lässt.
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
@@ -84,7 +84,7 @@ Mit Nuxt.js lassen sich zudem auch statische Seite generieren, während man in d
 
 ### 3. Was ist und wie funktioniert eigentlich die neue Composition API?
 
-Am **25. Juni** referiert vue.js-Gründer, Entwickler und Trainer Antony Konstantinidis dann zu einem Thema, das momentan wohl alle Vue-Entwickler:innen beschäftigt: Die [**neue Composition API**](https://enterjs.de/lecture_compact1.php?id=13042&source=0){:target="_blank"}. Antony erklärt, was die Neuerung der Api überhaupt ist und wie sie funktioniert.
+Am **25. Juni** referiert vue.js-Gründer, Entwickler und Trainer Antony Konstantinidis dann zu einem Thema, das momentan wohl alle Vue-Entwickler:innen beschäftigt: Die [**neue Composition API**](https://enterjs.de/2021/lecture_compact1.php?id=13042&source=0){:target="_blank"}. Antony erklärt, was die Neuerung der Api überhaupt ist und wie sie funktioniert.
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
@@ -107,7 +107,7 @@ Das heißt: Dank der neuen Composition API können jetzt sich wiederholende Code
 
 ### 4. Wie baue ich performante Vue.js-Applikationen
 
-„**[Wie baue ich performante Vue.js-Applikationen?](https://enterjs.de/lecture_compact1.php?id=13045&source=0){:target="_blank"}**“ lautet der Titel des zweiten Workshops von Belá Varga, den er am **28. Juni** abhält.
+„**[Wie baue ich performante Vue.js-Applikationen?](https://enterjs.de/2021/lecture_compact1.php?id=13045&source=0){:target="_blank"}**“ lautet der Titel des zweiten Workshops von Belá Varga, den er am **28. Juni** abhält.
 
 Geschwindigkeit ist ein sehr wichtiger Erfolgsfaktor von Webapplikationen. Doch was ist gemeint mit Geschwindigkeit? Die Dauer bis alles in den Browser geladen wurde? Die Zeit bis zum ersten Anzeigen von Informationen auf der Seite? Die Geschwindigkeit während Laufzeit und der dazugehörige Speicherverbrauch?
 
@@ -115,7 +115,7 @@ Diese Fragen werden in diesem Workshop genauer betrachtet. Ihr schaut welche gro
 
 ### 5. State-Management in Vue.js-Anwendungen
 
-Den Abschluss der Workshop-Reihe im Rahmen des VueDay 2021 macht erneut Evgeny Sacharow mit dem Thema „**[State-Management in Vue.js-Anwendungen](https://enterjs.de/lecture_compact1.php?id=13046&source=0){:target="_blank"}**“.
+Den Abschluss der Workshop-Reihe im Rahmen des VueDay 2021 macht erneut Evgeny Sacharow mit dem Thema „**[State-Management in Vue.js-Anwendungen](https://enterjs.de/2021/lecture_compact1.php?id=13046&source=0){:target="_blank"}**“.
 
 Vuex ist ein State Management Pattern und eine Bibliothek für Vue.js-Anwendungen. Es dient als zentraler Speicher für alle Komponenten in einer Anwendung.
 

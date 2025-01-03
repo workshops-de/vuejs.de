@@ -34,17 +34,17 @@ Obwohl der VueDay nun schon einige Tage zurückliegt, ist die Freude über diese
 
 ## Talks und Workshops bald regelmäßig
 
-In den sieben Talks haben wir tiefe Einblicke in unser Lieblings-Framework Vue bekommen und sind dank der Sprecher:innen jetzt um einiges schlauer als vorher. [Cathrin Möller](https://enterjs.de/lecture_compact1.php?id=12965&source=0){:target="_blank"}, [Jan Becker](https://enterjs.de/lecture_compact1.php?id=13053&source=0){:target="_blank"}, [Vanessa Böhner](https://enterjs.de/lecture_compact1.php?id=13041&source=0){:target="_blank"}, [Thorsten Lünborg](https://enterjs.de/lecture_compact1.php?id=13040&source=0){:target="_blank"}, [Joe Ray Gregory](https://enterjs.de/lecture_compact1.php?id=13134&source=0){:target="_blank"}, [Alexander Lichter](https://enterjs.de/lecture_compact1.php?id=13218&source=0){:target="_blank"} und [Markus Oberlehner](https://enterjs.de/lecture_compact1.php?id=13135&source=0){:target="_blank"} haben extrem interessante Talks abgeliefert und das Feedback der Teilnehmer:innen war durchweg positiv.
+In den sieben Talks haben wir tiefe Einblicke in unser Lieblings-Framework Vue bekommen und sind dank der Sprecher:innen jetzt um einiges schlauer als vorher. [Cathrin Möller](https://enterjs.de/2021/lecture_compact1.php?id=12965&source=0){:target="_blank"}, [Jan Becker](https://enterjs.de/2021/lecture_compact1.php?id=13053&source=0){:target="_blank"}, [Vanessa Böhner](https://enterjs.de/2021/lecture_compact1.php?id=13041&source=0){:target="_blank"}, [Thorsten Lünborg](https://enterjs.de/2021/lecture_compact1.php?id=13040&source=0){:target="_blank"}, [Joe Ray Gregory](https://enterjs.de/2021/lecture_compact1.php?id=13134&source=0){:target="_blank"}, [Alexander Lichter](https://enterjs.de/2021/lecture_compact1.php?id=13218&source=0){:target="_blank"} und [Markus Oberlehner](https://enterjs.de/2021/lecture_compact1.php?id=13135&source=0){:target="_blank"} haben extrem interessante Talks abgeliefert und das Feedback der Teilnehmer:innen war durchweg positiv.
 
 Vom Einstieg in Vue über das State Management mit Vue 3 bis hin zur Island-Architecture wurden in den Talks jede Menge Themen behandelt, die bei vielen für neue Erkenntnisse und Aha-Momente gesorgt haben.
 
 Im Anschluss an den VueDay fanden außerdem noch Workshops zu ausgewählten Themengebieten statt. Weil die Workshops so viel Spaß gemacht haben und das Feedback der Teilnehmer:innen so gut war, arbeitet das Vue.js-Team im Moment daran, diese Workshops so zu strukturieren, dass sie regelmäßig angeboten werden können. Die **Workshops und ihre Sprecher:innen** waren:
 
-- Béla Varga: [Einführung in Vue 3](https://enterjs.de/lecture_compact1.php?id=13043&source=0){:target="_blank"}
-- Evgeny Sacharow: [Building Nuxt.js Applications](https://enterjs.de/lecture_compact1.php?id=13044&source=0){:target="_blank"}
-- Antony Konstantinidis: [Was ist und wie funktioniert die neue Composition API?](https://enterjs.de/lecture_compact1.php?id=13042&source=0){:target="_blank"}
-- Béla Varga: [Wie baue ich performante Vue.js-Applikationen?](https://enterjs.de/lecture_compact1.php?id=13045&source=0){:target="_blank"}
-- Evgeny Sacharow: [State-Management in Vue.js-Anwendungen](https://enterjs.de/lecture_compact1.php?id=13046&source=0){:target="_blank"}
+- Béla Varga: [Einführung in Vue 3](https://enterjs.de/2021/lecture_compact1.php?id=13043&source=0){:target="_blank"}
+- Evgeny Sacharow: [Building Nuxt.js Applications](https://enterjs.de/2021/lecture_compact1.php?id=13044&source=0){:target="_blank"}
+- Antony Konstantinidis: [Was ist und wie funktioniert die neue Composition API?](https://enterjs.de/2021/lecture_compact1.php?id=13042&source=0){:target="_blank"}
+- Béla Varga: [Wie baue ich performante Vue.js-Applikationen?](https://enterjs.de/2021/lecture_compact1.php?id=13045&source=0){:target="_blank"}
+- Evgeny Sacharow: [State-Management in Vue.js-Anwendungen](https://enterjs.de/2021/lecture_compact1.php?id=13046&source=0){:target="_blank"}
 
 Um zu erfahren, wann die Workshops das nächste Mal angeboten werden, schau einfach regelmäßig auf [vuejs.de](https://vuejs.de){:target="_blank"} vorbei oder abonniere unseren [Newsletter](https://vuejs.de/newsletter/redirect/footer){:target="_blank"}, um immer auf dem neuesten Stand zu bleiben.
 
