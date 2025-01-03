@@ -51,7 +51,7 @@ Sie kann aber auch verwendet werden, um zum Beispiel browserbasierte Spiele und 
 
 ## Welche Vorteile bietet JavaScript?
 
-- JavaScript ist die [beliebteste](https://insights.stackoverflow.com/survey/2019#technology){:target="_blank"} [Programmiersprache](https://devskiller.com/technical-hiring-skills-report-2019/){:target="_blank"} und weit verbreitet.
+- JavaScript ist die [beliebteste](https://survey.stackoverflow.co/2019#technology){:target="_blank"} [Programmiersprache](https://devskiller.com/technical-hiring-skills-report-2019/){:target="_blank"} und weit verbreitet.
 - Als Standardsprache des Internets in jedem Browser zu finden. Da Browser in unserem täglichen Leben nahezu unabdingbar sind, erkennt man leicht, warum JavaScript so bedeutend ist.
 - JavaScript wird auch in SmartTVs und vielen anderen Technologien als Sprache eingesetzt.
 - Die Programmiersprache ist einfach zu erlernen.
@@ -71,7 +71,7 @@ Einen ausführlicheren Vergleich findet Ihr zum Beispiel [hier](https://www.guru
 Ständig hört man von neuen Programmiersprachen, neuen Tools und Frameworks – das kann verwirrend sein.
 Klar, als angehender Entwickler möchte man sicher sein, dass das, was man gerade lernt, morgen noch relevant ist.
 Ihr habt Zweifel? Dann solltet Ihr daran denken, dass JavaScript seit 1995 an seiner Popularität nichts verloren hat.
-Überall im Web ist es zu finden. Laut einer [StackOverflow Entwicklerumfrage 2020](https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-all-respondents){:target="_blank"} ist JavaScript mit 67,7 % das *achte Jahr* in Folge die am häufigsten verwendete Programmiersprache.
+Überall im Web ist es zu finden. Laut einer [StackOverflow Entwicklerumfrage 2020](https://survey.stackoverflow.co/2020#technology-programming-scripting-and-markup-languages-all-respondents){:target="_blank"} ist JavaScript mit 67,7 % das *achte Jahr* in Folge die am häufigsten verwendete Programmiersprache.
 
 ## Welche Programmiersprachen sollten man ebenso beherrschen?
 
