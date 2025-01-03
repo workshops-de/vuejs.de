@@ -1,6 +1,6 @@
 ---
 title: "Vue 3 &lt;script setup&gt;-Tutorial"
-description: "Seit dem Release von Vue 3 und der Composition API ist die &lt;script setup&gt;-Syntax die empfohlene Schreibweise. Welche Vorteile sie bietet, klären wir in diesem Arikel."
+description: "Seit dem Release von Vue 3 und der Composition API ist die &lt;script setup&gt;-Syntax die empfohlene Schreibweise. Welche Vorteile sie bietet, klären wir in diesem Artikel."
 author: "Antony Konstantinidis"
 published_at: 2022-04-22 09:00:00.000000Z
 categories: "tutorial vuejs typescript"
