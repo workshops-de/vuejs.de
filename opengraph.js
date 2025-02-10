@@ -51,6 +51,15 @@ loadImage(data.background).then((image) => {
   ctx.fillStyle = '#ffffff';
   ctx.fillText(data.author, 80, 555);
 
+  loadImage('./assets/img/logo-with-poweredby-white.png').then(logo => {
+    ctx.drawImage(logo, 820, 490, 300, 300 * logo.height / logo.width);
+
+    const out = fs.createWriteStream(data.output);
+    const stream = canvas.createJPEGStream();
+    stream.pipe(out);
+    out.on('finish', () => console.log('The PNG file was created.'));
+  });
+
   const out = fs.createWriteStream(data.output)
   const stream = canvas.createJPEGStream()
   stream.pipe(out)
