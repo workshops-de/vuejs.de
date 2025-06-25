@@ -1,22 +1,28 @@
 ---
-title: "Vue 3 Tutorial für Einsteiger"
-description: "Einsteiger Tutorial für das Javascript Framework Vue.js in Version 3. Schritt für Schritt erklären wir dir die Konzepte und Verbesserungen der Composition API."
+title: "Vue 3.5 Tutorial für Einsteiger"
+description: "Einsteiger Tutorial für das Javascript Framework Vue.js in Version 3.5. Schritt für Schritt erklären wir dir die Konzepte und Verbesserungen der Composition API sowie die neuen Features von Vue 3.5."
 author: "Antony Konstantinidis"
-published_at: 2024-03-26 16:00:00.000000Z
+published_at: 2025-01-21 16:00:00.000000Z
 categories: "tutorial vuejs typescript"
 tutorial_page_order: '1'
 ---
 
-Die lang erwartete Version 3 des beliebten JavaScript Frameworks Vue.js ist offiziell freigegeben worden und schon vor dem Release wurde der aktuelle [Release Candidate](https://github.com/vuejs/vue-next/tags){:target="_blank"} bereits ausgiebig getestet und verwendet.
-Wenn du dich fragst, was die Hauptmerkmale und wichtigsten Änderungen von Vue 3 sind, bist du hier schon einmal richtig. Bereits die Ankündigung der neuen Composition API hat zu einigen Kontroversen geführt, welche mittlerweile jedoch zur Zufriedenheit aller beendet sind. In diesem Artikel beleuchten wir hauptsächlich diese neue API näher.
+Die lang erwartete Version 3.5 "Tengen Toppa Gurren Lagann" des beliebten JavaScript Frameworks Vue.js wurde im September 2024 offiziell freigegeben. Diese Version bringt signifikante Performance-Verbesserungen und neue Features mit sich, die die Entwicklererfahrung weiter verbessern.
 
-Das finale Release erfolgte am 18. September 2020, doch schon zuvor konnte die Composition API über ein Plug-in bereits in bestehende Vue Anwendungen integriert und verwendet werden.
+Wenn du dich fragst, was die Hauptmerkmale und wichtigsten Neuerungen von Vue 3.5 sind, bist du hier genau richtig. In diesem Tutorial zeigen wir dir nicht nur die bewährte Composition API, sondern auch die neuen Features wie Reactive Props Destructure, `useTemplateRef()` und weitere Optimierungen.
+
+Das finale Release von Vue 3.5 erfolgte am 1. September 2024 und brachte beeindruckende Leistungsverbesserungen mit sich:
+- **56% weniger Speicherverbrauch** durch Optimierungen des Reaktivitätssystems
+- **Bis zu 10x schnellere** Operationen bei großen, tief verschachtelten reaktiven Arrays
+- **Neue APIs** wie `useTemplateRef()`, `onWatcherCleanup()` und `useId()`
+- **Reactive Props Destructure** ist jetzt standardmäßig aktiviert
+
 In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 
 * Was ist Vue?
 * Was verbirgt sich hinter der Composition API?
-* Warum wurde die Composition API eingeführt?
-* Wie funktioniert die Composition API?
+* Welche neuen Features bringt Vue 3.5 mit?
+* Wie nutze ich die neuen APIs effektiv?
 
 In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js. Wenn du eine mehr strukturierte und Hands-On Einführung in Form einer Schulung möchtest schau doch mal bei unser <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue & TypeScript Intensiv-Schulungen</a> vorbei.
 
@@ -59,19 +65,24 @@ Das Team von Vue bietet ein offizielles [CLI](https://cli.vuejs.org){:target="_b
 Zu Beginn installieren wir das CLI zum Beispiel über den [Node Package Manager](https://docs.npmjs.com/getting-started){:target="_blank"}:
 
 ```shell
-npm install -g @vue/cli@next
+npm install -g @vue/cli
 ```
 
 Das Erstellen eines neuen Projektes erreichen wir über die folgende Zeile:
 
 ```shell
-vue create vue-3-tutorial
+vue create vue-3-5-tutorial
 ```
 
-Als Preset wählen wir hier **Default (Vue 3 Preview)**. Daraufhin findet das Aufsetzen und Konfigurieren unseres neuen Projektes statt. Sobald der Vorgang abgeschlossen ist, werden auch schon die nächsten Schritte zum Ausführen der Vue Anwendung angezeigt:
+Als Preset wählen wir hier **Vue 3**. Seit Vue 3.5 profitieren wir automatisch von den Performance-Optimierungen:
+- **56% weniger Speicherverbrauch** durch ein optimiertes Reaktivitätssystem
+- **Bis zu 10x schnellere** Operationen bei großen Arrays
+- Verbesserte SSR-Performance und keine veralteten berechneten Werte mehr
+
+Daraufhin findet das Aufsetzen und Konfigurieren unseres neuen Projektes statt. Sobald der Vorgang abgeschlossen ist, werden auch schon die nächsten Schritte zum Ausführen der Vue Anwendung angezeigt:
 
 ```shell
-cd vue-3-tutorial
+cd vue-3-5-tutorial
 yarn serve
 # OR
 npm run serve
@@ -334,6 +345,55 @@ Nach der Installation und einem Neustart des Browsers können wir über die Tast
 In der Abbildung sehen wir links den Komponentenbaum, welcher die Komponente `App` und darunter unsere selbsterstellte Komponente `CalculatorApp` enthält.
 Im rechten Bereich sehen wir Detailinformationen zu der ausgewählten Komponente.
 
+### 5. Neue Features in Vue 3.5
+
+Vue 3.5 bringt einige praktische neue Features mit, die wir in unserer Komponente nutzen können. Lass uns ein paar davon kennenlernen!
+
+#### useTemplateRef() - Die neue Art, Template-Referenzen zu verwenden
+
+In Vue 3.5 gibt es eine neue, typsicherere Methode, um auf DOM-Elemente zuzugreifen. Erweitern wir unsere Calculator-Komponente um eine Funktion, die das erste Eingabefeld automatisch fokussiert:
+
+```javascript
+import { ref, computed, onMounted, useTemplateRef } from 'vue';
+
+export default {
+  setup() {
+    const num1 = ref(0);
+    const num2 = ref(0);
+    const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
+
+    // Neue Vue 3.5 API für Template-Referenzen
+    const firstInputRef = useTemplateRef('firstInput');
+
+    onMounted(() => {
+      // Fokussiere das erste Eingabefeld beim Laden der Komponente
+      firstInputRef.value?.focus();
+    });
+
+    return {
+      num1,
+      num2,
+      sum,
+    };
+  },
+}
+```
+
+Und im Template fügen wir die `ref`-Attribute hinzu:
+
+```html
+<template>
+    <h3>Calculator</h3>
+    <form>
+        <input type="number" v-model="num1" ref="firstInput">
+        <input type="number" v-model="num2">
+    </form>
+    <p>Result: {{ sum }}</p>
+</template>
+```
+
+Der Vorteil von `useTemplateRef()` gegenüber der alten Methode ist, dass es typsicherer ist und besser mit TypeScript funktioniert. Die Vue Language Tools bieten automatische Vervollständigung und Warnungen basierend auf den `ref`-Attributen in deinem Template.
+
 ## Refactoring mit der Composition API
 
 Zu Demonstrationszwecken soll diese recht überschaubare Komponente zunächst reichen. Neben einigen anderen Neuerungen von Vue 3, wollen wir uns jetzt mit der Composition API auseinandersetzen.
@@ -507,7 +567,7 @@ Wir verwenden eine [arrow function](https://developer.mozilla.org/de/docs/Web/Ja
 Vue sammelt alle im Body verwendeten Variablen als Abhängigkeiten ein und berechnet `sum` jedes Mal automatisch neu, sobald sich einer der Werte dieser Abhängigkeiten ändert. In unserem Falle sind das `num1` und `num2`.
 
 Darüber hinaus wird der Wert gecacht und nur dann neu berechnet, wenn sich der Wert einer der gesammelten Abhängigkeiten tatsächlich ändert.
-Das heißt, selbst wenn es aus einem anderen Grund zu einem Re-Rendering der Komponente kommt, ist Vue schlau genug, um die `computed properties` nicht neu zu berechnen und einfach den zuvor gespeicherten Wert auszugeben.
+Das heißt, selbst wenn es aus einem anderen Grund zu einem Re-Rendering der Komponente kommt, ist Vue schlau genug, um die `computed properties` nicht neu berechnen und einfach den zuvor gespeicherten Wert auszugeben.
 
 Im Gegensatz dazu wird eine einfache Funktion jedes Mal ausgeführt, da hier kein Dependency Tracking stattfindet.
 
@@ -579,7 +639,7 @@ Jedes Mal, wenn `sum` neu berechnet wird, wollen wir weitere Logik ausführen la
 Die angegebene Funktion wird sofort ausgeführt und automatisch immer wieder dann, wenn sich ein oder mehrere Abhängigkeiten verändern.
 
 ```javascript
-import {computed, ref, watchEffect} from 'vue';
+import {computed, ref, watchEffect, onWatcherCleanup} from 'vue';
 
 export default {
   setup() {
@@ -589,8 +649,25 @@ export default {
     const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
 
     watchEffect(async () => {
-      const res = await fetch(`http://numbersapi.com/${sum.value}`);
-      fact.value = await res.text();
+      // Neu in Vue 3.5: onWatcherCleanup für besseres Cleanup-Management
+      const controller = new AbortController();
+
+      onWatcherCleanup(() => {
+        // Breche laufende Anfragen ab, wenn sich sum ändert
+        controller.abort();
+      });
+
+      try {
+        const res = await fetch(`http://numbersapi.com/${sum.value}`, {
+          signal: controller.signal
+        });
+        fact.value = await res.text();
+      } catch (error) {
+        if (error.name !== 'AbortError') {
+          console.error('Fehler beim Abrufen des Fakts:', error);
+          fact.value = 'Fehler beim Laden des Fakts';
+        }
+      }
     });
 
     return {
@@ -708,17 +785,206 @@ Wie auch bei der Übergabe von `sum` an `useApi` würden wir hierbei ohne das Ko
 
 Durch dieses Konzept der Zusammensetzung von Komponenten erhalten wir eine wesentlich bessere Strukturierung und Wartbarkeit. Die Möglichkeit, Komponenten nun endlich nach Logik strukturieren zu können, ist erst mit der Composition API in diesem Ausmaß möglich.
 
+## Script Setup und Reactive Props Destructure
+
+Vue 3.5 macht die Entwicklung noch angenehmer mit der stabilen `<script setup>` Syntax und der neuen **Reactive Props Destructure** Funktion. Lass uns unsere Calculator-Komponente modernisieren:
+
+### Script Setup Syntax
+
+Die `<script setup>` Syntax ist eine kompaktere Art, Komponenten zu schreiben:
+
+```vue
+<template>
+  <h3>Calculator</h3>
+  <form>
+    <input type="number" v-model="num1" ref="firstInput">
+    <input type="number" v-model="num2">
+  </form>
+  <p>Result: {{ sum }}</p>
+  <strong>{{ fact }}</strong>
+</template>
+
+<script setup>
+import { ref, computed, watchEffect, onWatcherCleanup, onMounted, useTemplateRef } from 'vue';
+
+// Alles hier ist automatisch im Template verfügbar - kein return mehr nötig!
+const num1 = ref(0);
+const num2 = ref(0);
+const fact = ref('');
+const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
+
+// Template Ref mit Vue 3.5 API
+const firstInputRef = useTemplateRef('firstInput');
+
+onMounted(() => {
+  firstInputRef.value?.focus();
+});
+
+watchEffect(async () => {
+  const controller = new AbortController();
+
+  onWatcherCleanup(() => {
+    controller.abort();
+  });
+
+  try {
+    const res = await fetch(`http://numbersapi.com/${sum.value}`, {
+      signal: controller.signal
+    });
+    fact.value = await res.text();
+  } catch (error) {
+    if (error.name !== 'AbortError') {
+      fact.value = 'Fehler beim Laden des Fakts';
+    }
+  }
+});
+</script>
+```
+
+### Reactive Props Destructure - Neu in Vue 3.5!
+
+Eine der spannendsten Neuerungen in Vue 3.5 ist **Reactive Props Destructure**. Erstellen wir eine neue Komponente, die Props verwendet:
+
+```vue
+<!-- NumberDisplay.vue -->
+<template>
+  <div class="number-display">
+    <h4>{{ title }}</h4>
+    <p>Die Zahl ist: {{ value }}</p>
+    <p v-if="showDouble">Das Doppelte ist: {{ double }}</p>
+  </div>
+</template>
+
+<script setup>
+import { computed } from 'vue';
+
+// NEU in Vue 3.5: Props können direkt destrukturiert werden und bleiben reaktiv!
+const {
+  value = 0,           // Mit Default-Wert
+  title = 'Zahl',      // Mit Default-Wert
+  showDouble = false   // Mit Default-Wert
+} = defineProps();
+
+// Die destrukturierten Props sind reaktiv - das computed wird automatisch aktualisiert
+const double = computed(() => value * 2);
+</script>
+
+<style scoped>
+.number-display {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+</style>
+```
+
+Vor Vue 3.5 mussten wir umständlich `withDefaults` verwenden:
+
+```javascript
+// Alt (vor Vue 3.5)
+const props = withDefaults(
+  defineProps<{
+    value?: number
+    title?: string
+    showDouble?: boolean
+  }>(),
+  {
+    value: 0,
+    title: 'Zahl',
+    showDouble: false
+  }
+)
+
+// Neu (Vue 3.5) - viel sauberer!
+const {
+  value = 0,
+  title = 'Zahl',
+  showDouble = false
+} = defineProps<{
+  value?: number
+  title?: string
+  showDouble?: boolean
+}>();
+```
+
+### Verwendung der neuen Komponente
+
+Jetzt können wir unsere `NumberDisplay` Komponente in der Calculator-App verwenden:
+
+```vue
+<!-- Calculator.vue -->
+<template>
+  <h3>Calculator</h3>
+  <form>
+    <input type="number" v-model="num1" ref="firstInput">
+    <input type="number" v-model="num2">
+  </form>
+
+  <!-- Neue Komponente mit Props -->
+  <NumberDisplay
+    :value="sum"
+    title="Ergebnis"
+    :show-double="sum > 10"
+  />
+
+  <strong>{{ fact }}</strong>
+</template>
+
+<script setup>
+import { ref, computed, watchEffect, onWatcherCleanup, onMounted, useTemplateRef } from 'vue';
+import NumberDisplay from './NumberDisplay.vue';
+
+const num1 = ref(0);
+const num2 = ref(0);
+const fact = ref('');
+const sum = computed(() => parseInt(num1.value, 10) + parseInt(num2.value, 10));
+
+const firstInputRef = useTemplateRef('firstInput');
+
+onMounted(() => {
+  firstInputRef.value?.focus();
+});
+
+watchEffect(async () => {
+  const controller = new AbortController();
+
+  onWatcherCleanup(() => {
+    controller.abort();
+  });
+
+  try {
+    const res = await fetch(`http://numbersapi.com/${sum.value}`, {
+      signal: controller.signal
+    });
+    fact.value = await res.text();
+  } catch (error) {
+    if (error.name !== 'AbortError') {
+      fact.value = 'Fehler beim Laden des Fakts';
+    }
+  }
+});
+</script>
+```
+
 ## Fazit
 
-In diesem Vue.js Online-Tutorial hast du gelernt, selbstständig eine Komponente mit Vue zu schreiben. Dabei hast du das grundlegende Konzept des Arbeitens in Vue kennengelernt.
-Im Vergleich zur klassischen Schreibweise hast du gesehen, was die Composition API ist, warum sie notwendig ist und wie man damit eine Komponente erstellen kann.
-Die Composition API ist bereits jetzt veröffentlicht und einsatzbereit. Du kannst sie über den Release Candidate von Vue 3 oder als Plug-in benutzen.
-Diskutier gerne mit, ob sich die Composition API in deinen Augen lohnt. Möchtest du diese einmal selbst ausprobieren oder lieber weiter wie gewohnt mit der Options API arbeiten?
+In diesem Vue.js Online-Tutorial hast du gelernt, selbstständig eine Komponente mit Vue 3.5 zu schreiben. Dabei hast du nicht nur das grundlegende Konzept des Arbeitens in Vue kennengelernt, sondern auch die neuesten Features aus Vue 3.5 ausprobiert:
+
+- Die neue `useTemplateRef()` API für typsichere Template-Referenzen
+- **Reactive Props Destructure** für saubereren und intuitiveren Code
+- `onWatcherCleanup()` für besseres Ressourcenmanagement
+- Die moderne `<script setup>` Syntax für kompaktere Komponenten
+
+Vue 3.5 bringt außerdem signifikante Performance-Verbesserungen mit sich - bis zu 56% weniger Speicherverbrauch und bis zu 10x schnellere Operationen bei großen Arrays. Diese Optimierungen machen Vue zu einer noch besseren Wahl für moderne Webanwendungen.
+
+Im Vergleich zur klassischen Options API hast du gesehen, wie die Composition API zusammen mit den neuen Vue 3.5 Features eine noch bessere Developer Experience bietet. Die Reactive Props Destructure macht den Code lesbarer, während APIs wie `useTemplateRef()` und `onWatcherCleanup()` für mehr Typsicherheit und besseres Ressourcenmanagement sorgen.
+
+Möchtest du diese neuen Features selbst ausprobieren? Die Composition API und alle Vue 3.5 Features sind ab sofort verfügbar und produktionsreif!
 Tausche dich in unserem kostenfreien [Discord Chat](https://vuejs.de/discord) mit anderen Nutzern aus!
 
-Wir arbeiten aktuell an vielen weiteren Artikeln zum Thema Vue.js, insbesondere die Neuerungen von Vue 3 werden wir auf dieser Seite näher beleuchten. Guck also regelmäßig bei uns vorbei, um alle Neuerungen als Erstes zu erfahren.
+Wir arbeiten aktuell an vielen weiteren Artikeln zum Thema Vue.js, insbesondere die Neuerungen von Vue 3.5 werden wir auf dieser Seite näher beleuchten. Guck also regelmäßig bei uns vorbei, um alle Neuerungen als Erstes zu erfahren.
 Viel Spaß beim Lernen!
-
 
 Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das Tutorial macht:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pMr7P4QXj-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -730,7 +996,7 @@ Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das 
   <div class="row mb-2">
     <div class="col-xs-12 col-md-6">
       <p> Wir bieten auch <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">Vue-Intesiv-Schulungen</a>        an, um dich möglichst effektiv in das Thema Vue zu begleiten. Im Kurs kannst Du die Fragen stellen, die Du nur
-        schlecht googeln kannst, z.B. “Besserer Weg, um meine Applikation zu strukturieren?”. Wir können sie Dir beantworten.
+        schlecht googeln kannst, z.B. "Besserer Weg, um meine Applikation zu strukturieren?". Wir können sie Dir beantworten.
       </p>
       <p class="text-center">
         <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">
