@@ -8,24 +8,24 @@ permalink: /
   <div class="container">
     <div class="row align-items-center justify-content-center gy-3">
       <div class="col-3 col-md-4">
-        <img class="img img-fluid px-xl-4" alt="08. - 09. Oktober 2024 - Die Vue.js Konferenz in Deutschland"
-          src="/assets/img/logo-conf.png" title="vuejs.de Logo">
+        <img class="img img-fluid px-xl-4" alt="VueJS.DE Logo"
+          src="/assets/img/logo.svg" title="vuejs.de Logo">
       </div>
       <div class="col-12 col-md-8">
         <div class="pe-lg-4 me-lg-4 text-center text-md-start">
           <p class="lead text-muted">
-            08. - 09. Oktober 2024 - Maritim Hotel, Bonn
+            Alle Infos zu Vue.js auf Deutsch!
           </p>
-          <h1 class="header-homepage-title">Die Vue.js Konferenz in Deutschland</h1>
+          <h1 class="header-homepage-title">Alles rund um Vue.js</h1>
           <div class="mt-2 mt-md-4">
             <div class="row gy-3">
               <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                <a target="_blank" href="https://conf.vuejs.de/?utm_source=vuejs_de&utm_campaign=conference2024&utm_medium=portal&utm_content=home_hero"
-                  class="btn btn-primary w-100">Jetzt mehr erfahren &rsaquo;</a>
+                <a target="_blank" href="/artikel/vuejs-tutorial-deutsch-anfaenger/"
+                  class="btn w-100">Mit einem Tutorial starten &rsaquo;</a>
               </div>
               <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                <a target="_blank" href="https://www.youtube.com/watch?v=vu83i5XW5do&list=PLoq34pnGQDbZEuCmWtTRYzuQr6scsrNTC&utm_source=vuejs_de&utm_campaign=conference2024&utm_medium=portal&utm_content=home_hero"
-                  class="btn btn-primary w-100">Livestream ansehen &rsaquo;</a>
+                <a target="_blank" href="/schulungen/vuejs-typescript/"
+                  class="btn btn-primary w-100">Schulung buchen &rsaquo;</a>
               </div>
             </div>
           </div>
@@ -35,33 +35,19 @@ permalink: /
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h2>Deine Vue.js Community</h2>
-      <p>
-        Wir bieten euch hier Tutorials, Artikel und <a href="schulungen/"> Schulungen</a> rund um das Vue.js Framework.
-        Gestartet durch unsere Begeisterung für die modernen Möglichkeiten der Webentwicklung hat sich mittlerweile eine
-        ganze Community dazu entwickelt.
-        Es gibt bereits viele <a href="meetups/">Meetups</a> zu diesem Thema von Vue.js begeisterten Web Entwicklern.
-        Regelmäßig werden neue Bücher und Artikel zu dem Thema Vue.js auf Deutsch veröffentlicht.
-        Auch auf Konferenzen ist Vue.js ein wesentliches Thema und von der Tagesordnung nicht mehr wegzudenken.
-      </p>
-
-      <p>
-        Wir sind eine offene Community die jeden Willkommen heißt der sich einbringen möchte oder eine Frage hat.
-        Der meiste Austausch passiert dabei über unseren <a href="/discord" rel="noopener nofollow">Community
-          Discord</a> mit fast 2000 Mitgliedern.
-        Du hast spannende Themen rund um Vue.js über welche du dich austauschen willst oder sogar ein Artikel schreiben
-        möchtest?
-        Dann bist du hier genau richtig. Lasst uns voneinander lernen und die Herrausforderungen in unseren Projekten
-        gemeinsam meistern.
-      </p>
-    </div>
-  </div>
-</div>
 
 <main class="container">
+  <section class="my-5">
+    <h2>Die neuesten Artikel</h2>
+    <div class="row row-cols-1 row-cols-md-3 gy-4 gx-5">
+      {% for post in site.posts limit:6 %}
+      <div class="col">
+        {% include shared/_post_card.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
   <section class="my-5">
     <h2>Community</h2>
     <div class="row row-cols-1 row-cols-md-3 gy-4 gx-5">
@@ -107,15 +93,30 @@ permalink: /
         </div>
       </div>
     </div>
-  </section>
-  <section class="my-5">
-    <h2>Die neuesten Artikel</h2>
-    <div class="row row-cols-1 row-cols-md-3 gy-4 gx-5">
-      {% for post in site.posts limit:6 %}
-      <div class="col">
-        {% include shared/_post_card.html %}
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Deine Vue.js Community</h2>
+          <p>
+            Wir bieten euch hier Tutorials, Artikel und <a href="schulungen/"> Schulungen</a> rund um das Vue.js Framework.
+            Gestartet durch unsere Begeisterung für die modernen Möglichkeiten der Webentwicklung hat sich mittlerweile eine
+            ganze Community dazu entwickelt.
+            Es gibt bereits viele <a href="meetups/">Meetups</a> zu diesem Thema von Vue.js begeisterten Web Entwicklern.
+            Regelmäßig werden neue Bücher und Artikel zu dem Thema Vue.js auf Deutsch veröffentlicht.
+            Auch auf Konferenzen ist Vue.js ein wesentliches Thema und von der Tagesordnung nicht mehr wegzudenken.
+          </p>
+
+          <p>
+            Wir sind eine offene Community die jeden Willkommen heißt der sich einbringen möchte oder eine Frage hat.
+            Der meiste Austausch passiert dabei über unseren <a href="/discord" rel="noopener nofollow">Community
+              Discord</a> mit fast 2000 Mitgliedern.
+            Du hast spannende Themen rund um Vue.js über welche du dich austauschen willst oder sogar ein Artikel schreiben
+            möchtest?
+            Dann bist du hier genau richtig. Lasst uns voneinander lernen und die Herrausforderungen in unseren Projekten
+            gemeinsam meistern.
+          </p>
+        </div>
       </div>
-      {% endfor %}
     </div>
   </section>
 </main>
