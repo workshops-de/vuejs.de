@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vuejs.de/sitemap-index.xml
+
