@@ -5,7 +5,7 @@ import PostLayout from '../../layouts/PostLayout.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
   return posts.map(post => {
-    // Extract slug from the post id (e.g., "2025-06-09-vuejs-tutorial-deutsch" -> "vuejs-tutorial-deutsch")
+    // Extract slug from the post id (e.g., "2025-06-09-vuejs-tutorial-deutsch-anfaenger" -> "vuejs-tutorial-deutsch-anfaenger")
     const idParts = post.id.split('/');
     const folderName = idParts[0];
     // Remove date prefix from folder name

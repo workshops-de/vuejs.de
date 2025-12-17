@@ -120,9 +120,9 @@ export const siteConfig = {
     items: [
       { href: "/artikel/", label: "Artikel", pattern: "/artikel" },
       {
-        href: "/artikel/vuejs-tutorial-deutsch/",
+        href: "/artikel/vuejs-tutorial-deutsch-anfaenger/",
         label: "Tutorial",
-        pattern: "/artikel/vuejs-tutorial-deutsch/",
+        pattern: "/artikel/vuejs-tutorial-deutsch-anfaenger/",
       },
       {
         href: "/schulungen/vuejs-typescript/",

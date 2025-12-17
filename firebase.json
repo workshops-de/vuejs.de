@@ -1,11 +1,7 @@
 {
   "hosting": {
     "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
@@ -54,11 +50,6 @@
         "type": 301
       },
       {
-        "source": "/artikel/vuejs-tutorial-deutsch/",
-        "destination": "https://vuejs.de/artikel/vuejs-tutorial-deutsch-anfaenger/",
-        "type": 301
-      },
-      {
         "source": "/schulungen/vuejs/",
         "destination": "https://vuejs.de/schulungen/vuejs-typescript/",
         "type": 301
@@ -102,4 +93,3 @@
     "trailingSlash": true
   }
 }
-
