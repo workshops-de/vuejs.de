@@ -27,7 +27,7 @@ export const siteConfig = {
   titleShort: "vuejs.de",
   titleSuffix: "",
   description: "Deine deutsche Community zum Vue.js Framework",
-  topic: "vuejs",
+  topic: "Vue.js",
   url: "https://vuejs.de",
   language: "de",
 

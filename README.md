@@ -31,7 +31,6 @@ npm run preview
 │   ├── components/      # Reusable Astro components
 │   ├── content/         # Content collections
 │   │   ├── posts/       # Blog posts (markdown)
-│   │   ├── books/       # Book chapters
 │   │   └── users/       # Author profiles (YAML)
 │   ├── data/            # JSON data files
 │   ├── layouts/         # Page layouts
@@ -70,13 +69,13 @@ The migration script (`npm run migrate`) handles:
 
 ## 🛠️ Key Differences from Jekyll
 
-| Feature | Jekyll | Astro |
-|---------|--------|-------|
-| Templating | Liquid | Astro/JSX |
-| Content | Markdown + YAML | Content Collections |
-| Plugins | Ruby gems | npm packages |
-| Data | `_data/*.json` | `src/data/` + imports |
-| Build | `bundle exec jekyll build` | `npm run build` |
+| Feature    | Jekyll                     | Astro                 |
+| ---------- | -------------------------- | --------------------- |
+| Templating | Liquid                     | Astro/JSX             |
+| Content    | Markdown + YAML            | Content Collections   |
+| Plugins    | Ruby gems                  | npm packages          |
+| Data       | `_data/*.json`             | `src/data/` + imports |
+| Build      | `bundle exec jekyll build` | `npm run build`       |
 
 ## 📝 Content Management
 
