@@ -271,9 +271,7 @@ Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeic
         <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue Intensiv-Schulungen</a> an, damit du tiefer in die Thematik einsteigen kannst.
       </p>
       <p class="">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">
-          <button class="btn btn-danger">Mehr Informationen zur Vue3-Schulung</button>
-        </a>
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top" class="inline-block bg-primary !text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors">Mehr Informationen zur Vue3-Schulung</a>
       </p>
     </div>
     <div class="col-xs-12 col-md-6">
@@ -1016,9 +1014,7 @@ Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das 
         schlecht googeln kannst, z.B. "Besserer Weg, um meine Applikation zu strukturieren?". Wir können sie Dir beantworten.
       </p>
       <p class="text-center">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">
-          <button class="btn btn-danger">Jetzt weiter lernen</button>
-        </a>
+        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom" class="inline-block bg-primary !text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors">Jetzt weiter lernen</a>
       </p>
     </div>
     <div class="col-xs-12 col-md-6">
