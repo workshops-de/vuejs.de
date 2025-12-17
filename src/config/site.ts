@@ -69,11 +69,16 @@ export const siteConfig = {
     },
     // Main navigation items
     items: [
-      { href: "/artikel/", label: "Artikel", pattern: "/artikel", icon: "document-text" },
       {
-        href: "/artikel/vuejs-tutorial-deutsch/",
+        href: "/artikel/",
+        label: "Artikel",
+        pattern: "/artikel",
+        icon: "document-text",
+      },
+      {
+        href: "/artikel/vuejs-tutorial-deutsch-anfaenger/",
         label: "Tutorial",
-        pattern: "/artikel/vuejs-tutorial-deutsch/",
+        pattern: "/artikel/vuejs-tutorial-deutsch-anfaenger/",
         icon: "book-open",
       },
       {
