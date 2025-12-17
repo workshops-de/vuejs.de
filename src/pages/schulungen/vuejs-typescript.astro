@@ -228,18 +228,43 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
           Schneller und angenehmer lernen.
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-          Bücher und Videokurse sind heute nicht mehr wegzudenken. Allerdings kannst du in unserer Schulung:
-        </p>
+
+        <div class="prose prose-lg dark:prose-invert max-w-none mb-12">
+          <p>
+            {topic} wird immer beliebter und zahlreiche Unternehmen bieten mittlerweile {topic} Schulungen, Seminare und Workshops an.
+            Ob Formulare, Single-Page-Webanwendungen oder Multi-Page-Webseiten – die Einsatzmöglichkeiten mit Vue sind enorm.
+            Mit Version 3.0 hat {topic} sich sogar wieder übertroffen und überzeugt mit vielen innovativen Features,
+            die es Entwicklern noch einfacher macht, professionelle Anwendungen zu erstellen.
+          </p>
+          <p>
+            In unserer Vue Schulung vermitteln wir die Grundlagen des Webframeworks und zeigen unseren Teilnehmern,
+            wie sie ein Projekt-Setup planen und aufbauen können.
+          </p>
+          <p>
+            Wir bieten sowohl offene als auch geschlossene Workshops an. Erstere zeichnen sich dadurch aus,
+            dass der Termin bereits vorgegeben ist und die Anmeldung jedem beliebigen Teilnehmer online zur Verfügung steht.
+            Geschlossene bzw. inhouse Schulungen kommen durch Anfragen von Unternehmen zustande und werden sowohl terminlich
+            als auch inhaltlich ganz individuell abgestimmt.
+          </p>
+          <p>
+            Aktuell fokussieren wir uns auf das Homeoffice und bieten 6-Tage-Teilzeit-Workshops an.
+            So könnt Ihr weiterhin an Euren Projekten arbeiten und fallt nicht komplett aus.
+            Gerade Entwickler können sich selten für eine ganze Woche freimachen.
+            Ständig meldet sich ein Kunde oder der Chef, weil irgendetwas ganz dringend gemacht werden muss. 🙄
+          </p>
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
-        <ul class="space-y-4">
+      <div class="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+        <ul class="space-y-2">
           {[
-            'Durch direktes Feedback schneller lernen.',
-            'Trainer:in nach konkreten Lösungsansätzen für dein Projekt fragen.',
-            'Gemeinsam Lernhürden überwinden.',
-            'Einfach eine gute Zeit mit anderen Entwicklern in der gleichen Situation haben.',
+            '60 % Praxisanteil',
+            'Musterlösungen zu allen Aufgaben',
+            `Aktuelle Inhalte basierend auf ${topic} 3.0`,
+            'Viel Zeit für Fragen',
+            'Zeit für Gruppenarbeit und Breakout-Sessions',
+            'Interaktive Meetings für Fragen und Diskussionen',
+            'Dauerhafter Zugriff auf Materialien, Aufzeichnung und Transkripte',
           ].map(item => (
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -250,20 +275,12 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           ))}
         </ul>
 
-        <div class="grid grid-cols-2 gap-4">
-          <img
-            src="/assets/img/schulungen/angular-enterprise-applications/attendees.jpg"
-            alt="Teilnehmer"
-            loading="lazy"
-            class="rounded-lg shadow-lg"
-          />
-          <img
-            src="/assets/img/schulungen/shared/workshops-de-angular-schulung-remote-session.png"
-            alt="Remote Session"
-            loading="lazy"
-            class="rounded-lg shadow-lg"
-          />
-        </div>
+        <img
+          src="/assets/img/schulungen/shared/attendees.jpg"
+          alt="Workshop Teilnehmer"
+          loading="lazy"
+          class="rounded-lg shadow-lg w-full"
+        />
       </div>
     </div>
   </section>
