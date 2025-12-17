@@ -13,6 +13,7 @@ interface NavItem {
   label: string;
   pattern: string;
   external?: boolean;
+  icon?: string; // Heroicon name: 'document-text' | 'book-open' | 'academic-cap' | etc.
 }
 
 // Community link type
@@ -68,16 +69,18 @@ export const siteConfig = {
     },
     // Main navigation items
     items: [
-      { href: "/artikel/", label: "Artikel", pattern: "/artikel" },
+      { href: "/artikel/", label: "Artikel", pattern: "/artikel", icon: "document-text" },
       {
-        href: "/artikel/vuejs-tutorial-deutsch-anfaenger/",
+        href: "/artikel/vuejs-tutorial-deutsch/",
         label: "Tutorial",
-        pattern: "/artikel/vuejs-tutorial-deutsch-anfaenger/",
+        pattern: "/artikel/vuejs-tutorial-deutsch/",
+        icon: "book-open",
       },
       {
         href: "/schulungen/vuejs-typescript/",
         label: "Schulung",
         pattern: "/schulungen",
+        icon: "academic-cap",
       },
     ] as NavItem[],
   },
