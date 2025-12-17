@@ -50,7 +50,7 @@ export const siteConfig = {
   discord_invite: "https://workshops.de/join-discord",
 
   // Analytics & Tracking
-  gtm_property: "GTM-T5VPDDK",
+  gtm_property: "GTM-PNQ82ZX",
   utm_source: "vuejs_de",
 
   // URLs
