@@ -16,10 +16,41 @@
     "Fira Code", Menlo, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
     monospace;
 
-  /* Brand colors */
-  --color-primary: #42b883;
-  --color-primary-dark: #35495e;
-  --color-primary-light: #42b883;
+  /*
+   * Brand colors - Vue.js
+   * Usage: text-primary, bg-primary-500, border-primary-200, etc.
+   * To adapt for another portal, change these color values.
+   */
+
+  /* Primary color scale (Vue.js green #42b883) */
+  --color-primary-50: #f0fdf7;
+  --color-primary-100: #dcfce9;
+  --color-primary-200: #bbf7d4;
+  --color-primary-300: #86efb4;
+  --color-primary-400: #4ade8b;
+  --color-primary-500: #42b883; /* Base Vue.js green */
+  --color-primary-600: #16a35a;
+  --color-primary-700: #158049;
+  --color-primary-800: #16653c;
+  --color-primary-900: #145333;
+  --color-primary-950: #052e19;
+  --color-primary: #42b883; /* Alias for primary-500 */
+  --color-primary-dark: #35495e; /* Vue.js dark blue */
+  --color-primary-light: #4ade8b;
+
+  /* Accent color scale (Blue #3b82f6) */
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-200: #bfdbfe;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6; /* Base blue */
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+  --color-accent-800: #1e40af;
+  --color-accent-900: #1e3a8a;
+  --color-accent-950: #172554;
+  --color-accent: #3b82f6; /* Alias for accent-500 */
 
   /* Discord brand color */
   --color-discord: #5865f2;
@@ -78,7 +109,7 @@ html.dark nav input {
 
 /* Dark mode - Code blocks */
 html.dark :not(pre) > code {
-  @apply bg-green-900/50 text-green-200;
+  @apply bg-primary-900/50 text-primary-200;
 }
 
 /* Dark mode - Prose content */
@@ -111,11 +142,11 @@ html.dark .prose-content hr {
 
 /* Dark mode - Alerts */
 html.dark .alert-info {
-  @apply bg-blue-900/30 border-blue-800 text-blue-300;
+  @apply bg-accent-900/30 border-accent-800 text-accent-300;
 }
 
 html.dark .alert-success {
-  @apply bg-green-900/30 border-green-800 text-green-300;
+  @apply bg-primary-900/30 border-primary-800 text-primary-300;
 }
 
 html.dark .alert-warning {
@@ -179,7 +210,7 @@ code {
 }
 
 :not(pre) > code {
-  @apply bg-green-100 text-green-900 px-1.5 py-0.5 rounded;
+  @apply bg-primary-100 text-primary-900 px-1.5 py-0.5 rounded;
 }
 
 /* Focus styles */
@@ -189,7 +220,7 @@ code {
 
 /* Custom gradient button */
 .btn-gradient {
-  @apply bg-gradient-to-r from-green-500 to-blue-600 text-white font-medium py-2 px-6 rounded-lg hover:from-blue-600 hover:to-green-600 transition-all duration-300;
+  @apply bg-gradient-to-r from-primary-500 to-accent-600 text-white font-medium py-2 px-6 rounded-lg hover:from-accent-600 hover:to-primary-600 transition-all duration-300;
 }
 
 /* Content styles for articles - Smashing-inspired */
@@ -267,11 +298,11 @@ code {
 }
 
 .alert-info {
-  @apply bg-blue-50 border border-blue-200 text-blue-800;
+  @apply bg-accent-50 border border-accent-200 text-accent-800;
 }
 
 .alert-success {
-  @apply bg-green-50 border border-green-200 text-green-800;
+  @apply bg-primary-50 border border-primary-200 text-primary-800;
 }
 
 .alert-warning {

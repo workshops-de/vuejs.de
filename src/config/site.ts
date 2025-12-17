@@ -31,12 +31,65 @@ export const siteConfig = {
   url: "https://vuejs.de",
   language: "de",
 
-  // Branding colors (Tailwind classes)
+  // Branding colors
+  //
+  // Full color scales are defined in src/styles/global.css @theme
+  // Usage examples:
+  //   text-primary, text-primary-500, text-primary-600
+  //   bg-primary-100, bg-primary/10
+  //   border-accent-200, text-accent-700
+  //
   branding: {
-    primaryColor: "green", // Used for gradients, buttons, etc.
-    accentColor: "blue",
-    // Hero icon background gradient
-    heroGradient: "from-primary to-blue-500",
+    // Primary color (Vue.js green)
+    primary: "#42b883",
+    primaryDark: "#35495e", // Vue.js dark blue (dark variant)
+    primaryLight: "#4ade8b",
+
+    // Primary color scale (for reference, defined in global.css)
+    primaryScale: {
+      50: "#f0fdf7",
+      100: "#dcfce9",
+      200: "#bbf7d4",
+      300: "#86efb4",
+      400: "#4ade8b",
+      500: "#42b883", // Base
+      600: "#16a35a",
+      700: "#158049",
+      800: "#16653c",
+      900: "#145333",
+      950: "#052e19",
+    },
+
+    // Accent color (Blue for links, interactive elements)
+    accent: "#3b82f6",
+
+    // Accent color scale (for reference, defined in global.css)
+    accentScale: {
+      50: "#eff6ff",
+      100: "#dbeafe",
+      200: "#bfdbfe",
+      300: "#93c5fd",
+      400: "#60a5fa",
+      500: "#3b82f6", // Base
+      600: "#2563eb",
+      700: "#1d4ed8",
+      800: "#1e40af",
+      900: "#1e3a8a",
+      950: "#172554",
+    },
+
+    // RGB values for gradients
+    primaryRgb: "66, 184, 131", // #42b883
+    primaryDarkRgb: "53, 73, 94", // #35495e
+    accentRgb: "59, 130, 246", // #3b82f6
+
+    // Hero gradients (light mode)
+    heroGradientLight:
+      "radial-gradient(at 20% 30%, rgba(66, 184, 131, 0.08) 0px, transparent 50%), radial-gradient(at 80% 20%, rgba(53, 73, 94, 0.1) 0px, transparent 50%), radial-gradient(at 40% 80%, rgba(66, 184, 131, 0.06) 0px, transparent 50%), radial-gradient(at 90% 70%, rgba(53, 73, 94, 0.05) 0px, transparent 50%), linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%)",
+
+    // Hero gradients (dark mode)
+    heroGradientDark:
+      "radial-gradient(at 20% 30%, rgba(66, 184, 131, 0.15) 0px, transparent 50%), radial-gradient(at 80% 20%, rgba(53, 73, 94, 0.12) 0px, transparent 50%), radial-gradient(at 40% 80%, rgba(66, 184, 131, 0.1) 0px, transparent 50%)",
   },
 
   // Social media

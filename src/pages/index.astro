@@ -10,7 +10,7 @@ const latestPosts = allPosts
   .sort((a, b) => b.data.published_at.getTime() - a.data.published_at.getTime())
   .slice(0, 6);
 
-const { topic, title, description, training, discord_invite } = siteConfig;
+const { topic, title, description, training, discord_invite, branding } = siteConfig;
 
 // Stats for the community
 const stats = [
@@ -57,10 +57,10 @@ const communityBenefits = [
 >
   <!-- Hero Section with Typewriter Effect -->
   <section class="relative py-20 md:py-32 overflow-hidden hero-background dark:bg-gray-950">
-    <!-- Gradient Mesh Background -->
-    <div class="absolute inset-0 hero-gradient dark:opacity-0"></div>
+    <!-- Gradient Mesh Background (Light Mode) -->
+    <div class="absolute inset-0 dark:opacity-0" style={`background: ${branding.heroGradientLight}`}></div>
     <!-- Dark Mode Gradient -->
-    <div class="absolute inset-0 hidden dark:block" style="background: radial-gradient(at 20% 30%, rgba(133, 20, 245, 0.2) 0px, transparent 50%), radial-gradient(at 80% 20%, rgba(139, 92, 246, 0.15) 0px, transparent 50%), radial-gradient(at 40% 80%, rgba(59, 130, 246, 0.12) 0px, transparent 50%);"></div>
+    <div class="absolute inset-0 hidden dark:block" style={`background: ${branding.heroGradientDark}`}></div>
     <!-- Dot Grid Pattern Overlay -->
     <div class="absolute inset-0 hero-dots dark:opacity-30"></div>
 
