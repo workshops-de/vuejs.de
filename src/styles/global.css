@@ -1,0 +1,175 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Enable manual dark mode toggling via .dark class */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom fonts - Mona Sans for modern, bold headings */
+@import "@fontsource-variable/source-sans-3/index.css";
+@import "@fontsource/fira-code/400.css";
+
+/* Theme configuration */
+@theme {
+  --font-sans:
+    "Source Sans 3 Variable", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono:
+    "Fira Code", Menlo, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+
+  /*
+   * Brand colors - Vue.js
+   * Usage: text-primary, bg-primary-500, border-primary-200, etc.
+   * To adapt for another portal, change these color values.
+   */
+
+  /* Primary color scale (Vue.js green #42b883) */
+  --color-primary-50: #f0fdf7;
+  --color-primary-100: #dcfce9;
+  --color-primary-200: #bbf7d4;
+  --color-primary-300: #86efb4;
+  --color-primary-400: #4ade8b;
+  --color-primary-500: #42b883; /* Base Vue.js green */
+  --color-primary-600: #16a35a;
+  --color-primary-700: #158049;
+  --color-primary-800: #16653c;
+  --color-primary-900: #145333;
+  --color-primary-950: #052e19;
+  --color-primary: #42b883; /* Alias for primary-500 */
+  --color-primary-dark: #35495e; /* Vue.js dark blue */
+  --color-primary-light: #4ade8b;
+
+  /* Accent color scale (Blue #3b82f6) */
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-200: #bfdbfe;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6; /* Base blue */
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+  --color-accent-800: #1e40af;
+  --color-accent-900: #1e3a8a;
+  --color-accent-950: #172554;
+  --color-accent: #3b82f6; /* Alias for accent-500 */
+
+  /* Discord brand color */
+  --color-discord: #5865f2;
+  --color-discord-dark: #4752c4;
+
+  /* Typography plugin customization */
+  --tw-prose-links: var(--color-primary);
+  --tw-prose-links-hover: var(--color-primary-700);
+  --tw-prose-quote-borders: var(--color-primary);
+}
+
+/* Base styles */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply text-gray-800 dark:text-gray-200 leading-relaxed bg-white dark:bg-gray-950;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Headings - Bold, punchy, Smashing-style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold leading-tight tracking-tight;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl;
+  line-height: 1.1;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+  line-height: 1.15;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl;
+  line-height: 1.2;
+}
+
+h4 {
+  @apply text-xl md:text-2xl;
+  line-height: 1.25;
+}
+
+/* Links - only apply default color where not explicitly set */
+a:not([class*="text-"]) {
+  @apply text-primary hover:text-primary-dark;
+}
+
+a {
+  @apply transition-colors;
+}
+
+/* Code blocks */
+pre {
+  @apply bg-gray-900 rounded-lg p-4 overflow-x-auto my-4;
+}
+
+code {
+  @apply font-mono text-sm;
+}
+
+:not(pre) > code {
+  @apply bg-primary-100 dark:bg-primary-900/50 text-primary-900 dark:text-primary-200 px-1.5 py-0.5 rounded;
+}
+
+/* Focus styles */
+:focus {
+  @apply outline-2 outline-dotted outline-primary outline-offset-2;
+}
+
+/* Custom gradient button */
+.btn-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-accent-600 text-white font-medium py-2 px-6 rounded-lg hover:from-accent-600 hover:to-primary-600 transition-all duration-300;
+}
+
+/* Prose customizations - extend Tailwind Typography */
+.prose img {
+  @apply rounded-xl;
+}
+
+.prose blockquote {
+  @apply bg-gray-50 dark:bg-gray-800 rounded-r-lg;
+}
+
+/* Alert boxes */
+.alert {
+  @apply p-4 rounded-lg mb-4;
+}
+
+.alert-info {
+  @apply bg-accent-50 dark:bg-accent-900/30 border border-accent-200 dark:border-accent-800 text-accent-800 dark:text-accent-300;
+}
+
+.alert-success {
+  @apply bg-primary-50 dark:bg-primary-900/30 border border-primary-200 dark:border-primary-800 text-primary-800 dark:text-primary-300;
+}
+
+.alert-warning {
+  @apply bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-800 text-yellow-800 dark:text-yellow-300;
+}
+
+/* Workshop hint box */
+.workshop-hint {
+  @apply bg-gray-50 dark:bg-gray-900 rounded-lg p-6 my-8 border-l-4 border-primary;
+}

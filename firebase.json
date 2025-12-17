@@ -1,12 +1,12 @@
 {
   "hosting": {
-    "public": "_site",
-    "cleanUrls": true,
-    "trailingSlash": true,
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/404.html"
+      }
     ],
     "redirects": [
       {
@@ -46,12 +46,7 @@
       },
       {
         "source": "/chat*",
-        "destination": "https://angular.de/discord",
-        "type": 301
-      },
-      {
-        "source": "/artikel/vuejs-tutorial-deutsch/",
-        "destination": "https://vuejs.de/artikel/vuejs-tutorial-deutsch-anfaenger/",
+        "destination": "https://vuejs.de/discord",
         "type": 301
       },
       {
@@ -67,23 +62,34 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(jpg|jpeg|gif|png|svg|css)",
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|ico)",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=604800"
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       },
       {
-        "source": "/assets/mirror/**",
+        "source": "**/*.@(js|css)",
         "headers": [
           {
-            "key": "X-Robots-Tag",
-            "value": "noindex, follow"
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(woff|woff2|ttf|eot)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       }
-    ]
+    ],
+    "cleanUrls": true,
+    "trailingSlash": true
   }
 }
