@@ -29,7 +29,7 @@ Zunächst einmal die Hardfacts:
 
 Während einer Tech-Konferenz dürfen die Emojis natürlich auch nicht fehlen. In der Übersicht siehst du, welche Reaktionen am häufigsten verwendet wurden. Selbstverständlich sind nur positive Lachsmilies, Herzen, erstaunte Gesichter und klatschende Hände durch unser Diagramm geflogen. 🥰
 
-<img class="img-fluid img-rounded" src="vueday-emojidichte.jpg" alt="VueDay Emojidichte">
+![VueDay Emojidichte](vueday-emojidichte.jpg)
 
 Obwohl der VueDay nun schon einige Tage zurückliegt, ist die Freude über diesen gelungenen Tag mit so vielen tollen Sprecher:innen und Teilnehmer:innen immer noch riesig und wir können es gar nicht abwarten, das nächste große Event für und mit der Community zu starten.
 

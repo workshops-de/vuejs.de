@@ -1,12 +1,12 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProductJsonLd from '../../components/ProductJsonLd.astro';
-import { siteConfig, buildUtmUrl, getLocalizedCourses } from '../../config/site';
-import courseData from '../../data/course.json';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductJsonLd from '../../../components/ProductJsonLd.astro';
+import { siteConfig, buildUtmUrl, getLocalizedCourses } from '../../../config/site';
+import courseData from '../../../data/course.json';
 
 const { topic } = siteConfig;
 const { providerUrl } = siteConfig.training;
-const courses = getLocalizedCourses('de');
+const courses = getLocalizedCourses('en');
 
 // Client logos
 const clients = [
@@ -29,32 +29,32 @@ const reviews = courseData.review.slice(0, 6).map(review => ({
 // Aggregate rating from course.json
 const aggregateRating = courseData.aggregateRating;
 
-// Featured Testimonials with images
+// Featured Testimonials with images (translated)
 const testimonials = [
   {
-    quote: 'Die Trainer:innen sind absolute Profis und übermitteln ihre Begeisterung für das Thema. Unsere Mitarbeiter profitieren von intensiven, praktischen Trainings, in denen auf ihre Bedürfnisse eingegangen wird. Das Feedback ist ausgesprochen gut.',
+    quote: 'The trainers are absolute professionals and convey their enthusiasm for the subject. Our employees benefit from intensive, practical training that addresses their needs. The feedback has been exceptionally positive.',
     name: 'Annika Stille',
-    role: 'Verantwortliche für interne Weiterbildung',
+    role: 'Head of Internal Training',
     company: 'Adesso AG',
     image: '/assets/img/schulungen/shared/testimonial-annika-stille-adesso.jpg',
     align: 'left',
   },
   {
-    quote: 'Die Schulungen sind immer an die aktuellen Themen am Markt gerichtet und passen maßgeschneidert auf unsere Bedarfe. Sie helfen unseren Mitarbeitern sich schnell und effizient auf bevorstehende Projekte vorzubereiten.',
+    quote: 'The training courses are always aligned with current market topics and are tailored to our needs. They help our employees prepare quickly and efficiently for upcoming projects.',
     name: 'Christian Janz',
-    role: 'Lead Softwarearchitekt',
+    role: 'Lead Software Architect',
     company: 'bridgingIT',
     image: '/assets/img/schulungen/shared/testimonial-christianz-janz.png',
     align: 'right',
   },
 ];
 
-const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-typescript`, 'schulungen_2025', 'portal', 'schulung_page');
+const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-typescript`, 'training_2025', 'portal', 'training_page_en');
 ---
 
 <BaseLayout
-  title={`${topic} & TypeScript Intensiv-Schulung (Vor-Ort / Remote)`}
-  description={`Du möchtest ${topic} lernen? Ganz entspannt Vor Ort oder Remote gemeinsam lernen. Erfahre mehr über unsere Intensiv-Schulung!`}
+  title={`${topic} & TypeScript Intensive Training (On-Site / Remote)`}
+  description={`Want to learn ${topic}? Learn together on-site or remotely. Discover our intensive training courses!`}
 >
   <!-- Product JSON-LD for rich search results -->
   <ProductJsonLd />
@@ -72,28 +72,28 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
       <!-- Badge -->
       <div class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-600 text-primary-700 dark:text-primary-400 rounded-full text-sm font-medium mb-6 dark:bg-gray-800/50">
         <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-        Nächste Termine verfügbar
+        Upcoming dates available
       </div>
 
       <!-- Logo -->
       <div class="w-28 h-28 md:w-36 md:h-36 mx-auto mb-8">
         <img
           src="/assets/img/workshops/logo-vue-typescript-schulung.svg"
-          alt={`${topic} & TypeScript Schulung`}
+          alt={`${topic} & TypeScript Training`}
           class="w-full h-full drop-shadow-lg"
         />
       </div>
 
       <!-- Title -->
       <h1 class="text-gray-900 dark:text-white mb-6">
-        Der beste Weg mit<br />
-        <span class="text-primary">{topic}</span> zu starten.
+        The best way to start<br />
+        with <span class="text-primary">{topic}</span>.
       </h1>
 
       <!-- Subtitle -->
       <p class="text-xl text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto">
-        Unsere Schulungen machen dich fit für den produktiven Einsatz von {topic}.
-        Vertraue wie über <span class="font-semibold text-gray-900 dark:text-white">2000+ Teilnehmer:innen</span> vor dir auf unsere Expertise.
+        Our training courses prepare you for productive use of {topic}.
+        Trust our expertise like <span class="font-semibold text-gray-900 dark:text-white">2000+ participants</span> before you.
       </p>
 
       <!-- Format badges -->
@@ -103,7 +103,7 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
           </svg>
-          Vor Ort
+          On-Site
         </span>
         <span class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-600 dark:text-gray-300 shadow-sm">
           <svg class="w-4 h-4 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,7 +115,7 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           <svg class="w-4 h-4 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
           </svg>
-          Inhouse
+          In-House
         </span>
       </div>
 
@@ -126,16 +126,16 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           target="_blank"
           class="inline-flex items-center justify-center gap-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold px-8 py-4 rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg"
         >
-          Schulung buchen
+          Book Training
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
         </a>
         <a
-          href="#kurse"
+          href="#courses"
           class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-full font-semibold text-gray-700 dark:text-gray-300 hover:border-primary hover:text-primary transition-colors"
         >
-          Alle Kurse ansehen
+          View All Courses
         </a>
       </div>
     </div>
@@ -158,12 +158,12 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   </section>
 
   <!-- All Courses Overview -->
-  <section id="kurse" class="py-16 scroll-mt-20 dark:bg-gray-950">
+  <section id="courses" class="py-16 scroll-mt-20 dark:bg-gray-950">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto mb-12">
-        <h2 class="!text-sm !font-semibold text-primary uppercase !tracking-wide mb-3">Unsere {topic}-Schulungen</h2>
+        <h2 class="!text-sm !font-semibold text-primary uppercase !tracking-wide mb-3">Our {topic} Training Courses</h2>
         <p class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-          Erweitere dein {topic}-Wissen mit diesen Kursen.
+          Expand your {topic} knowledge with these courses.
         </p>
       </div>
 
@@ -202,21 +202,20 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
             </div>
 
             <a
-              href={buildUtmUrl(`${providerUrl}${course.url}`, 'schulungen_2025', 'portal', 'course_card')}
+              href={buildUtmUrl(`${providerUrl}${course.url}`, 'training_2025', 'portal', 'course_card_en')}
               target="_blank"
               class="block w-full text-center bg-primary hover:bg-primary-dark text-white font-medium py-3 px-4 rounded-lg transition-all"
             >
-              Zur Schulung
+              View Training
             </a>
           </div>
         ))}
       </div>
 
       <p class="text-center text-gray-500 dark:text-gray-400 mt-8">
-        Alle Schulungen werden von
+        All training courses are provided by
         <img src="/shared/assets/img/workshops-de-logo.svg" alt="workshops.de" class="inline h-5 mx-1 align-middle" loading="lazy" />
-        <a href={buildUtmUrl(providerUrl, 'schulungen_2025', 'portal', 'provider_link')} target="_blank" class="text-primary hover:underline font-medium">workshops.de</a>
-        durchgeführt.
+        <a href={buildUtmUrl(providerUrl, 'training_2025', 'portal', 'provider_link_en')} target="_blank" class="text-primary hover:underline font-medium">workshops.de</a>.
       </p>
     </div>
   </section>
@@ -225,33 +224,32 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   <section class="py-20 dark:bg-gray-950">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
-        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Interaktiver Workshop</p>
+        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Interactive Workshop</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-          Schneller und angenehmer lernen.
+          Learn faster and more enjoyably.
         </h2>
 
         <div class="prose prose-lg dark:prose-invert max-w-none mb-12">
           <p>
-            {topic} wird immer beliebter und zahlreiche Unternehmen bieten mittlerweile {topic} Schulungen, Seminare und Workshops an.
-            Ob Formulare, Single-Page-Webanwendungen oder Multi-Page-Webseiten – die Einsatzmöglichkeiten mit Vue sind enorm.
-            Mit Version 3.0 hat {topic} sich sogar wieder übertroffen und überzeugt mit vielen innovativen Features,
-            die es Entwicklern noch einfacher macht, professionelle Anwendungen zu erstellen.
+            {topic} is becoming increasingly popular, and numerous companies now offer {topic} training, seminars, and workshops.
+            Whether forms, single-page web applications, or multi-page websites – the possibilities with Vue are enormous.
+            With version 3.0, {topic} has outdone itself again and impresses with many innovative features
+            that make it even easier for developers to create professional applications.
           </p>
           <p>
-            In unserer Vue Schulung vermitteln wir die Grundlagen des Webframeworks und zeigen unseren Teilnehmern,
-            wie sie ein Projekt-Setup planen und aufbauen können.
+            In our Vue training, we teach the fundamentals of the web framework and show our participants
+            how to plan and set up a project.
           </p>
           <p>
-            Wir bieten sowohl offene als auch geschlossene Workshops an. Erstere zeichnen sich dadurch aus,
-            dass der Termin bereits vorgegeben ist und die Anmeldung jedem beliebigen Teilnehmer online zur Verfügung steht.
-            Geschlossene bzw. inhouse Schulungen kommen durch Anfragen von Unternehmen zustande und werden sowohl terminlich
-            als auch inhaltlich ganz individuell abgestimmt.
+            We offer both open and closed workshops. Open workshops have predetermined dates and registration
+            is available online to any participant. Closed or in-house training courses come about through
+            company inquiries and are individually tailored both in terms of timing and content.
           </p>
           <p>
-            Aktuell fokussieren wir uns auf das Homeoffice und bieten 6-Tage-Teilzeit-Workshops an.
-            So könnt Ihr weiterhin an Euren Projekten arbeiten und fallt nicht komplett aus.
-            Gerade Entwickler können sich selten für eine ganze Woche freimachen.
-            Ständig meldet sich ein Kunde oder der Chef, weil irgendetwas ganz dringend gemacht werden muss. 🙄
+            Currently, we focus on remote work and offer 6-day part-time workshops.
+            This way, you can continue working on your projects and don't completely drop out.
+            Developers especially can rarely take a whole week off.
+            Clients or bosses are constantly calling because something urgently needs to be done. 🙄
           </p>
         </div>
       </div>
@@ -259,13 +257,13 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
       <div class="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
         <ul class="space-y-2">
           {[
-            '60 % Praxisanteil',
-            'Musterlösungen zu allen Aufgaben',
-            `Aktuelle Inhalte basierend auf ${topic} 3.0`,
-            'Viel Zeit für Fragen',
-            'Zeit für Gruppenarbeit und Breakout-Sessions',
-            'Interaktive Meetings für Fragen und Diskussionen',
-            'Dauerhafter Zugriff auf Materialien, Aufzeichnung und Transkripte',
+            '60% hands-on practice',
+            'Sample solutions for all exercises',
+            `Current content based on ${topic} 3.0`,
+            'Plenty of time for questions',
+            'Time for group work and breakout sessions',
+            'Interactive meetings for questions and discussions',
+            'Permanent access to materials, recordings, and transcripts',
           ].map(item => (
             <li class="flex items-start gap-3">
               <svg class="w-6 h-6 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -278,7 +276,7 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
 
         <img
           src="/assets/img/schulungen/shared/attendees.jpg"
-          alt="Workshop Teilnehmer"
+          alt="Workshop Participants"
           loading="lazy"
           class="rounded-lg shadow-lg w-full"
         />
@@ -290,9 +288,9 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   <section class="py-20 bg-white dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
-        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Was sind {topic} bzw. TypeScript?</p>
+        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">What are {topic} and TypeScript?</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-16 leading-tight">
-          Ein Kurzüberblick, um<br />was es geht.
+          A brief overview of<br />what it's all about.
         </h2>
       </div>
 
@@ -303,9 +301,9 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           <div>
             <h3 class="text-xl text-gray-900 dark:text-white mb-3">{topic}</h3>
             <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              {topic} ist ein progressives JavaScript-Framework zur Erstellung von Benutzeroberflächen. Es wurde von Evan You entwickelt
-              und zeichnet sich durch seine einfache Integration, reaktive Datenbindung und komponentenbasierte Architektur aus.
-              Mit der Composition API in Vue 3 bietet das Framework moderne Patterns für skalierbare Anwendungen.
+              {topic} is a progressive JavaScript framework for building user interfaces. It was developed by Evan You
+              and is characterized by its easy integration, reactive data binding, and component-based architecture.
+              With the Composition API in Vue 3, the framework offers modern patterns for scalable applications.
             </p>
           </div>
         </div>
@@ -316,10 +314,10 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           <div>
             <h3 class="text-xl text-gray-900 dark:text-white mb-3">TypeScript</h3>
             <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              TypeScript wird seit 2012 von Microsoft entwickelt und ist ein Aufsatz auf die Sprache JavaScript
-              (die Basis der Web-Anwendungsentwicklung). Es erweitert diese u.a. um ein Typensystem, das die Entwicklung und Pflege
-              von Webanwendungen stark unterstützt. Gerade Entwickler:innen, die vorher Programmiersprachen wie Java oder C#
-              gelernt haben, finden sich so deutlich leichter zurecht.
+              TypeScript has been developed by Microsoft since 2012 and is a superset of JavaScript
+              (the foundation of web application development). It extends JavaScript with a type system that greatly
+              supports the development and maintenance of web applications. Developers who have previously learned
+              programming languages like Java or C# find it much easier to get started.
             </p>
           </div>
         </div>
@@ -414,12 +412,12 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
       <div class="max-w-5xl mx-auto mb-16">
         <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Agenda</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-          Wissen aus der Praxis.
+          Knowledge from practice.
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-          Wir sind selbst Entwickler:innen und wissen, welche Probleme zuerst in der echten Welt auftreten werden. Deshalb
-          arbeiten wir mit Beispielen, die aus der echten Welt stammen. Diese haben wir dann auf den Kern reduziert, um diese leicht
-          vermitteln zu können. <strong class="text-gray-900 dark:text-white">Der Praxis-Anteil liegt dabei bei 60%</strong>.
+          We are developers ourselves and know which problems arise first in the real world. That's why
+          we work with examples from the real world. We've reduced these to their core to make them easy
+          to teach. <strong class="text-gray-900 dark:text-white">The hands-on portion is 60%</strong>.
         </p>
       </div>
 
@@ -429,15 +427,15 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-typescript.svg" alt="TypeScript" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Grundlagen TypeScript</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">TypeScript Fundamentals</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Wir starten mit einer kurzen Einführung in TypeScript (ca. 3 Stunden). Dort lernen wir die
-                Grundlagen für den anschließenden {topic}-Teil.
+                We start with a brief introduction to TypeScript (approx. 3 hours). There we learn the
+                fundamentals for the subsequent {topic} part.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Warum TypeScript?', 'Type inference', 'Typendefinitionen', 'Interfaces & Type Aliases', 'Generics', 'Utility Types', 'Best Practises'].map(item => (
+            {['Why TypeScript?', 'Type inference', 'Type definitions', 'Interfaces & Type Aliases', 'Generics', 'Utility Types', 'Best Practices'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -453,16 +451,16 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-vuejs.svg" alt="Vue.js" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">{topic} Themen</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">{topic} Topics</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Danach erarbeiten wir die Grundkonzepte von {topic} entlang einer durchgehenden
-                Beispiel-Anwendung. Dazu gibt es immer einen kurzen Theorie-Teil, gefolgt von einer Aufgabe.
-                Zu den verschiedenen Schritten stellen wir eine Musterlösung bereit.
+                Then we work through the basic concepts of {topic} along a continuous
+                example application. There's always a short theory part, followed by an exercise.
+                We provide sample solutions for the various steps.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Was ist Vue.js?', 'Wann und Warum macht es Sinn Vue.js im Projekt einzusetzen?', 'Die Vue-CLI', 'Templates & Template-Syntax', 'Computed properties', 'Formulare und Validierung', 'Komponenten und Komponentendesign', 'Props und Custom Event Handling', 'Data-Flow', 'Lifecycle hooks', 'Zugriff auf eine REST-API'].map(item => (
+            {['What is Vue.js?', 'When and why does it make sense to use Vue.js in a project?', 'The Vue CLI', 'Templates & Template Syntax', 'Computed properties', 'Forms and validation', 'Components and component design', 'Props and Custom Event Handling', 'Data Flow', 'Lifecycle hooks', 'Accessing a REST API'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -480,12 +478,12 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
             <div>
               <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Vue Router</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Nach den Grundlagen gehen wir dazu über unsere Demo-Applikation umzusetzen, wobei wir mit dem Routing beginnen.
+                After the fundamentals, we move on to implementing our demo application, starting with routing.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Wozu braucht man Routing?', 'Definition und Nutzung von Routen', 'Dynamische Routen und der Ranking Algorithmus', 'Child Routes', 'Performance-Optimierungen durch Lazy Loading', 'Route Guards'].map(item => (
+            {['Why do you need routing?', 'Defining and using routes', 'Dynamic routes and the ranking algorithm', 'Child Routes', 'Performance optimizations through Lazy Loading', 'Route Guards'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -496,19 +494,19 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           </div>
         </div>
 
-        <!-- Vue Formulare und Rest-APIs -->
+        <!-- Vue Forms and REST APIs -->
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-vuejs.svg" alt="Vue.js" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Vue Formulare und Rest-APIs</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Vue Forms and REST APIs</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Als Nächstes gehen wir zu den Themen über, die den Kern von nahezu jeder Anwendung bilden.
+                Next, we move on to topics that form the core of almost every application.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Formulare', 'Validatoren und Fehlermeldungen', 'Zugriff auf eine REST-API', 'Bidirektionales Databinding (Two-Way) durch v-model'].map(item => (
+            {['Forms', 'Validators and error messages', 'Accessing a REST API', 'Bidirectional data binding (Two-Way) with v-model'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -519,19 +517,19 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           </div>
         </div>
 
-        <!-- State management mit Pinia -->
+        <!-- State management with Pinia -->
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-pinia.svg" alt="Pinia" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">State management mit Pinia</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">State Management with Pinia</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                In mittel bis großen Anwendungen wird die Verwaltung des Zustandes der Applikation immer wichtiger, daher widmen wir uns als letztes der Einbindung von Pinia.
+                In medium to large applications, managing application state becomes increasingly important, so we conclude with integrating Pinia.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Was ist State management und wozu brauchen wir es?', 'Pinia Architektur', 'Einbindung von Pinia', 'Nutzung von Actions und Getters', 'Trennen der Verantwortlichkeiten mit Modulen'].map(item => (
+            {['What is state management and why do we need it?', 'Pinia architecture', 'Integrating Pinia', 'Using Actions and Getters', 'Separating responsibilities with modules'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -542,20 +540,20 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           </div>
         </div>
 
-        <!-- Architektur großer Anwendungen -->
+        <!-- Architecture of Large Applications -->
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-vuejs.svg" alt="Vue.js" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Architektur großer Anwendungen</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Architecture of Large Applications</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Wie teilt man eine Applikation am Besten auf und warum? Wie programmiere ich zukunftssicher?
-                In diesem Teil liefern wir die Antworten.
+                How do you best structure an application and why? How do I program future-proof?
+                In this section, we provide the answers.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Komponentenarchitektur', 'Feature-basierte Struktur', 'Wiederverwendbare Composables', 'Monorepo mit Nx oder Turborepo', 'Micro Frontends mit Vue.js'].map(item => (
+            {['Component architecture', 'Feature-based structure', 'Reusable Composables', 'Monorepo with Nx or Turborepo', 'Micro Frontends with Vue.js'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -566,20 +564,20 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           </div>
         </div>
 
-        <!-- Vue.js weiterführende Themen -->
+        <!-- Vue.js Advanced Topics -->
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-vuejs.svg" alt="Vue.js" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">{topic} weiterführende Themen</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">{topic} Advanced Topics</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Die restliche Zeit widmen wir individuellen Themenwünschen. Hierbei kann die Gruppe wählen, welche
-                Themen am relevantesten für sie sind. Wir haben über 600 Folien, aus denen ad hoc ausgewählt werden kann.
+                We dedicate the remaining time to individual topic requests. The group can choose which
+                topics are most relevant to them. We have over 600 slides to choose from ad hoc.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Teleport und Suspense', 'Custom Directives', 'Plugins entwickeln', 'Performance-Optimierung', 'Unit Testing mit Vitest', 'Component Testing', 'E2E Testing mit Playwright', 'Vue DevTools', 'Build und Deployment'].map(item => (
+            {['Teleport and Suspense', 'Custom Directives', 'Developing Plugins', 'Performance Optimization', 'Unit Testing with Vitest', 'Component Testing', 'E2E Testing with Playwright', 'Vue DevTools', 'Build and Deployment'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -598,24 +596,24 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
     <div class="container mx-auto px-4">
       <!-- Header -->
       <div class="max-w-5xl mx-auto mb-16">
-        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Erweiterte Agenda</p>
+        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Extended Agenda</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-          Angepasst auf eure Bedürfnisse.
+          Tailored to your needs.
         </h2>
         <div class="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
           <p>
-            Wir stellen euch als Trainer:innen-Community ein großes Portfolio an Materialien und Aufgaben zur Verfügung.
-            Da in wenigen Tagen aber nur eine bestimmte Menge an Wissen aufgenommen werden kann, haben wir fortführende Themen
-            die wir auf die jeweiligen Bedürfnisse und Herausforderungen der Gruppe anpassen. Wenn ihr also die Grundlagen schon kennt,
-            werden diese nur kurz wiederholt damit alle dieselbe Terminologie und Konzepte benutzen. Dies klappt in die andere Richtung
-            natürlich genauso und es können z.B. Basis-Module für HTML & CSS dazu genommen werden.
+            As a trainer community, we provide you with a large portfolio of materials and exercises.
+            Since only a certain amount of knowledge can be absorbed in a few days, we have advanced topics
+            that we adapt to the respective needs and challenges of the group. If you already know the basics,
+            they are only briefly reviewed so everyone uses the same terminology and concepts. This works
+            the other way around too, and basic modules for HTML & CSS can be added.
           </p>
 
           <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-            Aktuell haben wir <strong class="text-gray-900 dark:text-white">über 20 Module</strong> die wir in unserer {topic} Schulung kombinieren können.
-            In unserem workshops.de virtuellen Klassenraum können wir diese dynamisch und flexibel verwalten.
-            Wir wollen an dieser Stelle auch klar kommunizieren, dass in unseren öffentlichen Schulungen durch die oft sehr gemixte Gruppe
-            nicht alle Zusatzmodule im Detail besprochen werden können. Hier eine Auswahl unserer zusätzlichen Module:
+            Currently, we have <strong class="text-gray-900 dark:text-white">over 20 modules</strong> that we can combine in our {topic} training.
+            In our workshops.de virtual classroom, we can manage these dynamically and flexibly.
+            We also want to clearly communicate that in our public training courses, due to the often very mixed group,
+            not all additional modules can be discussed in detail. Here's a selection of our additional modules:
           </p>
         </div>
       </div>
@@ -628,13 +626,13 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
             <div>
               <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Testing & Debugging</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Manuelles Testen ist sehr Zeitaufwendig und lenkt euch von der eigentlichen Entwicklung ab.
-                Mit einer sinnvollen Teststrategie könnt ihr euren Code absichern und schneller entwickeln.
+                Manual testing is very time-consuming and distracts you from actual development.
+                With a sensible testing strategy, you can secure your code and develop faster.
               </p>
             </div>
           </div>
           <div class="space-y-1 md:pl-4">
-            {['Unit Tests mit Vitest', 'Component Testing', 'Testing Library', 'E2E Testing mit Playwright', 'Vue DevTools'].map(item => (
+            {['Unit Tests with Vitest', 'Component Testing', 'Testing Library', 'E2E Testing with Playwright', 'Vue DevTools'].map(item => (
               <div class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -645,15 +643,15 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           </div>
         </div>
 
-        <!-- Routing für Fortgeschrittene -->
+        <!-- Advanced Routing -->
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div class="flex gap-5">
             <img src="/assets/img/schulungen/shared/logo-vuejs.svg" alt="Vue Router" loading="lazy" class="w-14 h-14 flex-shrink-0" />
             <div>
-              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Routing für Fortgeschrittene</h3>
+              <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Advanced Routing</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Der Vue Router ist mächtig und bietet viele Features. Wir zeigen euch, wie ihr das Beste
-                aus dem Router herausholt und eure Anwendung performant strukturiert.
+                Vue Router is powerful and offers many features. We show you how to get the most
+                out of the router and structure your application performantly.
               </p>
             </div>
           </div>
@@ -676,8 +674,8 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
             <div>
               <h3 class="text-2xl text-gray-900 dark:text-white mb-3">Nuxt.js Framework</h3>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Nuxt.js ist das Meta-Framework für Vue.js und bietet Server-Side Rendering, Static Site Generation
-                und eine hervorragende Developer Experience out of the box.
+                Nuxt.js is the meta-framework for Vue.js and offers Server-Side Rendering, Static Site Generation,
+                and an excellent Developer Experience out of the box.
               </p>
             </div>
           </div>
@@ -700,20 +698,20 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   <section class="py-20 dark:bg-gray-950">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto mb-12">
-        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Bewertungen</p>
+        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Reviews</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-          Die Meinung unserer Teilnehmer:innen zählt.
+          Our participants' opinions matter.
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-          Nach jeder Schulung bitten wir unsere Teilnehmer:innen um Feedback. Aus insgesamt <strong class="text-gray-900 dark:text-white">{aggregateRating.reviewCount}</strong> abgegebenen
-          Bewertungen erreichen wir aktuell eine durchschnittliche <strong class="text-gray-900 dark:text-white">Bewertung von {aggregateRating.ratingValue} Sternen</strong>.
+          After each training, we ask our participants for feedback. From a total of <strong class="text-gray-900 dark:text-white">{aggregateRating.reviewCount}</strong> submitted
+          reviews, we currently achieve an average <strong class="text-gray-900 dark:text-white">rating of {aggregateRating.ratingValue} stars</strong>.
         </p>
         <a
           href={`${providerUrl}/seminare-schulungen-kurse/vuejs-typescript/erfahrungen`}
           target="_blank"
           class="text-primary hover:underline mt-2 inline-block"
         >
-          Alle Bewertungen anzeigen →
+          View all reviews →
         </a>
       </div>
 
@@ -732,10 +730,6 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
               ))}
             </div>
             <p class="text-gray-700 dark:text-gray-300 italic mb-3">"{review.quote}"</p>
-            {/* <div class="flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
-              <span class="font-medium text-gray-700 dark:text-gray-300">{review.author}</span>
-              <span>{new Date(review.date).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
-            </div> */}
           </div>
         ))}
       </div>
@@ -747,20 +741,20 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
         <div>
-          <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Kosteneffizienz</p>
+          <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Cost Efficiency</p>
           <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-            Spare Kosten.
+            Save costs.
           </h2>
           <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-            Kennst Du die Studie der Standish Group? Fehler ganz am Anfang eines Projektes sind die Teuersten.
-            Wir arbeiten seit über 10 Jahren mit {topic} und haben die meisten Fehler schon gemacht. Nutze unsere Erfahrung und
-            vermeide die häufigsten Anfängerfehler.
+            Do you know the Standish Group study? Errors at the very beginning of a project are the most expensive.
+            We've been working with {topic} for over 10 years and have made most of the mistakes already. Use our experience and
+            avoid the most common beginner mistakes.
           </p>
         </div>
         <div class="relative">
           <img
             src="/assets/img/schulungen/shared/piggy-bank.png"
-            alt="Kostenersparnis durch professionelle Schulung"
+            alt="Cost savings through professional training"
             class="w-full max-w-md mx-auto"
             loading="lazy"
           />
@@ -774,29 +768,27 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
         <div>
-          <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Voraussetzungen</p>
+          <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Prerequisites</p>
           <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-            Ohne viel Vorwissen direkt starten.
+            Start directly without much prior knowledge.
           </h2>
           <div class="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             <p>
-              Voraussetzung sind <strong class="text-gray-900 dark:text-white">Grundlagenkenntnisse in JavaScript und HTML</strong>.
-              Innerhalb des Workshops gehen wir auf die individuelle Situation der Gruppe ein und passen
-              sowohl den Fokus als auch die Geschwindigkeit an. Somit können dann z.B. Grundlagen
-              noch einmal wiederholt oder auch übersprungen werden.
+              The prerequisite is <strong class="text-gray-900 dark:text-white">basic knowledge of JavaScript and HTML</strong>.
+              Within the workshop, we adapt to the individual situation of the group and adjust
+              both the focus and the pace. Thus, basics can be reviewed again or skipped.
             </p>
             <p>
-              <strong class="text-gray-900 dark:text-white">Technische Voraussetzung</strong> für die Schulung ist ein Notebook
-              mit Windows, Linux oder MacOSX. Weiterhin wird NodeJS mit einigen Paketen benötigt,
-              du bekommst hierzu eine Schritt-für-Schritt-Anleitung nach deiner Anmeldung zu
-              diesem Workshop.
+              <strong class="text-gray-900 dark:text-white">Technical requirement</strong> for the training is a notebook
+              with Windows, Linux, or macOS. Additionally, NodeJS with some packages is required;
+              you will receive step-by-step instructions after registering for this workshop.
             </p>
           </div>
         </div>
         <div>
           <img
             src="/assets/img/workshops/attendees-coding.jpg"
-            alt="Teilnehmer beim Programmieren in der Schulung"
+            alt="Participants coding during training"
             class="w-full rounded-2xl shadow-lg"
             loading="lazy"
           />
@@ -809,9 +801,9 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   <section class="py-20 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto mb-12">
-        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Enthaltene Leistungen</p>
+        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Included Benefits</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-          Alles Wichtige ist dabei.
+          Everything important is included.
         </h2>
       </div>
 
@@ -822,10 +814,10 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Vorgespräch mit Trainer:in</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Pre-meeting with Trainer</h3>
           <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Jede Gruppe ist anders. Damit wir den Workshop für euch optimal konzipieren können,
-            führen wir vor jedem In-House Workshop ein intensives Gespräch mit euch.
+            Every group is different. To optimally design the workshop for you,
+            we conduct an intensive conversation with you before each in-house workshop.
           </p>
         </div>
 
@@ -835,10 +827,10 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Kursunterlagen inkl. Updates</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Course Materials incl. Updates</h3>
           <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Du erhältst Zugriff auf alle Unterlagen und Zusatzmaterialien über unser virtuelles Klassenzimmer.
-            Mit deinem Account hast du lebenslangen Zugriff - inkl. Aktualisierungen!
+            You get access to all materials and additional resources through our virtual classroom.
+            With your account, you have lifetime access – including updates!
           </p>
         </div>
 
@@ -848,9 +840,9 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Teilnahmezertifikat</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Certificate of Participation</h3>
           <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Nach erfolgreichem Abschluss erhältst du ein offizielles Teilnahmezertifikat als Nachweis deiner Weiterbildung. Das Zertifikat ist auf LinkedIn teilbar.
+            After successful completion, you receive an official certificate of participation as proof of your training. The certificate is shareable on LinkedIn.
           </p>
         </div>
 
@@ -860,10 +852,10 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Essen & Trinken</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Food & Drinks</h3>
           <p class="text-gray-600 dark:text-gray-400 text-sm">
-            In unseren öffentlichen Schulungen sind Essen und Trinken für die komplette Veranstaltungszeit enthalten.
-            Vegetarische Optionen sind verfügbar.
+            In our public training courses, food and drinks are included for the entire event duration.
+            Vegetarian options are available.
           </p>
         </div>
       </div>
@@ -874,9 +866,9 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   <section class="py-20 dark:bg-gray-950">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
-        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Kontakt</p>
+        <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Contact</p>
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-8 leading-tight">
-          Sind noch Fragen offen?
+          Still have questions?
         </h2>
 
         <div class="flex flex-col md:flex-row gap-6 items-start">
@@ -889,9 +881,9 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
           <div>
             <p class="text-gray-500 dark:text-gray-400 text-sm mb-2">Robin Böhm</p>
             <p class="text-gray-700 dark:text-gray-300">
-              Dann schreib' uns einfach eine E-Mail an <a href="mailto:info@vuejs.de" class="text-primary hover:underline">info@vuejs.de</a>.
-              Wenn du einen persönlicheren Kontakt vorziehst, freuen wir uns auch über einen Anruf von dir! Wir sind werktags
-              von 8 bis 13 Uhr telefonisch unter <a href="tel:+493075437336" class="text-primary hover:underline">+49 30 / 75437336</a> erreichbar.
+              Then just send us an email at <a href="mailto:info@vuejs.de" class="text-primary hover:underline">info@vuejs.de</a>.
+              If you prefer more personal contact, we're also happy to receive a call from you! We're available by phone
+              on weekdays from 8 am to 1 pm at <a href="tel:+493075437336" class="text-primary hover:underline">+49 30 / 75437336</a>.
             </p>
             </div>
           </div>
@@ -900,12 +892,12 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
     </section>
 
   <!-- All Courses - Bottom Section -->
-  <section id="alle-schulungen" class="py-16 bg-gray-900 text-white scroll-mt-20">
+  <section id="all-courses" class="py-16 bg-gray-900 text-white scroll-mt-20">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl mb-4">Alle {topic}-Schulungen</h2>
+        <h2 class="text-3xl md:text-4xl mb-4">All {topic} Training Courses</h2>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-          Finde die passende Schulung für dein Level und deine Ziele.
+          Find the right training for your level and goals.
         </p>
       </div>
 
@@ -935,21 +927,20 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
             </p>
 
             <a
-              href={buildUtmUrl(`${providerUrl}${course.url}`, 'schulungen_2025', 'portal', 'bottom_course_card')}
+              href={buildUtmUrl(`${providerUrl}${course.url}`, 'training_2025', 'portal', 'bottom_course_card_en')}
               target="_blank"
               class="block w-full text-center bg-primary hover:bg-primary-dark text-white font-medium py-3 px-4 rounded-lg transition-colors"
             >
-              Zur Schulung
+              View Training
             </a>
           </div>
         ))}
       </div>
 
       <p class="text-center text-gray-400 mt-8 flex items-center justify-center gap-2">
-        Alle Schulungen werden von
+        All training courses are provided by
         <img src="/shared/assets/img/workshops-de-logo.svg" alt="workshops.de" class="inline h-5 align-middle" loading="lazy" />
-        <a href={buildUtmUrl(providerUrl, 'schulungen_2025', 'portal', 'bottom_provider_link')} target="_blank" class="text-white hover:underline font-medium">workshops.de</a>
-        durchgeführt.
+        <a href={buildUtmUrl(providerUrl, 'training_2025', 'portal', 'bottom_provider_link_en')} target="_blank" class="text-white hover:underline font-medium">workshops.de</a>.
       </p>
       </div>
     </section>
@@ -957,13 +948,13 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
   <!-- Sticky CTA Button -->
   <div id="sticky-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 opacity-0 translate-y-4 pointer-events-none transition-all duration-300">
     <a
-      href="#alle-schulungen"
+      href="#all-courses"
       class="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all"
     >
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
-      Alle Schulungen ansehen
+      View All Courses
     </a>
   </div>
 
@@ -992,3 +983,4 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
     })();
   </script>
 </BaseLayout>
+

@@ -75,7 +75,7 @@ könnten wir einzelne, logisch zusammenhängende Code-Teile an einer Stelle vero
 
 Und das ist genau das, was die Composition API uns ermöglicht!
 
-<img class="img-fluid img-rounded" src="options-vs-composition.png" alt="Ein Vergleich der beiden APIs hinsichtlich der entstehenden Code-Fragmentierung.">
+![Ein Vergleich der beiden APIs hinsichtlich der entstehenden Code-Fragmentierung.](options-vs-composition.png)
 
 Im linken Teil der Grafik kann man gut erkennen, wie eine große Komponente mit verschiedenen Features (farblich markiert) aussehen kann.
 Rechts sehen wir, wie die optimierte Struktur mittels Composition API schließlich aufgebaut ist.
@@ -247,7 +247,7 @@ Der Grund: In JavaScript werden primitive Datentypen wie `Number` oder `String` 
 
 Hierzu eine hervorragende Veranschaulichung von [penjee.com](https://blog.penjee.com/passing-by-value-vs-by-reference-java-graphical/):
 
-<img class="img-fluid center img-rounded" src="https://blog.penjee.com/wp-content/uploads/2015/02/pass-by-reference-vs-pass-by-value-animation.gif" alt="Unterschied pass by reference und pass by value">
+![Unterschied pass by reference und pass by value](https://blog.penjee.com/wp-content/uploads/2015/02/pass-by-reference-vs-pass-by-value-animation.gif)
 
 In JavaScript existieren neben den primitiven Datentypen auch sogenannte [strukturelle Typen](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures). Dazu gehört auch `object`, welches wir am häufigsten durch die Syntax `{}` verwenden. Dieser Datentyp wird entgegen der Funktionsweise von primitiven Datentypen per Referenz übergeben und nicht als Kopie. Als weiterführende Literatur hierzu empfehlen wir zum Beispiel [diesen Link](https://www.javascripttutorial.net/javascript-pass-by-value/).
 Durch eine Weitergabe per Referenz lassen sich Objekte über Funktionsaufrufe mitnehmen und weiterverarbeiten (siehe oben).

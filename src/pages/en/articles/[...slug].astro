@@ -1,20 +1,19 @@
 ---
 import { getCollection, render } from 'astro:content';
-import PostLayout from '../../layouts/PostLayout.astro';
+import PostLayout from '../../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
+  const posts = await getCollection('posts-en');
   return posts.map(post => {
-    // Extract slug from the post id (e.g., "de/2020-09-01-vuejs-tutorial-deutsch-anfaenger" -> "vuejs-tutorial-deutsch-anfaenger")
+    // Extract slug from the post id (e.g., "en/vuejs-tutorial-for-beginners" -> "vuejs-tutorial-for-beginners")
     const idParts = post.id.split('/');
-    // For de/ folder structure: "de/2020-09-01-article-name" -> "2020-09-01-article-name"
+    // For en/ folder structure: "en/article-name" -> "article-name"
     const folderName = idParts.length > 1 ? idParts[1] : idParts[0];
-    // Remove date prefix from folder name
-    const slug = folderName.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+    const slug = folderName;
 
     return {
       params: { slug },
-      props: { post, slug, folderName: `de/${folderName}` },
+      props: { post, slug, folderName: `en/${folderName}` },
     };
   });
 }
@@ -30,3 +29,4 @@ Astro.locals.translationSlug = post.data.translation_slug;
 <PostLayout {...post.data} slug={slug} folderName={folderName}>
   <Content />
 </PostLayout>
+

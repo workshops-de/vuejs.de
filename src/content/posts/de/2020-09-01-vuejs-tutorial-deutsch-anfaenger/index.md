@@ -6,6 +6,7 @@ published_at: 2025-01-21T16:00:00.000Z
 categories: "tutorial vuejs typescript"
 tutorial_page_order: "1"
 header_image: "header.jpg"
+translation_slug: "vuejs-tutorial-for-beginners"
 ---
 
 Die lang erwartete Version 3.5 "Tengen Toppa Gurren Lagann" des beliebten JavaScript Frameworks Vue.js wurde im September 2024 offiziell freigegeben. Diese Version bringt signifikante Performance-Verbesserungen und neue Features mit sich, die die Entwicklererfahrung weiter verbessern.
@@ -38,7 +39,7 @@ Wie in allen gängigen Frameworks, wird auch in Vue komponentenorientiert gearbe
 Dadurch werden einfach wiederverwendbare und pflegbare Einheiten erstellt, die in eine hierarchische Struktur gebracht werden, um somit eine größere Anwendung Stück für Stück zusammenzusetzen.
 Komponenten bilden somit die fundamentalen Bausteine einer Anwendung. In folgender Grafik wird veranschaulicht, wie eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht werden kann:
 
-<a href="https://v2.vuejs.org/v2/guide/#Composing-with-Components" target="_blank"><img class="img-fluid center img-rounded" src="components.png" alt="Eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht."></a>
+[![Eine Webseite in Komponenten zerlegt und in Form einer Baumstruktur in Beziehung zueinander gebracht.](components.png)](https://v2.vuejs.org/v2/guide/#Composing-with-Components)
 
 Weitere Informationen dazu finden sich in der offiziellen [Vue Dokumentation](https://v2.vuejs.org/v2/guide/#Composing-with-Components).
 
@@ -118,7 +119,7 @@ Die HTML-Datei mit dem Element der ID _app_ findest du unter `public/index.html`
 
 Wir erstellen eine einfache Komponente zur Addition zweier Zahlen. Das vorläufige Ergebnis sieht so aus:
 
-<img class="img-fluid center img-rounded" src="tutorial-result.png" alt="Das Ergebnis der hier umgesetzten Komponente, besteht aus zwei Eingabefeldern und einem Button, um die Addition auszulösen.">
+![Das Ergebnis der hier umgesetzten Komponente, besteht aus zwei Eingabefeldern und einem Button, um die Addition auszulösen.](tutorial-result.png)
 
 Im `components`-Ordner erstellen wir dafür zunächst eine neue Datei mit dem Namen `Calculator.vue`:
 
@@ -261,25 +262,7 @@ In unserem Fall ist es `prevent`, welches das Standardverhalten des Events verhi
 
 Die Direktive `v-on` kann und sollte für eine bessere Lesbarkeit durch das Zeichen `@` ersetzt werden, sodass wir `@submit.prevent="add"` erhalten.
 
-<hr>
-<div class="workshop-hint">
-  <div class="h3">Keine Lust zu lesen?</div>
-  <div class="row mb-2">
-    <div class="col-xs-12 col-md-6">
-      <p>
-        Nicht jeder lernt am besten aus Büchern und Artikeln. Lernen darf interaktiv sein und Spaß machen. Wir bieten dir auch
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue Intensiv-Schulungen</a> an, damit du tiefer in die Thematik einsteigen kannst.
-      </p>
-      <p class="">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top" class="inline-block bg-primary !text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors">Mehr Informationen zur Vue3-Schulung</a>
-      </p>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer:innen in der Veranstaltung Vue-Intensiv-Workshop">
-    </div>
-  </div>
-</div>
-<hr>
+[[cta:training-top]]
 
 #### Multi-Root Templates
 
@@ -338,7 +321,7 @@ Bei der Arbeit mit Vue gehören neben den kennengelernten Werkzeugen unbedingt a
 
 Nach der Installation und einem Neustart des Browsers können wir über die Tastenkombination [**Cmd+Option+I**] (Mac) oder [**Strg+Shift+I**] (Windows) die Entwicklertools öffnen. In der Liste der Reiter suchen wir den Eintrag **Vue** und klicken diesen an:
 
-<img class="img-fluid" src="vue-devtools.png" alt="Eine Ansicht der Vue-Devtools für unsere aktuelle Vue-Anwendung.">
+![Eine Ansicht der Vue-Devtools für unsere aktuelle Vue-Anwendung.](vue-devtools.png)
 
 In der Abbildung sehen wir links den Komponentenbaum, welcher die Komponente `App` und darunter unsere selbsterstellte Komponente `CalculatorApp` enthält.
 Im rechten Bereich sehen wir Detailinformationen zu der ausgewählten Komponente.
@@ -1005,21 +988,4 @@ Wenn du Unterstützung brauchst, schau dir doch an, wie unser Trainer David das 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pMr7P4QXj-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<hr>
-<div class="workshop-hint text-center">
-  <div class="h3">Hat dir das Tutorial geholfen?</div>
-  <div class="row mb-2">
-    <div class="col-xs-12 col-md-6">
-      <p> Wir bieten auch <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom">Vue-Intesiv-Schulungen</a>        an, um dich möglichst effektiv in das Thema Vue zu begleiten. Im Kurs kannst Du die Fragen stellen, die Du nur
-        schlecht googeln kannst, z.B. "Besserer Weg, um meine Applikation zu strukturieren?". Wir können sie Dir beantworten.
-      </p>
-      <p class="text-center">
-        <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom" class="inline-block bg-primary !text-white font-medium py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors">Jetzt weiter lernen</a>
-      </p>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <img class="img-fluid img-rounded" src="workshops-attendees.png" alt="Teilnehmer:innen der Veranstaltung Vue-Intensiv-Workshop">
-    </div>
-  </div>
-</div>
-<hr>
+[[cta:training-bottom]]

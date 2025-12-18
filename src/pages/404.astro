@@ -2,22 +2,50 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Seite nicht gefunden" noindex={true}>
+<BaseLayout title="Page not found / Seite nicht gefunden" noindex={true}>
   <section class="py-24">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-8xl text-gray-200 mb-4">404</h1>
-      <h2 class="text-2xl text-gray-900 mb-4">Seite nicht gefunden</h2>
-      <p class="text-gray-600 mb-8 max-w-md mx-auto">
-        Die gesuchte Seite existiert leider nicht oder wurde verschoben.
-      </p>
-      <div class="flex justify-center gap-4">
-        <a href="/" class="btn-gradient">
-          Zur Startseite
-        </a>
-        <a href="/artikel/" class="px-6 py-3 border border-gray-300 rounded-lg font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors">
-          Zu den Artikeln
-        </a>
+      <h1 class="text-8xl text-gray-200 dark:text-gray-800 mb-4">404</h1>
+
+      <!-- German content (default) -->
+      <div id="content-de">
+        <h2 class="text-2xl text-gray-900 dark:text-white mb-4">Seite nicht gefunden</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto">
+          Die gesuchte Seite existiert leider nicht oder wurde verschoben.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/" class="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors">
+            Zur Startseite
+          </a>
+          <a href="/artikel/" class="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg font-medium text-gray-700 dark:text-gray-300 hover:border-primary hover:text-primary transition-colors">
+            Zu den Artikeln
+          </a>
+        </div>
+      </div>
+
+      <!-- English content (shown when URL starts with /en/) -->
+      <div id="content-en" class="hidden">
+        <h2 class="text-2xl text-gray-900 dark:text-white mb-4">Page not found</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/en/" class="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors">
+            Back to Home
+          </a>
+          <a href="/en/articles/" class="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg font-medium text-gray-700 dark:text-gray-300 hover:border-primary hover:text-primary transition-colors">
+            Browse Articles
+          </a>
+        </div>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<script is:inline>
+  // Show English content if URL starts with /en/
+  if (window.location.pathname.startsWith('/en/')) {
+    document.getElementById('content-de')?.classList.add('hidden');
+    document.getElementById('content-en')?.classList.remove('hidden');
+  }
+</script>

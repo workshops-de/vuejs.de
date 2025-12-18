@@ -31,8 +31,8 @@ Vue.js ist mit Version 3 erwachsen geworden – auch wenn es im semiprofessionel
   - Doppelt so schnell: Komponenten-Initialisierung, Mouting und Patching
   - Weniger Re-Renderings: nur dann, wenn sich tatsächlich etwas ändert
   - Static Tree Hoisting: statische Elemente werden nicht wiederholt gerendert
-    <a href="https://docs.google.com/presentation/d/1yhPGyhQrJcpJI2ZFvBme3pGKaGNiLi709c37svivv0o/edit#slide=id.p" target="_blank"><img class="img-rounded" src="js-heap.png" alt="Wie man anhand der Zahlen sehen kann, hat sich der JS Heap mehr als halbiert, genauso die Renderzeit."></a>
-    _[Vue 3.0 updates – Evan You](https://docs.google.com/presentation/d/1yhPGyhQrJcpJI2ZFvBme3pGKaGNiLi709c37svivv0o/edit#slide=id.p)_
+    [![Wie man anhand der Zahlen sehen kann, hat sich der JS Heap mehr als halbiert, genauso die Renderzeit.](js-heap.png)](https://docs.google.com/presentation/d/1yhPGyhQrJcpJI2ZFvBme3pGKaGNiLi709c37svivv0o/edit#slide=id.p)
+    _[Vue 3.0 updates – Evan You](https://docs.google.com/presentation/d/1yhPGyhQrJcpJI2ZFvBme3pGKaGNiLi709c37svivv0o/edit#slide=id.p)_
 - Composition API: für verbesserte Code-Übersichtlichkeit
 - Direkte HTML-Optimierung: ähnlich wie Angular können HTML-Blöcke mittels verschiedener Direktiven erweitert werden
 - TypeScript-Kern: schneller und einfacher für viele Entwickler, die nicht mit Flow vertraut sind

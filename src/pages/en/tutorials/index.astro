@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const tutorials = [
+  {
+    slug: 'vuejs-tutorial-deutsch-anfaenger',
+    title: 'Vue.js Basics',
+    description: 'Tutorial on Vue.js - the new version of the most popular single-page application framework. Learn the basics of the framework with a sample project.',
+    icon: '🛠️',
+    color: 'from-red-500 to-pink-500'
+  }
+];
+---
+
+<BaseLayout
+  title="Beginner Tutorials"
+  noindex={true}
+>
+  <!-- Header -->
+  <section class="bg-gradient-to-br from-primary-50 to-white py-12">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl text-gray-900 mb-2">Beginner Tutorials</h1>
+      <p class="text-lg text-gray-600">
+        Here we offer you an easy introduction to Vue.js, Composition API and AI Engineering!
+      </p>
+      <p class="mt-2 text-sm text-amber-600">
+        Note: Tutorials are in German. Use your browser's translation feature if needed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tutorials List -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <div class="space-y-4">
+        {tutorials.map(tutorial => (
+          <a
+            href={`/artikel/${tutorial.slug}/`}
+            class="group flex items-center gap-6 p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all"
+          >
+            <div class={`w-16 h-16 rounded-xl bg-gradient-to-br ${tutorial.color} flex items-center justify-center text-3xl flex-shrink-0`}>
+              {tutorial.icon}
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                {tutorial.title}
+              </h2>
+              <p class="text-gray-600 mt-1">{tutorial.description}</p>
+            </div>
+            <svg class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors flex-shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+
+

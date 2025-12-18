@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { siteConfig, buildUtmUrl } from '../../../config/site';
+
+const { topic, training } = siteConfig;
+---
+
+<BaseLayout
+  title="Vue.js Training"
+  description="Professional Vue.js and TypeScript training courses for teams and individuals."
+>
+  <!-- Hero Header with Pattern Background -->
+  <section class="relative py-20 md:py-28 overflow-hidden dark:bg-gray-950">
+    <!-- Gradient Mesh Background (Light) -->
+    <div class="absolute inset-0 dark:hidden" style="background: radial-gradient(at 20% 30%, rgba(66, 184, 131, 0.15) 0px, transparent 50%), radial-gradient(at 80% 20%, rgba(139, 92, 246, 0.1) 0px, transparent 50%), radial-gradient(at 40% 80%, rgba(59, 130, 246, 0.08) 0px, transparent 50%), linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);"></div>
+    <!-- Gradient Mesh Background (Dark) -->
+    <div class="absolute inset-0 hidden dark:block" style="background: radial-gradient(at 20% 30%, rgba(66, 184, 131, 0.2) 0px, transparent 50%), radial-gradient(at 80% 20%, rgba(139, 92, 246, 0.15) 0px, transparent 50%), radial-gradient(at 40% 80%, rgba(59, 130, 246, 0.12) 0px, transparent 50%);"></div>
+    <!-- Dot Grid Pattern Overlay -->
+    <div class="absolute inset-0 dark:opacity-30" style="background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+    <div class="container mx-auto px-4 relative text-center z-10">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl text-gray-900 dark:text-white mb-4">
+        <span class="block">{topic}</span>
+        <span class="text-primary">Training.</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+        Professional training courses for teams and individuals.<br />
+        From beginner to expert level.
+      </p>
+      <a
+        href={buildUtmUrl(training.providerUrl + '/schulungsthemen/vuejs', 'training_page', 'cta', 'hero')}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark transition-colors"
+      >
+        View Training Courses
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Training Info -->
+  <section class="py-16 dark:bg-gray-950">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="prose prose-lg max-w-none dark:prose-invert">
+        <h2>Why Choose Our Training?</h2>
+        <ul>
+          <li><strong>Expert Trainers:</strong> Learn from experienced Vue.js developers who work with the framework daily</li>
+          <li><strong>Hands-on Approach:</strong> Practical exercises and real-world projects</li>
+          <li><strong>Small Groups:</strong> Maximum attention for each participant</li>
+          <li><strong>Flexible Formats:</strong> On-site, remote, or hybrid training options</li>
+          <li><strong>Up-to-date Content:</strong> Always covering the latest Vue.js features and best practices</li>
+        </ul>
+
+        <h2>Available Courses</h2>
+        <p>
+          We offer training courses for all skill levels:
+        </p>
+        <ul>
+          <li><strong>Vue.js Fundamentals:</strong> Perfect for beginners starting with Vue.js</li>
+          <li><strong>Vue.js Advanced:</strong> Deep dive into Composition API, Pinia, and advanced patterns</li>
+          <li><strong>TypeScript with Vue:</strong> Type-safe Vue.js development</li>
+          <li><strong>Nuxt.js:</strong> Server-side rendering and full-stack Vue.js</li>
+          <li><strong>Testing Vue Applications:</strong> Unit testing, component testing, and E2E testing</li>
+        </ul>
+
+        <div class="bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg p-6 not-prose">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Interested in Training?</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Our training courses are provided by {training.provider}. Visit our training portal for
+            detailed information about courses, dates, and pricing.
+          </p>
+          <a
+            href={buildUtmUrl(training.providerUrl + '/schulungsthemen/vuejs', 'training_page', 'cta', 'info_box')}
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"
+          >
+            View All Training Courses
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+
+        <h2>Contact</h2>
+        <p>
+          Have questions about our training courses? Contact us at
+          <a href="mailto:info@workshops.de">info@workshops.de</a> or join our
+          <a href="/discord/">Discord community</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+
+

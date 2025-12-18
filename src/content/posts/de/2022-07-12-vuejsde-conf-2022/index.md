@@ -28,7 +28,7 @@ Je länger man an einer Anwendung arbeitet, desto komplizierter wird das Routing
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="eduardo-morote.jpg" alt="Eduardo San Martin Morote"></div>
+        <div class="text-center"><img src="eduardo-morote.jpg" alt="Eduardo San Martin Morote"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -43,7 +43,7 @@ Mit der Vue 3 Composition API haben wir ein mächtiges Werkzeug zur Abstraktion 
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="natalia-tepluhina.jpg" alt="Natalia Tepluhina"></div>
+        <div class="text-center"><img src="natalia-tepluhina.jpg" alt="Natalia Tepluhina"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -60,7 +60,7 @@ Vite hat die Vue.js Entwicklungserfahrung mit seinen blitzschnellen Serverstarts
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="daniel-kelly.jpg" alt="Daniel Kelly"></div>
+        <div class="text-center"><img src="daniel-kelly.jpg" alt="Daniel Kelly"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -75,7 +75,7 @@ Dieser Vortrag wirft einen Blick hinter die Kulissen der Reaktivitäts-Engine vo
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="marc-backes.jpeg" alt="Marc Backes"></div>
+        <div class="text-center"><img src="marc-backes.jpeg" alt="Marc Backes"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -92,7 +92,7 @@ Vue 3 führte die Composition API ein und mit ihr den `<script setup>` Stil, um 
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="thorsten-luenborg.jpg" alt="Thorsten Lünborg"></div>
+        <div class="text-center"><img src="thorsten-luenborg.jpg" alt="Thorsten Lünborg"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -107,7 +107,7 @@ Die allgemeine Weisheit ist, Cypress für E2E und Jest/Vitest für Unit- und Kom
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="markus-oberlehner.jpg" alt="Markus Oberlehner"></div>
+        <div class="text-center"><img src="markus-oberlehner.jpg" alt="Markus Oberlehner"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -124,7 +124,7 @@ Wir machen einen Rundgang durch Nuxt 3 und erstellen, bauen und implementieren e
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="daniel-roe.jpg" alt="Daniel Roe"></div>
+        <div class="text-center"><img src="daniel-roe.jpg" alt="Daniel Roe"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -139,7 +139,7 @@ Testen ist schwer, Testen braucht Zeit, um zu lernen und zu schreiben, und Zeit 
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="debbie-obrien.jpg" alt="Debbie O'Brien"></div>
+        <div class="text-center"><img src="debbie-obrien.jpg" alt="Debbie O'Brien"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -156,7 +156,7 @@ Headless Commerce von Grund auf zu bauen, scheint sehr schwierig zu sein. Aber w
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="jakub-andrzejewski.jpg" alt="Jakub Andrzejewski"></div>
+        <div class="text-center"><img src="jakub-andrzejewski.jpg" alt="Jakub Andrzejewski"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -171,7 +171,7 @@ Tutorials zu schreiben ist schwierig. Das Schreiben von ansprechenden, interakti
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="alisa-duncan.jpg" alt="Alisa Duncan"></div>
+        <div class="text-center"><img src="alisa-duncan.jpg" alt="Alisa Duncan"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -199,7 +199,7 @@ Nuxt ist ein App-Level-Framework für die Erstellung von Vue-Anwendungen, das da
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="alexander-lichter.jpg" alt="Alexander Lichter"></div>
+        <div class="text-center"><img src="alexander-lichter.jpg" alt="Alexander Lichter"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -219,7 +219,7 @@ Pinia ist nun die offiziell empfohlene globale State-Management-Lösung für Vue
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="vanessa-otto.jpg" alt="Vanessa Otto"></div>
+        <div class="text-center"><img src="vanessa-otto.jpg" alt="Vanessa Otto"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -239,7 +239,7 @@ In diesem Workshop wird Stefan Baumgartner, der Autor von „TypeScript in 50 Le
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="stefan-baumgartner.jpg" alt="Stefan Baumgartner"></div>
+        <div class="text-center"><img src="stefan-baumgartner.jpg" alt="Stefan Baumgartner"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -258,7 +258,7 @@ Die Composition API ist die neueste und flexibelste Art der Interaktion mit dem 
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="alex-kyriakidis.jpg" alt="Alex Kyriakidis"></div>
+        <div class="text-center"><img src="alex-kyriakidis.jpg" alt="Alex Kyriakidis"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>

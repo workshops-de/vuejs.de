@@ -40,7 +40,7 @@ Den Start macht JavaScript-Entwickler und -Trainer Belá Varga am **18. Juni** m
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="bv.jpg" alt="Belá Varga"></div>
+        <div class="text-center"><img src="bv.jpg" alt="Belá Varga"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -66,7 +66,7 @@ Weiter geht es am **22. Juni** mit Full-Stack-Entwickler Evgeny Sacharow, der er
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="es.jpg" alt="Evgeny Sacharow"></div>
+        <div class="text-center"><img src="es.jpg" alt="Evgeny Sacharow"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>
@@ -89,7 +89,7 @@ Am **25. Juni** referiert vue.js-Gründer, Entwickler und Trainer Antony Konstan
 
 <div class="row justify-content-md-center align-items-md-center no-gutters my-4">
     <div class="col-sm-6">
-        <div class="text-center"><img class="img-fluid img-rounded" src="ak.jpg" alt="Antony Konstantinidis"></div>
+        <div class="text-center"><img src="ak.jpg" alt="Antony Konstantinidis"></div>
     </div>
     <div class="col-sm-6">
         <blockquote><p>

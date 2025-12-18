@@ -110,48 +110,56 @@ export const siteConfig = {
     mainCourse: "vuejs-typescript",
     provider: "Workshops.DE",
     providerUrl: "https://workshops.de",
-    // All available courses
+    // All available courses with i18n support
     courses: [
       {
         id: "vuejs-typescript",
-        title: "Vue.js 3 & TypeScript",
-        description:
-          "Intensiv-Schulung für Vue.js 3 mit TypeScript. Lerne die Grundlagen anhand eines praktischen Beispiels.",
-        duration: "3 Tage",
-        format: "Vor Ort oder Remote",
+        title: { de: "Vue.js 3 & TypeScript", en: "Vue.js 3 & TypeScript" },
+        description: {
+          de: "Intensiv-Schulung für Vue.js 3 mit TypeScript. Lerne die Grundlagen anhand eines praktischen Beispiels.",
+          en: "Intensive training for Vue.js 3 with TypeScript. Learn the fundamentals through a practical example.",
+        },
+        duration: { de: "3 Tage", en: "3 Days" },
+        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/workshops/logo-vue-typescript-schulung.svg",
         url: "/seminare-schulungen-kurse/vuejs-typescript",
         level: "beginner",
       },
       {
-        id: "vuejs-javascript",
-        title: "Vue.js State Management",
-        description:
-          "Verwalte den Zustand deiner Vue.js-Anwendungen effizient mit Pinia, der modernen State Management Lösung.",
-        duration: "2 Tage",
-        format: "Vor Ort oder Remote",
+        id: "vuejs-state-management",
+        title: { de: "Vue.js State Management", en: "Vue.js State Management" },
+        description: {
+          de: "Verwalte den Zustand deiner Vue.js-Anwendungen effizient mit Pinia, der modernen State Management Lösung.",
+          en: "Efficiently manage the state of your Vue.js applications with Pinia, the modern state management solution.",
+        },
+        duration: { de: "2 Tage", en: "2 Days" },
+        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/schulungen/shared/logo-pinia.svg",
         url: "/seminare-schulungen-kurse/vuejs-state-management-with-pinia",
         level: "advanced",
       },
       {
         id: "vuejs-composition-api",
-        title: "Vue.js Composition API",
-        description:
-          "Intensiv-Schulung zur modernen Composition API in Vue.js. Für sauberen und wartbaren Code.",
-        duration: "2 Tage",
-        format: "Vor Ort oder Remote",
+        title: { de: "Vue.js Composition API", en: "Vue.js Composition API" },
+        description: {
+          de: "Intensiv-Schulung zur modernen Composition API in Vue.js. Für sauberen und wartbaren Code.",
+          en: "Intensive training on the modern Composition API in Vue.js. For clean and maintainable code.",
+        },
+        duration: { de: "2 Tage", en: "2 Days" },
+        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/workshops/logo-vuejs-intensiv-schulung.svg",
         url: "/seminare-schulungen-kurse/vuejs-composition-api-schulung",
         level: "advanced",
       },
       {
         id: "frontend-architektur",
-        title: "Frontend-Architektur",
-        description:
-          "Moderne Webentwicklung und Frontend-Architektur. Lerne Best Practices für skalierbare Anwendungen.",
-        duration: "3 Tage",
-        format: "Vor Ort oder Remote",
+        title: { de: "Frontend-Architektur", en: "Frontend Architecture" },
+        description: {
+          de: "Moderne Webentwicklung und Frontend-Architektur. Lerne Best Practices für skalierbare Anwendungen.",
+          en: "Modern web development and frontend architecture. Learn best practices for scalable applications.",
+        },
+        duration: { de: "3 Tage", en: "3 Days" },
+        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/workshops/logo-frontend-architecture.svg",
         url: "/seminare-schulungen-kurse/frontend-architektur",
         level: "advanced",
@@ -162,6 +170,23 @@ export const siteConfig = {
 
 // Type for the site config
 export type SiteConfig = typeof siteConfig;
+
+// Type for i18n text
+export type I18nText = { de: string; en: string };
+
+// Type for language
+export type Lang = "de" | "en";
+
+// Helper to get localized course data
+export function getLocalizedCourses(lang: Lang = "de") {
+  return siteConfig.training.courses.map((course) => ({
+    ...course,
+    title: course.title[lang],
+    description: course.description[lang],
+    duration: course.duration[lang],
+    format: course.format[lang],
+  }));
+}
 
 // Helper to build UTM URLs
 export function buildUtmUrl(
