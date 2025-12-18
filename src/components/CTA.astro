@@ -1,13 +1,6 @@
 ---
 import { getLangFromUrl } from '../i18n/utils';
 
-export interface Props {
-  id: string;
-}
-
-const { id } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
-
 const ctas = {
   "training-top": {
     title: {
@@ -51,6 +44,14 @@ const ctas = {
   },
 };
 
+type CTAId = keyof typeof ctas;
+
+export interface Props {
+  id: CTAId;
+}
+
+const { id } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 const cta = ctas[id];
 ---
 

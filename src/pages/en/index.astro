@@ -13,7 +13,7 @@ const latestPosts = allPosts
   .sort((a, b) => b.data.published_at.getTime() - a.data.published_at.getTime())
   .slice(0, 6);
 
-const { topic, title, description, training, discord_invite, branding } = siteConfig;
+const { topic, title, training, discord_invite, branding } = siteConfig;
 
 // Stats for the community
 const stats = [
@@ -311,7 +311,7 @@ const communityBenefits = [
   }
 </style>
 
-<script define:vars={{ typewriterWords }}>
+<script is:inline define:vars={{ typewriterWords }}>
   // Typewriter effect
   const element = document.getElementById('typewriter');
   if (element) {
