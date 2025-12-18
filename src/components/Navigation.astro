@@ -42,7 +42,7 @@ const isActive = (pattern: string) => currentPath.includes(pattern);
   <nav class="container mx-auto px-4">
     <div class="flex items-center h-18 py-3">
       <!-- Logo -->
-      <a href="/" class="flex items-center flex-shrink-0">
+      <a href={translatePath('/')} class="flex items-center flex-shrink-0">
         <img
           src="/assets/img/logo-with-poweredby.svg"
           alt={`${siteConfig.title} powered by workshops.de`}
