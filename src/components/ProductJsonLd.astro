@@ -4,6 +4,7 @@
  * Used on training pages for rich search results
  */
 import courseData from '../data/course.json';
+import type { CourseData } from '../data/course.json';
 
 interface Props {
   name?: string;
@@ -43,7 +44,7 @@ const productSchema = {
     "priceCurrency": courseData.offers?.priceCurrency || "EUR",
     "offerCount": courseData.offers?.offerCount || 6
   },
-  "review": courseData.review?.slice(0, 6).map(review => ({
+  "review": (courseData.review as CourseData['review'])?.slice(0, 6).map((review: any) => ({
     "@type": "Review",
     "name": review.name,
     "datePublished": review.datePublished,

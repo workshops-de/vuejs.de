@@ -19,7 +19,7 @@ const clients = [
 ];
 
 // Load reviews from course.json
-const reviews = courseData.review.slice(0, 6).map(review => ({
+const reviews = courseData.review.slice(0, 6).map((review: any) => ({
   stars: review.reviewRating.ratingValue,
   quote: review.reviewBody,
   author: review.author.name,
@@ -718,7 +718,7 @@ const bookingUrl = buildUtmUrl(`${providerUrl}/seminare-schulungen-kurse/vuejs-t
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {reviews.map(review => (
+        {reviews.map((review: any) => (
           <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
             <div class="flex gap-1 mb-3">
               {Array.from({ length: 5 }).map((_, i) => (
