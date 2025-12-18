@@ -1,30 +1,22 @@
 // src/data/course.json.d.ts
-declare module "../data/course.json" {
-  export interface ReviewRating {
-    ratingValue: number;
-    bestRating: number;
-  }
-
-  export interface Author {
-    type: string;
-    name: string;
-  }
-
-  export interface Review {
-    type: string;
-    reviewRating: ReviewRating;
-    author: Author;
+declare module "*/data/course.json" {
+  interface Review {
+    reviewRating: {
+      ratingValue: number;
+    };
     reviewBody: string;
+    author: {
+      name: string;
+    };
     datePublished: string;
   }
 
-  export interface AggregateRating {
-    type: string;
+  interface AggregateRating {
     ratingValue: number;
     reviewCount: number;
   }
 
-  export interface CourseData {
+  interface CourseData {
     review: Review[];
     aggregateRating: AggregateRating;
   }
