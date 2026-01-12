@@ -74,7 +74,7 @@ Sicherlich werden sich viele Entwickler über die Umstellung auf TypeScript und 
 
 Wer Anwendungen mit Vue.js realisieren möchte, wird erkennen, dass Nuxt.js 3 einem viel Arbeit abnimmt. Allein die Performance-Steigerung und User Experience ist schon beachtlich.
 
-Da es derzeit noch nicht so viele Dokumente und Hilfestellungen zu Nuxt.js 3 gibt, sollte man sich nicht entmutigen lassen. Schon bald wird man auf Stack Overflow oder auf Github viele nützliche Ressourcen finden. Wer sich schon immer aktiv an einer Community beteiligen wollte, hat jetzt die Gelegenheit, sich einzubringen. Einen guten Überblick dafür liefert zum Beispiel die [Seite](https://isnuxt3ready.owln.ai) "Is Nuxt 3 ready?", welche übersichtlich darstellt, bei welchen Modulen man sich noch aktiv beteiligen kann, da diese noch nicht mit Nuxt 3 kompatibel sind.
+Da es derzeit noch nicht so viele Dokumente und Hilfestellungen zu Nuxt.js 3 gibt, sollte man sich nicht entmutigen lassen. Schon bald wird man auf Stack Overflow oder auf Github viele nützliche Ressourcen finden. Wer sich schon immer aktiv an einer Community beteiligen wollte, hat jetzt die Gelegenheit, sich einzubringen. Mittlerweile ist Nuxt 3 stabil und die meisten Module sind kompatibel. Eine Übersicht der verfügbaren Module findet ihr auf der [Nuxt Modules Seite](https://nuxt.com/modules).
 
 Bei all der Euphorie sollte man allerdngs nicht vergessen, dass sich Nuxt 3 noch in der Beta-Phase befindet. Das heißt: Es kann immer mal zu kleineren Schwierigkeiten kommen. Bis zum ersten Release Candidate sollte man es noch nicht für die Produktion verwenden. Während der Beta-Phase wird fast jeder Commit ein neues npm-Release auslösen. Schaut Euch am besten die zusammengeführten Pull-Requests an, bis die ersten Changelogs in der Dokumentation erstellt werden.
 
@@ -84,13 +84,10 @@ Was haltet ihr von dem Release? Fehlt euch etwas? Werdet ihr in Zukunft eure Vue
 
 ## Weitere Informationen
 
-- Nuxt.js Homepage: https://nuxtjs.org
-- Nuxt 3 Dokumentation: https://v3.nuxtjs.org/
-- Nuxt Nitro: https://v3.nuxtjs.org/concepts/server-engine
-- Nuxt 3 Bridge: https://v3.nuxtjs.org/getting-started/bridge/
+- Nuxt.js Homepage: https://nuxt.com/
+- Nuxt 3 Dokumentation: https://nuxt.com/docs
+- Nuxt Nitro: https://nuxt.com/docs/guide/concepts/server-engine
 - Vue 3: https://vuejs.org/
 - Vite: https://vite.dev/
-- Github: https://github.com/nuxt/framework
-- Hilfe & Support: https://v3.nuxtjs.org/community/getting-help/
-- Bugs melden: https://v3.nuxtjs.org/community/reporting-bugs/
-- Mitmachen: https://v3.nuxtjs.org/community/contribution/
+- Github: https://github.com/nuxt/nuxt
+- Community: https://nuxt.com/docs/community/getting-help

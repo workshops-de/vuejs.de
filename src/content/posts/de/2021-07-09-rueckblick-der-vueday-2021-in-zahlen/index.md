@@ -53,6 +53,6 @@ Um zu erfahren, wann die Workshops das nächste Mal angeboten werden, schau einf
 
 Wann der nächste VueDay stattfinden wird, können wir noch nicht genau sagen. Dass er stattfinden wird, steht außer Frage! Wir wollen auch in Zukunft die Vue-Community in Deutschland vernetzen, zusammenbringen und für Austausch sorgen. Bald sind dann hoffentlich auch große Vor-Ort-Konferenzen möglich.
 
-Bis dahin vernetzen wir uns gerade mit zahlreichen Meetups in ganz Deutschland und schließen Partnerschaften für gemeinsame Aktionen und Events. Wenn du dabei sein willst, kannst du gerne auf unseren [Discord-Server](https://discord.gg/6mfwSv2EZs) kommen und dich schon jetzt mit uns austauschen. Wir freuen uns auf alle, die an den zukünftigen Events teilnehmen und Lust haben, sich aktiv in die Community einzubringen.
+Bis dahin vernetzen wir uns gerade mit zahlreichen Meetups in ganz Deutschland und schließen Partnerschaften für gemeinsame Aktionen und Events. Wenn du dabei sein willst, kannst du gerne auf unseren [Discord-Server](https://workshops.de/join-discord) kommen und dich schon jetzt mit uns austauschen. Wir freuen uns auf alle, die an den zukünftigen Events teilnehmen und Lust haben, sich aktiv in die Community einzubringen.
 
 Ein riesiges Dankeschön geht raus an unsere Kooperationspartner [dpunkt.verlag](https://dpunkt.de) und [Heise Medien](https://www.heise.de), ohne deren Unterstützung der VueDay 2021 nicht möglich gewesen wäre. Danke auch für die Moderation, wir könnten uns keine besseren Partner wünschen und freuen uns auf das nächste gemeinsame Projekt!

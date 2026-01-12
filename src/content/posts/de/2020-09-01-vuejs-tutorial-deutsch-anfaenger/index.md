@@ -473,7 +473,7 @@ Im Beispiel sehen wir die Verwendung von `ref`. Auf diese Art machen wir die Var
 Das Konzept, mit solchen Referenzen zu arbeiten, zieht sich durch die gesamte Composition API. Für Webentwickler ist es wichtig, die grundlegende Funktionsweise zu verstehen.
 Eine ausführliche Beschreibung findet sich unter anderem in folgendem Artikel: [Die Composition API](https://vuejs.de/artikel/composition-api-teil-1/).
 
-[Primitiven Datentypen in JavaScript](https://developer.mozilla.org/de/docs/Glossary/einfache_datenelemente) (im Wesentlichen non-`objects`, wie z.B. ein `string`) werden als Kopie und nicht als Referenz übergeben.
+[Primitiven Datentypen in JavaScript](https://developer.mozilla.org/de/docs/Glossary/Primitive) (im Wesentlichen non-`objects`, wie z.B. ein `string`) werden als Kopie und nicht als Referenz übergeben.
 Das sorgt dafür, dass Referenzen beim Übergeben an Funktionen "verloren" gehen und somit keine Reaktivität abgebildet werden kann. `ref` hingegen erzeugt aus dem initialen Wert ein Objekt und ermöglicht somit, die Werte als Referenz übergeben zu können.
 
 Das zurückgegebene Objekt von `ref` verfügt lediglich über eine einzelne Eigenschaft: `value` verweist auf den eigentlichen Wert einer Referenz und kann gleichzeitig auch als Setter verwendet werden, wie wir oben am Beispiel der Funktion `add` sehen.

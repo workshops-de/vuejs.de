@@ -262,7 +262,7 @@ Um tiefer einzutauchen, schauen Sie sich diese zusätzlichen Astro-Ressourcen an
 
 - [Astro GitHub Repo](https://github.com/withastro/astro) - Durchsuchen Sie Astros Quellcode, öffnen Sie Issues und tragen Sie auf GitHub bei.
 
-- [Astro Discord](https://astro.build/chat) - Treten Sie der Astro-Community auf Discord bei, um Fragen zu stellen, Hilfe zu bekommen und Best Practices zu diskutieren. Mit über 30.000 Mitgliedern ist es ein großartiger Ort, um sich zu verbinden.
+- [Astro Discord](https://discord.gg/astrodotbuild) - Treten Sie der Astro-Community auf Discord bei, um Fragen zu stellen, Hilfe zu bekommen und Best Practices zu diskutieren. Mit über 30.000 Mitgliedern ist es ein großartiger Ort, um sich zu verbinden.
 
 Die Astro-Dokumente bieten umfassende Anleitungen und API-Referenzen. Das Studium von realen Astro-Projekten auf GitHub ist eine großartige Möglichkeit zu lernen. Und die Discord-Community bietet Unterstützung, während Sie mit dem Bauen mit Astro beginnen.
 

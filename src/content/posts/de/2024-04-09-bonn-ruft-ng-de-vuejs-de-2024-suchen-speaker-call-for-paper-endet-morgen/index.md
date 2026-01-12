@@ -16,8 +16,8 @@ Vom 8. bis zum 11. Oktober 2024 verwandeln wir die Stadt Bonn, die traditionell 
 
 Derzeit läuft unser Countdown für Call for Papers (CfP) für beide Konferenzen auf Hochtouren. Die ng-de und vuejs.de suchen nach Speakern, die bereit sind, ihr Wissen und ihre Leidenschaft mit der Community zu teilen. Egal, ob alte Hasen oder noch frisch hinter den Ohren in der Welt der Webentwicklung, viele von euch haben die Gelegenheit genutzt und spannende Themen eingereicht. Für alle anderen ist hier noch die letzte Erinnerung: Ihr habt noch Zeit bis morgen, dem 10. April 2024 um 23:59 Uhr CET, eure Paper einzureichen und Teil des Speaker-Teams zu werden. Also seid mutig und schickt uns eure Paper!
 
-* Für die ng-de habt ihr die Möglichkeit, hier eure Paper einzureichen: [Ng-de: Call for Paper](https://ng-de.org/call-for-papers/)
-* Für die vuejs.de habt ihr die Möglichkeit, hier eure Paper einzureichen: [Vuejs.de: Call for Paper](https://conf.vuejs.de/call-for-paper/)
+* Für die ng-de: [ng-de.org](https://ng-de.org/)
+* Für die vuejs.de: [conf.vuejs.de](https://conf.vuejs.de/)
 
 ## Wie sieht der Bewerbungsprozess aus?
 
