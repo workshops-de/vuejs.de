@@ -2,7 +2,7 @@ permalink: bela-varga
 name: Bela Varga
 gravatar_uid: 393640f88c24599cde6d104c3d0b913c
 city: München
-team: true
+team: false
 trainer: true
 intro: >
   Seit meinem Studium hab ich mit diversen Programmiersprachen und Technologien gearbeitet. Die offenen Webtechnologien wurden aber immer mehr meine Hauptwerkzeuge. Nebenbei hab ich vor zehn Jahren die JavaScript User Group in München gegründet und die letzten Jahre die JavaScript Konferenz: JS Kongress organisiert. Jetzt vermittle ich mein Wissen über JavaScript und Vue.js in Workshops.
