@@ -8,7 +8,7 @@ const allUsers = await getCollection('users');
 const teamMembers = allUsers.filter(user => user.data.team === true);
 
 // Define the featured team order
-const teamOrder = ['Robin Böhm', 'Gregor Woiwode', 'Britta Lenzen', 'Sascha Nuissl'];
+const teamOrder = ['Robin Böhm', 'Antony Konstantinidis', 'Gregor Woiwode', 'Britta Lenzen', 'Sascha Nuissl'];
 const featuredTeam = teamOrder
   .map(name => teamMembers.find(m => m.data.name === name))
   .filter(Boolean);
