@@ -25,13 +25,6 @@ export default defineConfig({
         !page.includes("/kategorie/") &&
         // Exclude pagination pages (page 1 duplicates main page)
         !page.includes("/seite/"),
-      i18n: {
-        defaultLocale: "de",
-        locales: {
-          de: "de-DE",
-          en: "en-US",
-        },
-      },
     }),
     pagefind(),
   ],
@@ -58,8 +51,9 @@ export default defineConfig({
   build: {
     format: "directory",
   },
-  // Redirects
+  // Redirects (with and without trailing slash to avoid double redirects)
   redirects: {
+    "/discord": "https://workshops.de/join-discord",
     "/discord/": "https://workshops.de/join-discord",
     "/sitemap.xml": "/sitemap-index.xml",
   },
