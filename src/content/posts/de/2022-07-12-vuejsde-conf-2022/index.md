@@ -14,7 +14,7 @@ Die vuejs.de Conf findet am **5. Oktober 2022 in Berlin** statt und ist die erst
 
 „Von der Community für die Community“ – das ist schon lange das Motto bei vuejs.de. Das Team hat es sich seit jeher zum Ziel gemacht, begeisterte Vue-User und alle, die es werden wollen, zu vernetzen, weiterzubilden und zu unterstützen. Aus genau diesem Grundsatz ist auch die vuejs.de Conf 2022 entstanden, die erste Vue.js-Konferenz Deutschlands.
 
-Während der eintägigen Konferenz kannst du nicht nur jede Menge neues Wissen über spannende Vue-Themen erlangen, sondern auch neue Kontakte mit der Community knüpfen. Die Konferenz am 5. Oktober 2022 findet in den **Bolle Festsälen** in Berlin statt. **Tickets** kannst du [hier](https://conf.vuejs.de/tickets/){:target="\_blank"} kaufen.
+Während der eintägigen Konferenz kannst du nicht nur jede Menge neues Wissen über spannende Vue-Themen erlangen, sondern auch neue Kontakte mit der Community knüpfen. Die Konferenz am 5. Oktober 2022 findet in den **Bolle Festsälen** in Berlin statt. **Tickets** kannst du [hier](https://conf.vuejs.de/tickets/) kaufen.
 
 Wenn dir der eine Konferenztag noch nicht reicht, dann kannst du übrigens direkt vor Ort bleiben und an unserer Partnerkonferenz, der **NG-DE Angular Conf** teilnehmen, die am 6. und 7. Oktober in der gleichen Location stattfindet. Mit dem Kombiticket erhältst du Zutritt zu beiden Konferenzen!
 
@@ -116,7 +116,7 @@ Tutorials zu schreiben ist schwierig. Das Schreiben von ansprechenden, interakti
 
 ## Workshops am 4. Oktober 2022
 
-Einen Tag vor der vuejs.de Conf 2022 hast du die Möglichkeit, dein Wissen in spannenden Workshops auf ein neues Level zu bringen. Du hast die Wahl zwischen vier unterschiedlichen, tagesfüllenden Workshops von Top-Trainern. Die Workshops dauern jeweils zwischen sechs und acht Stunden und finden im AMERON Hotel Abion direkt am Konferenzort statt. Tickets für die Workshops kannst du [hier](https://conf.vuejs.de/tickets/){:target="\_blank"} kaufen.
+Einen Tag vor der vuejs.de Conf 2022 hast du die Möglichkeit, dein Wissen in spannenden Workshops auf ein neues Level zu bringen. Du hast die Wahl zwischen vier unterschiedlichen, tagesfüllenden Workshops von Top-Trainern. Die Workshops dauern jeweils zwischen sechs und acht Stunden und finden im AMERON Hotel Abion direkt am Konferenzort statt. Tickets für die Workshops kannst du [hier](https://conf.vuejs.de/tickets/) kaufen.
 
 ### 1. Nuxt3 - The Beginners Workshop – Alexander Lichter
 
