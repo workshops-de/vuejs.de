@@ -38,16 +38,9 @@ Die Workshops gehen immer einen ganzen Tag und Tickets kannst du direkt [hier](h
 
 Den Start macht JavaScript-Entwickler und -Trainer Belá Varga am **18. Juni** mit einer **[Einführung in Vue 3](https://enterjs.de/2021/lecture_compact1.php?id=13043&source=0)**, der neuesten Version von Vue.js.
 
-<div class="row justify-content-md-center align-items-md-center no-gutters my-4">
-    <div class="col-sm-6">
-        <div class="text-center"><img src="bv.jpg" alt="Belá Varga"></div>
-    </div>
-    <div class="col-sm-6">
-        <blockquote><p>
-            <strong>Béla Varga</strong> ist JavaScript-Entwickler und -Trainer. Als Meetup- und Konferenz-Organisator setzt er sich aktiv für den Einsatz für die JavaScript Community ein. Er vermittelt sein Wissen an Hochschulen und als Trainer für JavaScript und Vue.js bei workshops.de.
-        </p></blockquote>
-    </div>
-</div>
+![Béla Varga](bv.jpg)
+
+> **Béla Varga** ist JavaScript-Entwickler und -Trainer. Als Meetup- und Konferenz-Organisator setzt er sich aktiv für den Einsatz für die JavaScript Community ein. Er vermittelt sein Wissen an Hochschulen und als Trainer für JavaScript und Vue.js bei workshops.de.
 
 Die neueste Version von Vue.js ist fertig und freigegeben. Zeit um sich die neuen Features genauer anzuschauen. Die Version 3 bringt noch mehr und bessere Werkzeuge für die Entwicklung von Webseiten und Web-Applikationen; und ist auch noch kleiner und schneller. Die meisten Features sind abwärtskompatibel, dadurch kann man sofort loslegen. In diesem Workshop betrachtet ihr die neuen Features und Änderungen von Vue.js 3.0 und auch die experimentellen Features der kommenden Version 3.1:
 
@@ -64,16 +57,9 @@ Ihr probiert anhand von kleinen Beispielen einige Features aus und schaut, wie a
 
 Weiter geht es am **22. Juni** mit Full-Stack-Entwickler Evgeny Sacharow, der erklärt, wie sich mit dem **[Framework Nuxt.js](https://enterjs.de/2021/lecture_compact1.php?id=13044&source=0)** ordentlich Zeit beim Erstellen von Applikationen sparen lässt.
 
-<div class="row justify-content-md-center align-items-md-center no-gutters my-4">
-    <div class="col-sm-6">
-        <div class="text-center"><img src="es.jpg" alt="Evgeny Sacharow"></div>
-    </div>
-    <div class="col-sm-6">
-        <blockquote><p>
-            <strong>Evgeny Sacharow</strong> ist Full-Stack-Entwickler mit Leidenschaft für Vue.js und Laravel. Er engagiert sich unter anderem als Trainer bei workshops.de und als Speaker bei Meetups.
-        </p></blockquote>
-    </div>
-</div>
+![Evgeny Sacharow](es.jpg)
+
+> **Evgeny Sacharow** ist Full-Stack-Entwickler mit Leidenschaft für Vue.js und Laravel. Er engagiert sich unter anderem als Trainer bei workshops.de und als Speaker bei Meetups.
 
 Mit Vue.js lassen sich sowohl einfache, als auch komplexe Projekte umsetzen. Themen wie SEO, State Management, Lazy Loading, eine ordentliche Projektstruktur und vieles mehr müssen dabei innerhalb des Projektes bei Bedarf eigens konzipiert und umgesetzt werden. Selbstverständlich gibt es reichlich Bibliotheken, wie Vuex, die ein bestimmtes Thema abdecken. Dennoch muss man diese Bibliotheken finden, installieren und konfigurieren.
 
@@ -87,16 +73,9 @@ Mit Nuxt.js lassen sich zudem auch statische Seite generieren, während man in d
 
 Am **25. Juni** referiert vue.js-Gründer, Entwickler und Trainer Antony Konstantinidis dann zu einem Thema, das momentan wohl alle Vue-Entwickler:innen beschäftigt: Die [**neue Composition API**](https://enterjs.de/2021/lecture_compact1.php?id=13042&source=0). Antony erklärt, was die Neuerung der Api überhaupt ist und wie sie funktioniert.
 
-<div class="row justify-content-md-center align-items-md-center no-gutters my-4">
-    <div class="col-sm-6">
-        <div class="text-center"><img src="ak.jpg" alt="Antony Konstantinidis"></div>
-    </div>
-    <div class="col-sm-6">
-        <blockquote><p>
-            <strong>Antony Konstantinidis</strong> ist seit mehr als zwölf Jahren als freiberuflicher Full Stack Entwickler, Trainer und Consultant tätig. In erster Linie beschäftigt er sich mit der Frontend-Entwicklung und ist super glücklich mit der Entwicklung von und in Vue. Mit vuejs.de hat er die erste deutsche Anlaufstelle für Vue gegründet.
-        </p></blockquote>
-    </div>
-</div>
+![Antony Konstantinidis](ak.jpg)
+
+> **Antony Konstantinidis** ist seit mehr als zwölf Jahren als freiberuflicher Full Stack Entwickler, Trainer und Consultant tätig. In erster Linie beschäftigt er sich mit der Frontend-Entwicklung und ist super glücklich mit der Entwicklung von und in Vue. Mit vuejs.de hat er die erste deutsche Anlaufstelle für Vue gegründet.
 
 Mit Version 3 des Javascript Frameworks Vue.js kamen auch viele Neuerungen und Veränderungen. Eine davon ist die Composition API, die ihr euch in diesem Workshop gemeinsam näher anschauen werdet.
 
