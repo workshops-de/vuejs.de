@@ -47,7 +47,7 @@ Im Anschluss an den VueDay fanden außerdem noch Workshops zu ausgewählten Them
 - Béla Varga: [Wie baue ich performante Vue.js-Applikationen?](https://enterjs.de/2021/lecture_compact1.php?id=13045&source=0)
 - Evgeny Sacharow: [State-Management in Vue.js-Anwendungen](https://enterjs.de/2021/lecture_compact1.php?id=13046&source=0)
 
-Um zu erfahren, wann die Workshops das nächste Mal angeboten werden, schau einfach regelmäßig auf [vuejs.de](https://vuejs.de) vorbei oder abonniere unseren [Newsletter](https://vuejs.de/newsletter/redirect/footer), um immer auf dem neuesten Stand zu bleiben.
+Um zu erfahren, wann die Workshops das nächste Mal angeboten werden, schau einfach regelmäßig auf [vuejs.de](https://vuejs.de) vorbei oder abonniere unseren [Newsletter](https://vuejs.de/newsletter/redirect/footer/), um immer auf dem neuesten Stand zu bleiben.
 
 ## Der nächste VueDay
 
