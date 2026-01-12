@@ -27,7 +27,7 @@ Erst durch JavaScript werden Funktionen hinzugefügt und Leben "eingehaucht". De
 Natürlich kann JavaScript noch viel mehr: Es wird auch verwendet, um Animationen, Games, interaktive Karten oder Video-Player zu erstellen.
 
 _Gute Nachrichten:_ Derzeit gibt es einen großen Mangel an erfahrenen JavaScript-Entwicklern.
-Laut einer Studie von [Devskiller.com](https://devskiller.com/it-skills-report-2020/) von 2020 suchen 70 Prozent der Unternehmen JavaScript-Entwickler.
+Laut einer Studie von [Devskiller.com](https://skillpanel.com/it-skills-report-2020/) von 2020 suchen 70 Prozent der Unternehmen JavaScript-Entwickler.
 In dem neuesten [HackerRank-Bericht](https://www.hackerrank.com/research/developer-skills/2020#skills) für 2020 wird berichtet, dass JavaScript die populärste Sprache ist, nach der Personalverantwortliche bei einem Webentwickler-Kandidaten suchen.
 
 Gibt man beispielsweise auf der Jobbörse [Indeed](https://de.indeed.com/jobs?q=Javascript&l=) den Suchbegriff "JavaScript" ein, so findet man für Deutschland über 16.000 Jobs.
@@ -52,7 +52,7 @@ Sie kann aber auch verwendet werden, um zum Beispiel browserbasierte Spiele und 
 
 ## Welche Vorteile bietet JavaScript?
 
-- JavaScript ist die [beliebteste](https://survey.stackoverflow.co/2019#technology) [Programmiersprache](https://devskiller.com/technical-hiring-skills-report-2019/) und weit verbreitet.
+- JavaScript ist die [beliebteste](https://survey.stackoverflow.co/2019#technology) [Programmiersprache](https://skillpanel.com/technical-hiring-skills-report-2019/) und weit verbreitet.
 - Als Standardsprache des Internets in jedem Browser zu finden. Da Browser in unserem täglichen Leben nahezu unabdingbar sind, erkennt man leicht, warum JavaScript so bedeutend ist.
 - JavaScript wird auch in SmartTVs und vielen anderen Technologien als Sprache eingesetzt.
 - Die Programmiersprache ist einfach zu erlernen.

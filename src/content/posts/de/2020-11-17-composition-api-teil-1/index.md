@@ -245,7 +245,7 @@ Das wirkt auf den ersten Blick recht umständlich und gewöhnungsbedürftig.
 Das Einschließen von Werten in einem Objekt ist allerdings essenziell, um ein einheitliches Verhalten über verschiedene Datentypen in JavaScript zu gewährleisten.
 Der Grund: In JavaScript werden primitive Datentypen wie `Number` oder `String` per Kopie weitergegeben und nicht durch die Referenz.
 
-Hierzu eine hervorragende Veranschaulichung von [penjee.com](https://blog.penjee.com/passing-by-value-vs-by-reference-java-graphical/):
+Hierzu eine hervorragende Veranschaulichung von [penjee.com](https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php):
 
 ![Unterschied pass by reference und pass by value](https://blog.penjee.com/wp-content/uploads/2015/02/pass-by-reference-vs-pass-by-value-animation.gif)
 
