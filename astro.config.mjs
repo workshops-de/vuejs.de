@@ -47,7 +47,8 @@ function getValidTeamPermalinks() {
   // Filter users: must be team member, trainer, or author
   const validUsers = users.filter(
     (user) =>
-      user.team === true || user.trainer === true || authors.has(user.name)
+      // user.team === true || user.trainer === true || authors.has(user.name)
+      user.team === true || authors.has(user.name)
   );
 
   // Return permalinks
