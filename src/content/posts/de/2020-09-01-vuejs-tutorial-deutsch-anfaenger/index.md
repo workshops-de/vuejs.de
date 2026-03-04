@@ -27,7 +27,7 @@ In diesem Artikel sollen unter anderem die folgenden Fragen geklärt werden:
 - Welche neuen Features bringt Vue 3.5 mit?
 - Wie nutze ich die neuen APIs effektiv?
 
-In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js. Wenn du eine mehr strukturierte und Hands-On Einführung in Form einer Schulung möchtest schau doch mal bei unser <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue & TypeScript Intensiv-Schulungen</a> vorbei.
+In diesem kostenlosen Online-Tutorial werden wir zwei Versionen derselben Komponente erstellen: eine davon mit der Composition API, die andere mit der Options API, dem aktuellen Standard zum Schreiben von Komponenten in Vue.js. Wenn du eine mehr strukturierte und Hands-On Einführung in Form einer Schulung möchtest schau doch mal bei unser <a target="_blank" href="https://workshops.de/seminare-schulungen-kurse/vuejs-modul-1?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top">Vue & TypeScript Intensiv-Schulungen</a> vorbei.
 
 ## Was ist Vue?
 

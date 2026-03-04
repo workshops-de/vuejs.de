@@ -23,7 +23,7 @@ export const ctas = {
       en: "More information about Vue3 Training",
     },
     buttonUrl:
-      "https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top",
+      "https://workshops.de/seminare-schulungen-kurse/vuejs-modul-1?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-top",
     image: "workshops-attendees.png",
     imageAlt: {
       de: "Teilnehmer:innen in der Veranstaltung Vue-Intensiv-Workshop",
@@ -44,7 +44,7 @@ export const ctas = {
       en: "Continue learning now",
     },
     buttonUrl:
-      "https://workshops.de/seminare-schulungen-kurse/vuejs-typescript?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom",
+      "https://workshops.de/seminare-schulungen-kurse/vuejs-modul-1?utm_source=vuejs_de&utm_campaign=tutorial&utm_medium=portal&utm_content=text-bottom",
     image: "workshops-attendees.png",
     imageAlt: {
       de: "Teilnehmer:innen der Veranstaltung Vue-Intensiv-Workshop",

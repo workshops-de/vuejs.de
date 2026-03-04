@@ -110,20 +110,38 @@ export const siteConfig = {
     mainCourse: "vuejs-typescript",
     provider: "Workshops.DE",
     providerUrl: "https://workshops.de",
-    // All available courses with i18n support
     courses: [
       {
-        id: "vuejs-typescript",
-        title: { de: "Vue.js 3 & TypeScript", en: "Vue.js 3 & TypeScript" },
+        id: "vuejs-modul-1",
+        title: {
+          de: "Vue.js: Modul 1 - Komponenten, Reaktivität & Schnittstellen",
+          en: "Vue.js: Module 1 - Components, Reactivity & Interfaces",
+        },
         description: {
-          de: "Intensiv-Schulung für Vue.js 3 mit TypeScript. Lerne die Grundlagen anhand eines praktischen Beispiels.",
-          en: "Intensive training for Vue.js 3 with TypeScript. Learn the fundamentals through a practical example.",
+          de: "Intensiv-Schulung für den Einstieg in Vue.js 3 und TypeScript. Komponenten, Composition API, Routing und API-Anbindung.",
+          en: "Intensive training for getting started with Vue.js 3 and TypeScript. Components, Composition API, Routing and API integration.",
         },
         duration: { de: "3 Tage", en: "3 Days" },
         format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/workshops/logo-vue-typescript-schulung.svg",
-        url: "/seminare-schulungen-kurse/vuejs-typescript",
+        url: "/seminare-schulungen-kurse/vuejs-modul-1",
         level: "beginner",
+      },
+      {
+        id: "vuejs-modul-2",
+        title: {
+          de: "Vue.js: Modul 2 - Architektur & Qualität",
+          en: "Vue.js: Module 2 - Architecture & Quality",
+        },
+        description: {
+          de: "Intensiv-Schulung für fortgeschrittene Vue.js-Entwickler:innen. Architektur, Testing, Performance und State Management mit Pinia.",
+          en: "Intensive training for advanced Vue.js developers. Architecture, Testing, Performance and State Management with Pinia.",
+        },
+        duration: { de: "3 Tage", en: "3 Days" },
+        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
+        icon: "/assets/img/workshops/logo-vuejs-intensiv-schulung.svg",
+        url: "/seminare-schulungen-kurse/vuejs-modul-2",
+        level: "advanced",
       },
       {
         id: "vuejs-state-management",
