@@ -56,7 +56,7 @@ export const ui = {
     "articles.title": "Artikel",
     "articles.description": "Alle Artikel rund um Vue.js, Nuxt, Pinia und mehr",
     "articles.readMore": "Weiterlesen",
-    "articles.minRead": "Min. Lesezeit",
+    "articles.minRead": "min Lesezeit",
     "articles.by": "von",
     "articles.latestArticles": "Neueste Artikel",
     "articles.allArticles": "Alle Artikel",
