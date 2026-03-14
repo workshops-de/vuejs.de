@@ -11,10 +11,10 @@ import path from 'path';
 const DATA_DIR = path.join(process.cwd(), 'src/data');
 
 const TRAINER_ENDPOINTS = [
-  { url: 'https://workshops.de/api/portal/vuejs-de/trainers', file: 'trainers.json' },
-  { url: 'https://workshops.de/api/course/37/trainers', file: 'course_trainers/vuejs-typescript.json' },
-  { url: 'https://workshops.de/api/course/44/trainers', file: 'course_trainers/vuejs-javascript.json' },
-  { url: 'https://workshops.de/api/course/45/trainers', file: 'course_trainers/vuejs-composition-api.json' },
+  { url: 'https://workshops.de/api/portals/vuejs-de/trainers', file: 'trainers.json' },
+  { url: 'https://workshops.de/api/courses/37/trainers', file: 'course_trainers/vuejs-typescript.json' },
+  { url: 'https://workshops.de/api/courses/44/trainers', file: 'course_trainers/vuejs-javascript.json' },
+  { url: 'https://workshops.de/api/courses/45/trainers', file: 'course_trainers/vuejs-composition-api.json' },
 ];
 
 async function fetchTrainers() {
