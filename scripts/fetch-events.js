@@ -28,7 +28,7 @@ async function fetchEvents() {
   for (const course of COURSES) {
     // Fetch events
     try {
-      const eventsUrl = `https://workshops.de/api/course/${course.id}/events`;
+      const eventsUrl = `https://workshops.de/api/courses/${course.id}/events`;
       const response = await fetch(eventsUrl);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -45,7 +45,7 @@ async function fetchEvents() {
 
     // Fetch related events
     try {
-      const relatedUrl = `https://workshops.de/api/course/${course.id}/related-events`;
+      const relatedUrl = `https://workshops.de/api/courses/${course.id}/related-events`;
       const response = await fetch(relatedUrl);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
