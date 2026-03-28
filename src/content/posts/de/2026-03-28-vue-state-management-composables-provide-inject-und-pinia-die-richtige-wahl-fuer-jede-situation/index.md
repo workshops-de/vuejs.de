@@ -4,6 +4,7 @@ description: "Vue State Management: Composables, Provide/Inject und Pinia – Di
 author: "Robin Böhm"
 published_at: 2026-03-28T12:00:00.000Z
 categories: "vuejs javascript frontend"
+header_source: "https://unsplash.com/photos/colorful-code-scrolls-across-a-dark-background-Aowg76xooEY"
 header_image: "header.jpg"
 ---
 

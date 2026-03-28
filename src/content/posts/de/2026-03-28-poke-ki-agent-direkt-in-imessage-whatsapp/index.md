@@ -4,6 +4,7 @@ description: "Poke bringt KI-Agenten in deine Messaging-App. No-Code-Automatisie
 author: "Robin Böhm"
 published_at: 2026-03-28T12:00:00.000Z
 categories: "vuejs javascript frontend"
+header_source: "https://unsplash.com/photos/a-green-square-with-a-white-speech-bubble-eQsuFl7jNRA"
 header_image: "header.jpg"
 ---
 
