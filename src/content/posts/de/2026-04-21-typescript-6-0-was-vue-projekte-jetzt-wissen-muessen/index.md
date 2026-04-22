@@ -4,7 +4,8 @@ description: "TypeScript 6.0: Was Vue-Projekte jetzt wissen müssen"
 author: "Robin Böhm"
 published_at: 2026-04-21T12:00:00.000Z
 categories: "vuejs javascript frontend"
-header_image: "header.jpg"
+header_source: https://images.unsplash.com/photo-1568716353609-12ddc5c67f04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTM4MjZ8MHwxfHNlYXJjaHw2fHxUeXBlU2NyaXB0JTIwaXN0JTIwZGElMjBkYXMlMjBUTERSJTIwVHlwZVNjcmlwdCUyMGlzdHxlbnwxfDB8fHwxNzc2NzU3MzYxfDA&ixlib=rb-4.1.0&q=80&w=1080
+header_image: https://images.unsplash.com/photo-1568716353609-12ddc5c67f04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTM4MjZ8MHwxfHNlYXJjaHw2fHxUeXBlU2NyaXB0JTIwaXN0JTIwZGElMjBkYXMlMjBUTERSJTIwVHlwZVNjcmlwdCUyMGlzdHxlbnwxfDB8fHwxNzc2NzU3MzYxfDA&ixlib=rb-4.1.0&q=80&w=1080
 ---
 
 **TL;DR:** TypeScript 6.0 ist erschienen und bringt eine Reihe von Breaking Changes und neuen Defaults, die Vue 3-, Vite- und Nuxt-Projekte direkt betreffen – insbesondere bei `strict`, `baseUrl`, `types[]` und dem neuen Modul-Default.
@@ -64,8 +65,8 @@ Für Vue-3-Projekte mit Vite oder Nuxt sind vor allem drei Punkte handlungsrelev
 - 💡 Migration-Tipps (types[], baseUrl, ignoreDeprecations) sind hilfreich und korrekt
 - 📚 Alle wesentlichen TS 6.0 Features für Vue/Vite/Nuxt wurden abgedeckt
 
-**Reviewed by**: Technical Review Agent  
-**Verification Sources**: 
+**Reviewed by**: Technical Review Agent
+**Verification Sources**:
 - Microsoft TypeScript DevBlogs (Official)
 - TypeScript Official Documentation
 - GitHub Repositories (ts5to6, typescript-go)

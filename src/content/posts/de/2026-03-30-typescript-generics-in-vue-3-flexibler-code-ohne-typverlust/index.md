@@ -5,6 +5,7 @@ author: "Robin Böhm"
 published_at: 2026-03-30T12:00:00.000Z
 categories: "vuejs javascript frontend"
 header_image: "https://images.unsplash.com/photo-1611592121675-a09a80da4117?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTM4MjZ8MHwxfHNlYXJjaHwxfHxUeXBlU2NyaXB0JTIwR2VuZXJpY3MlMjBpbiUyMFZ1ZSUyMFRMRFIlMjBUeXBlU2NyaXB0JTIwR2VuZXJpY3N8ZW58MXwwfHx8MTc3NDg2NzA1N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+header_source: "https://images.unsplash.com/photo-1611592121675-a09a80da4117?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTM4MjZ8MHwxfHNlYXJjaHwxfHxUeXBlU2NyaXB0JTIwR2VuZXJpY3MlMjBpbiUyMFZ1ZSUyMFRMRFIlMjBUeXBlU2NyaXB0JTIwR2VuZXJpY3N8ZW58MXwwfHx8MTc3NDg2NzA1N3ww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 **TL;DR:** TypeScript Generics sind der elegante Mittelweg zwischen `any`-Chaos und copy-paste-Duplikaten. Jakub Andrzejewski vom Nuxt Ecosystem Team zeigt in einem aktuellen Praxis-Guide, wie Generic-Typen, `ApiResponse<T>`-Wrapper und `keyof`-Constraints Vue-Projekte typsicher und skalierbar machen.
