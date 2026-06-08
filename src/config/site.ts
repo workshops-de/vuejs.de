@@ -116,8 +116,8 @@ export const siteConfig = {
       {
         id: "vuejs-typescript",
         title: {
-          de: "Vue.js: Modul 1 - Komponenten, Reaktivität & Schnittstellen",
-          en: "Vue.js: Module 1 - Components, Reactivity & Interfaces",
+          de: "Vue.js & TypeScript Intensiv-Schulung",
+          en: "Vue.js & TypeScript Intensive Training",
         },
         description: {
           de: "Intensiv-Schulung für den Einstieg in Vue.js 3 und TypeScript. Komponenten, Composition API, Routing und API-Anbindung.",
