@@ -114,7 +114,7 @@ export const siteConfig = {
     providerUrl: "https://workshops.de",
     courses: [
       {
-        id: "vuejs-modul-1",
+        id: "vuejs-typescript",
         title: {
           de: "Vue.js: Modul 1 - Komponenten, Reaktivität & Schnittstellen",
           en: "Vue.js: Module 1 - Components, Reactivity & Interfaces",
@@ -126,7 +126,7 @@ export const siteConfig = {
         duration: { de: "3 Tage", en: "3 Days" },
         format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/workshops/logo-vue-typescript-schulung.svg",
-        url: "/seminare-schulungen-kurse/vuejs-modul-1",
+        url: "/seminare-schulungen-kurse/vuejs-typescript",
         level: "beginner",
       },
       {
@@ -143,45 +143,6 @@ export const siteConfig = {
         format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
         icon: "/assets/img/workshops/logo-vuejs-intensiv-schulung.svg",
         url: "/seminare-schulungen-kurse/vuejs-modul-2",
-        level: "advanced",
-      },
-      {
-        id: "vuejs-state-management",
-        title: { de: "Vue.js State Management", en: "Vue.js State Management" },
-        description: {
-          de: "Verwalte den Zustand deiner Vue.js-Anwendungen effizient mit Pinia, der modernen State Management Lösung.",
-          en: "Efficiently manage the state of your Vue.js applications with Pinia, the modern state management solution.",
-        },
-        duration: { de: "2 Tage", en: "2 Days" },
-        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
-        icon: "/assets/img/schulungen/shared/logo-pinia.svg",
-        url: "/seminare-schulungen-kurse/vuejs-state-management-with-pinia",
-        level: "advanced",
-      },
-      {
-        id: "vuejs-composition-api",
-        title: { de: "Vue.js Composition API", en: "Vue.js Composition API" },
-        description: {
-          de: "Intensiv-Schulung zur modernen Composition API in Vue.js. Für sauberen und wartbaren Code.",
-          en: "Intensive training on the modern Composition API in Vue.js. For clean and maintainable code.",
-        },
-        duration: { de: "2 Tage", en: "2 Days" },
-        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
-        icon: "/assets/img/workshops/logo-vuejs-intensiv-schulung.svg",
-        url: "/seminare-schulungen-kurse/vuejs-composition-api-schulung",
-        level: "advanced",
-      },
-      {
-        id: "frontend-architektur",
-        title: { de: "Frontend-Architektur", en: "Frontend Architecture" },
-        description: {
-          de: "Moderne Webentwicklung und Frontend-Architektur. Lerne Best Practices für skalierbare Anwendungen.",
-          en: "Modern web development and frontend architecture. Learn best practices for scalable applications.",
-        },
-        duration: { de: "3 Tage", en: "3 Days" },
-        format: { de: "Vor Ort oder Remote", en: "On-Site or Remote" },
-        icon: "/assets/img/workshops/logo-frontend-architecture.svg",
-        url: "/seminare-schulungen-kurse/frontend-architektur",
         level: "advanced",
       },
     ],
