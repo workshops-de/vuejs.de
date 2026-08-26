@@ -8,6 +8,11 @@
     "name": "Vuejs Frankfurt",
     "city": "Frankfurt",
     "url": "https://www.meetup.com/Vuejs-Frankfurt/"
+  },
+  {
+    "name": "Vuejs Hamburg",
+    "city": "Hamburg",
+    "url": "https://www.meetup.com/hamburg-vue-js-meetup/"
   }
 ]
 
